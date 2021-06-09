@@ -139,6 +139,52 @@ p {
     color: #2c538e ;
 }
 
+#hexagono { 
+    width: 70px; 
+    height: 100px; 
+    background: #C9E2F2; 
+    position: relative; 
+    margin-bottom: 5px;
+    padding-top: 13px;  
+    box-shadow: 2px 2px 4px 0px gray;
+}
+   
+#hexagono:before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: -30px; 
+    width: 0; 
+    height: 0; 
+    border-right: 30px solid #C9E2F2; 
+    border-top: 50px solid transparent; 
+    border-bottom: 50px solid transparent; 
+    
+} 
+
+#hexagono:after { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: -30px; 
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid #C9E2F2; 
+    border-top: 50px solid transparent; 
+    border-bottom: 50px solid transparent; 
+} 
+
+.capsula {
+	border-radius: 20px;
+	background: linear-gradient(to right, #10ba00 0%, #10ba00 50%, #fc0505 51%, #ff0000 100%);
+	border: 1px solid #999999;
+	margin: 2%;
+	height: 40px;
+	width: 110px;
+}
+
+
+
 
 .button-tab-azul3:active{
     position:relative;
@@ -1073,13 +1119,7 @@ a.article:hover {
     box-shadow: 2px 2px 4px 0px gray;
 }
 
-.caja-tarjeta{ /**/
-    background-color: #ffc107;
-    border-radius: 10px;
-    padding: 18px;
-    height: 325px;
-    width: 895px;    
-}
+
 
 .caja-amarilla{ /**/
     background-color: #ffc107;
@@ -1089,9 +1129,55 @@ a.article:hover {
     width: 100%;    
 }
 
+.caja-tarjeta{ /**/
+    background-color: #ffc107;
+    border-radius: 10px;
+    padding: 18px;
+    height: 325px;
+    width: 895px;    
+}
+
 .caja-tarjeta-atras{ /**/
     border: 4px solid #ffc107 !important;
     background: #ffdd78;
+    border-radius: 10px;
+    padding: 16px;
+    height: 325px;
+    width: 895px;
+    align-content: center;
+}
+
+.caja-tarjeta2{ /**/
+    background-color: #ffc107;
+    border-radius: 10px;
+    padding: 18px;
+    height: 353px;
+    width: 895px;    
+}
+
+.caja-tarjeta2-atras{ /**/
+    border: 4px solid #ffc107 !important;
+    background: #ffdd78;
+    border-radius: 10px;
+    padding: 8px;
+    height: 353px;
+    width: 895px;
+    align-content: center;
+}
+
+
+.caja-tarjeta-azul{ /**/
+    background-color: #2c538e;
+    border-radius: 10px;
+    padding: 18px;
+    height: 325px;
+    width: 895px;
+    font-size: 25px;
+}
+
+.caja-tarjeta-azul-atras{ /**/
+    
+    background: #b9d5ff;
     border-radius: 10px;
     padding: 16px;
     height: 325px;
@@ -1145,6 +1231,22 @@ a.article:hover {
     padding: 15px;
     width: 80%;
     margin-left: 10%;
+}
+
+.caja-color-blue-claro3{
+    background-color: #C9E2F2;
+    border-radius: 15px;
+    padding: 15px;
+    width: 60%;
+    margin-left: 12%;
+}
+
+.caja-color-blue-claro4{
+    background-color: #C9E2F2;
+    border-radius: 15px;
+    padding: 15px;
+    width: 90%;
+    margin-left: 4%;
 }
 
 .caja-color-blue-oscuro{
@@ -3712,3 +3814,4 @@ img.zoom2{
     }
 
 }
+

@@ -559,6 +559,50 @@ function cerrarLavado() {
     document.getElementById('lavado5').style.display = "none";
 }
 
+function showDiv39() {
+    document.getElementById('caja-desinfeccion-frente').style.display = "none"; 
+    document.getElementById('caja-desinfeccion-atras').style.display = "block"; 
+}
+
+function showDiv40() {
+    document.getElementById('caja-esterilizacion-frente').style.display = "none"; 
+    document.getElementById('caja-esterilizacion-atras').style.display = "block"; 
+}
+
+function showDiv41() {
+    document.getElementById('caja-diferencias-frente').style.display = "none"; 
+    document.getElementById('caja-diferencias-atras').style.display = "block"; 
+}
+
+function showDiv42() {
+    document.getElementById('caja-genericos-frente').style.display = "none"; 
+    document.getElementById('caja-genericos-atras').style.display = "block"; 
+}
+
+function showDiv43() {
+    document.getElementById('caja-diferencias-frente').style.display = "block"; 
+    document.getElementById('caja-diferencias-atras').style.display = "none";
+}
+
+function showDiv44() {
+    document.getElementById('caja-genericos-frente').style.display = "block"; 
+    document.getElementById('caja-genericos-atras').style.display = "none"; 
+}
+
+function showDiv45() {
+    document.getElementById('caja-desinfeccion-frente').style.display = "block"; 
+    document.getElementById('caja-desinfeccion-atras').style.display = "none";
+}
+
+function showDiv46() {
+    document.getElementById('caja-esterilizacion-frente').style.display = "block"; 
+    document.getElementById('caja-esterilizacion-atras').style.display = "none"; 
+}
+
+
+
+
+
 
 /*
 
