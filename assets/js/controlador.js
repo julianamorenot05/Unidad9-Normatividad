@@ -599,7 +599,403 @@ function showDiv46() {
     document.getElementById('caja-esterilizacion-atras').style.display = "none"; 
 }
 
+function showNaOCl() {
+    document.getElementById('NaOCl').style.display = "block";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
 
+function showNaDCC() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "block";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showCloraminas() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "block";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showClO2() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "block";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showCH2O() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "block";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showGlutaraldehído() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "block";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showFenolicos() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "block";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showAmonio() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "block";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showAlcoholes() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "block";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showYodo() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "block";
+    document.getElementById('Peroxido').style.display = "none";
+}
+function showPeroxido() {
+    document.getElementById('NaOCl').style.display = "none";
+    document.getElementById('NaDCC').style.display = "none";
+    document.getElementById('Cloraminas').style.display = "none";
+    document.getElementById('ClO2').style.display = "none";
+    document.getElementById('CH2O').style.display = "none";
+    document.getElementById('Glutaraldehído').style.display = "none";
+    document.getElementById('Fenolicos').style.display = "none";
+    document.getElementById('Amonio').style.display = "none";
+    document.getElementById('Alcoholes').style.display = "none";
+    document.getElementById('Yodo').style.display = "none";
+    document.getElementById('Peroxido').style.display = "block";
+}
+
+function muestraAtras1() {
+    document.getElementById('atras1').style.display = "block";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "none";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras2() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "block";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "none";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras3() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "block";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "none";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras4() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "block";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "none";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras5() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "block";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "none";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras6() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "block";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "none";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras7() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "block";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "none";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras8() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "block";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "none";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras9() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "block";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "none";
+    document.getElementById('frente10').style.display = "block";
+}
+
+function muestraAtras10() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "block";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "none";
+}
+
+function muestraFrente() {
+    document.getElementById('atras1').style.display = "none";
+    document.getElementById('atras2').style.display = "none";
+    document.getElementById('atras3').style.display = "none";
+    document.getElementById('atras4').style.display = "none";
+    document.getElementById('atras5').style.display = "none";
+    document.getElementById('atras6').style.display = "none";
+    document.getElementById('atras7').style.display = "none";
+    document.getElementById('atras8').style.display = "none";
+    document.getElementById('atras9').style.display = "none";
+    document.getElementById('atras10').style.display = "none";
+    document.getElementById('frente1').style.display = "block";
+    document.getElementById('frente2').style.display = "block";
+    document.getElementById('frente3').style.display = "block";
+    document.getElementById('frente4').style.display = "block";
+    document.getElementById('frente5').style.display = "block";
+    document.getElementById('frente6').style.display = "block";
+    document.getElementById('frente7').style.display = "block";
+    document.getElementById('frente8').style.display = "block";
+    document.getElementById('frente9').style.display = "block";
+    document.getElementById('frente10').style.display = "block";
+}
 
 
 
