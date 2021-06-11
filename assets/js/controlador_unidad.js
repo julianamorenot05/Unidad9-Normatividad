@@ -511,6 +511,24 @@ $(".caja-texto2").click(function(){
     $(this).addClass("caja-texto2-amarillo");
 });
 
+$(".button-tab2").click(function(){
+    $(".button-tab2").removeClass("button-tab2-activo");
+    $(this).addClass("button-tab2-activo");
+});
+
+
+$(".medio-circulo-der2").click(function(){
+    $(".medio-circulo-der2").removeClass("medio-circulo-der2-activo");
+    $(".medio-circulo-izq2").removeClass("medio-circulo-izq2-activo");
+    $(this).addClass("medio-circulo-der2-activo");
+});
+
+$(".medio-circulo-izq2").click(function(){
+    $(".medio-circulo-izq2").removeClass("medio-circulo-izq2-activo");
+    $(".medio-circulo-der2").removeClass("medio-circulo-der2-activo");
+    $(this).addClass("medio-circulo-izq2-activo");
+});
+
 
 
 

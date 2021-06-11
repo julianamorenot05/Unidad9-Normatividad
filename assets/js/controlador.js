@@ -226,6 +226,18 @@ function cerrarProcesos() { //btn-close
     document.getElementById('procesos5').style.display = "none";
 }
 
+function cerrarMedidas() { //btn-close
+    document.getElementById('medidas').style.display = "block";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "none";
+    document.getElementById('medidas3').style.display = "none";
+    document.getElementById('medidas4').style.display = "none";
+    document.getElementById('medidas5').style.display = "none";
+    document.getElementById('medidas6').style.display = "none";
+    document.getElementById('medidas7').style.display = "none";
+    document.getElementById('medidas8').style.display = "none";
+}
+
 function showDiv() {
     document.getElementById('unidad_necesitas').style.display = "none";
     document.getElementById('unidad_aprenderas').style.display = "block";
@@ -597,6 +609,62 @@ function showDiv45() {
 function showDiv46() {
     document.getElementById('caja-esterilizacion-frente').style.display = "block"; 
     document.getElementById('caja-esterilizacion-atras').style.display = "none"; 
+}
+
+function showDiv47() { /**HASTA 52 */
+    document.getElementById('recomendacion').style.display = "none"; 
+    document.getElementById('recomendacion1').style.display = "block"; 
+    document.getElementById('recomendacion2').style.display = "none"; 
+    document.getElementById('recomendacion3').style.display = "none"; 
+    document.getElementById('recomendacion4').style.display = "none"; 
+    document.getElementById('recomendacion5').style.display = "none"; 
+    document.getElementById('recomendacion6').style.display = "none"; 
+}
+
+function showDiv48() { /**HASTA 52 */
+    document.getElementById('recomendacion').style.display = "none"; 
+    document.getElementById('recomendacion1').style.display = "none"; 
+    document.getElementById('recomendacion2').style.display = "block"; 
+    document.getElementById('recomendacion3').style.display = "none"; 
+    document.getElementById('recomendacion4').style.display = "none"; 
+    document.getElementById('recomendacion5').style.display = "none"; 
+    document.getElementById('recomendacion6').style.display = "none"; 
+}
+function showDiv49() { /**HASTA 52 */
+    document.getElementById('recomendacion').style.display = "none"; 
+    document.getElementById('recomendacion1').style.display = "none"; 
+    document.getElementById('recomendacion2').style.display = "none"; 
+    document.getElementById('recomendacion3').style.display = "block"; 
+    document.getElementById('recomendacion4').style.display = "none"; 
+    document.getElementById('recomendacion5').style.display = "none"; 
+    document.getElementById('recomendacion6').style.display = "none"; 
+}
+function showDiv50() { /**HASTA 52 */
+    document.getElementById('recomendacion').style.display = "none"; 
+    document.getElementById('recomendacion1').style.display = "none"; 
+    document.getElementById('recomendacion2').style.display = "none"; 
+    document.getElementById('recomendacion3').style.display = "none"; 
+    document.getElementById('recomendacion4').style.display = "block"; 
+    document.getElementById('recomendacion5').style.display = "none"; 
+    document.getElementById('recomendacion6').style.display = "none"; 
+}
+function showDiv51() { /**HASTA 52 */
+    document.getElementById('recomendacion').style.display = "none"; 
+    document.getElementById('recomendacion1').style.display = "none"; 
+    document.getElementById('recomendacion2').style.display = "none"; 
+    document.getElementById('recomendacion3').style.display = "none"; 
+    document.getElementById('recomendacion4').style.display = "none"; 
+    document.getElementById('recomendacion5').style.display = "block"; 
+    document.getElementById('recomendacion6').style.display = "none"; 
+}
+function showDiv52() { /**HASTA 52 */
+    document.getElementById('recomendacion').style.display = "none"; 
+    document.getElementById('recomendacion1').style.display = "none"; 
+    document.getElementById('recomendacion2').style.display = "none"; 
+    document.getElementById('recomendacion3').style.display = "none"; 
+    document.getElementById('recomendacion4').style.display = "none"; 
+    document.getElementById('recomendacion5').style.display = "none"; 
+    document.getElementById('recomendacion6').style.display = "block"; 
 }
 
 function showNaOCl() {
@@ -997,12 +1065,8 @@ function muestraFrente() {
     document.getElementById('frente10').style.display = "block";
 }
 
-
-
-
-/*
-
-function showDiv25() { //btn-close
+function showMedidas1() {
+    document.getElementById('medidas').style.display = "none";
     document.getElementById('medidas1').style.display = "block";
     document.getElementById('medidas2').style.display = "none";
     document.getElementById('medidas3').style.display = "none";
@@ -1011,6 +1075,99 @@ function showDiv25() { //btn-close
     document.getElementById('medidas6').style.display = "none";
     document.getElementById('medidas7').style.display = "none";
     document.getElementById('medidas8').style.display = "none";
+}
+
+function showMedidas2() {
+    document.getElementById('medidas').style.display = "none";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "block";
+    document.getElementById('medidas3').style.display = "none";
+    document.getElementById('medidas4').style.display = "none";
+    document.getElementById('medidas5').style.display = "none";
+    document.getElementById('medidas6').style.display = "none";
+    document.getElementById('medidas7').style.display = "none";
+    document.getElementById('medidas8').style.display = "none";
+}
+
+function showMedidas3() {
+    document.getElementById('medidas').style.display = "none";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "none";
+    document.getElementById('medidas3').style.display = "block";
+    document.getElementById('medidas4').style.display = "none";
+    document.getElementById('medidas5').style.display = "none";
+    document.getElementById('medidas6').style.display = "none";
+    document.getElementById('medidas7').style.display = "none";
+    document.getElementById('medidas8').style.display = "none";
+}
+
+function showMedidas4() {
+    document.getElementById('medidas').style.display = "none";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "none";
+    document.getElementById('medidas3').style.display = "none";
+    document.getElementById('medidas4').style.display = "block";
+    document.getElementById('medidas5').style.display = "none";
+    document.getElementById('medidas6').style.display = "none";
+    document.getElementById('medidas7').style.display = "none";
+    document.getElementById('medidas8').style.display = "none";
+}
+
+function showMedidas5() {
+    document.getElementById('medidas').style.display = "none";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "none";
+    document.getElementById('medidas3').style.display = "none";
+    document.getElementById('medidas4').style.display = "none";
+    document.getElementById('medidas5').style.display = "block";
+    document.getElementById('medidas6').style.display = "none";
+    document.getElementById('medidas7').style.display = "none";
+    document.getElementById('medidas8').style.display = "none";
+}
+
+function showMedidas6() {
+    document.getElementById('medidas').style.display = "none";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "none";
+    document.getElementById('medidas3').style.display = "none";
+    document.getElementById('medidas4').style.display = "none";
+    document.getElementById('medidas5').style.display = "none";
+    document.getElementById('medidas6').style.display = "block";
+    document.getElementById('medidas7').style.display = "none";
+    document.getElementById('medidas8').style.display = "none";
+}
+
+function showMedidas7() {
+    document.getElementById('medidas').style.display = "none";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "none";
+    document.getElementById('medidas3').style.display = "none";
+    document.getElementById('medidas4').style.display = "none";
+    document.getElementById('medidas5').style.display = "none";
+    document.getElementById('medidas6').style.display = "none";
+    document.getElementById('medidas7').style.display = "block";
+    document.getElementById('medidas8').style.display = "none";
+}
+
+function showMedidas8() {
+    document.getElementById('medidas').style.display = "none";
+    document.getElementById('medidas1').style.display = "none";
+    document.getElementById('medidas2').style.display = "none";
+    document.getElementById('medidas3').style.display = "none";
+    document.getElementById('medidas4').style.display = "none";
+    document.getElementById('medidas5').style.display = "none";
+    document.getElementById('medidas6').style.display = "none";
+    document.getElementById('medidas7').style.display = "none";
+    document.getElementById('medidas8').style.display = "block";
+}
+
+
+
+
+/*
+
+function showDiv25() { //btn-close
+    
     document.getElementById('medidas9').style.display = "none";
     document.getElementById('medidas10').style.display = "none";
     document.getElementById('medidas11').style.display = "none";
