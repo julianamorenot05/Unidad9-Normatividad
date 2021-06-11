@@ -1217,6 +1217,16 @@ a.article:hover {
     height: 350px;
 }
 
+.caja-texto4{
+    background: #2c538e;
+    border-radius: 15px;
+    padding: 15px 15px;
+    margin-left: 17px;
+    margin-bottom: 8px;
+    height: auto;
+    width: 100%
+}
+
 .caja-texto2:active{
     background:  #ffc107;
     border-radius: 15px;
@@ -3754,8 +3764,6 @@ Estilos de tarjetas interactivas.
     box-shadow: 2px 2px 4px 0px gray;
 }
 
-
-
 .caja-texto-back-b2-interna{
     border: 2px solid #ffc107;
     border-radius: 2px;
@@ -3764,6 +3772,17 @@ Estilos de tarjetas interactivas.
     margin-bottom: 10px;
     height: 166px;
     box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-texto-back-b4{
+    border: 2px solid #2c538e;
+    border-radius: 2px;
+    padding: 30px 18px;
+    background: transparent;
+    margin-bottom: 10px;
+    height: 300px;
+    transform: rotate(-5deg);
+    box-shadow: 2px 2px 4px 0px grey;
 }
 
 .caja-texto-borde-amarillo{
