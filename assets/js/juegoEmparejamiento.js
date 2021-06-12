@@ -11,12 +11,12 @@ function init() {
     $('#cardSlots').html('');
 
     // Create the pile of shuffled cards
-    var columnaOrigen = ['Normas de seguridad industrial', 'Suelo', 'Mezcla', 'Conductores de enlace, electrodos y barrajes'];
+    var columnaOrigen = ['30 Minutos', '10 Minutos', '15 Minutos', '25 Minutos'];
     var numbers = [1, 2, 3, 4];
     numbers.sort(function () { return Math.random() - .5 });
 
     for (var i = 0; i < numbers.length; i++) {
-        $('<p class="btn btn-warning boton-juego" style="width:100%">' + columnaOrigen[numbers[i]-1] + '</p>').data('number', numbers[i]).attr('id', 'cardEmparejamiento' + numbers[i]).appendTo('#cardPile').draggable({
+        $('<p class="btn btn-warning boton-juego" style="width:80%">' + columnaOrigen[numbers[i]-1] + '</p>').data('number', numbers[i]).attr('id', 'cardEmparejamiento' + numbers[i]).appendTo('#cardPile').draggable({
             containment: '#contentEmparejamiento',
             stack: '#cardPile p',
             cursor: 'move',

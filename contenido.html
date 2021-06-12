@@ -2833,7 +2833,7 @@
                         </div>
 
 
-                        <!-- 187 -->
+                        <!-- 187-205 -->
                         <div id="unidad9_23" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
                             <div class="col-md-12">
                                 <p><span class="font-weight-bold">
@@ -2849,7 +2849,7 @@
                                 </div>  
                                 <br><br>
                             </div>
-                            <div id="ficha" style="display: none;">
+                            <div id="ficha" >
                                 <div class="row" style="background: #DEEBF7; padding: 15px 0;">
                                     <div class="col-md-3">
                                         <img src="assets/image/ficha-tecnica.png" class="img-fluid">
@@ -2877,32 +2877,567 @@
                                     <div class="col-md-2">
                                         
                                         <img src="assets/image/atomo.png" class="img-fluid" style="position: relative; bottom: 30%;">
-                                        <p class="font-weight-bold" style="position: relative; top: 80px;"><a data-toggle="modal" href="#modal_desinfeccion" class="button-tab">Información general de una ficha técnica</a></p>
+                                        <p class="font-weight-bold" style="position: relative; top: 80px;"><a onclick="mostrarFicha()" class="button-tab">Información general de una ficha técnica</a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div id="ficha1">
+                            <div id="ficha1" style="display: none;">
                                 <div class="row" style="background: #DEEBF7; padding: 15px 0;">
-                                    
-                                    
+                                    <div class="col-md-12">
+                                        <p class="" style="margin-top: -18px;"><span class="titulo-tab">Información general de una ficha técnica</span>&nbsp;
+                                            Clic sobre las tarjetas para ampliar la información 
+                                            <a class="text-right"><img src="assets/image/atomo.png" class="img-fluid" style="position: relative; left: 22%; bottom: 55px;">
+                                            </a>           
+                                            <span class="mod-close-azul" role="button" onclick="cerrarFicha()" style="position: absolute; right: 10px;"><i class="fas fa-times fa-3x" ></i></span>                                
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-12 text-center" style="padding-right: 30px;">
+                                        <div id="carouselFichaTecnica" class="carousel slide" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="row justify-content-center" style="align-items: center;">
+                                                        <div class="col-md-5">
+                                                            <div id="descripcion-frente" style="">
+                                                                <div class="caja-tarjeta-blanco" role="button" onclick="showDiv53()" >
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/lista-quehaceres.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">1. Descripción del producto</p>                                                                            
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id="descripcion-atras" style="display: none;" >
+                                                                <div class="caja-tarjeta-blanco-atras" onclick="showDiv54()" >
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/lista-quehaceres.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">1. Descripción del producto</p>                                                                            
+                                                                            <p class="p_black justificado">
+                                                                                En este apartado el fabricante deberá describir el nombre, la composición del producto, las especificaciones 
+                                                                                y la categoría, donde se clasifica el producto como un detergente, un desinfectante o un producto detergente/
+                                                                                desinfectante ya que ejerce ambas funciones.</p>
+                                                                            <p class="p_black justificado">
+                                                                                Características organolépticas: Estas propiedades ayudan al operador a identificar las condiciones de 
+                                                                                funcionamiento normal de cada producto e identificar si hay modificaciones que generen riesgo en el producto.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div id="empleo-frente" style="">
+                                                                <div class="caja-tarjeta-blanco" onclick="showDiv55()" >
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/alcohol-gel.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">2. Modo de empleo</p>                                                                            
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id="empleo-atras" style="display: none;">
+                                                                <div class="caja-tarjeta-blanco-atras" onclick="showDiv56()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/alcohol-gel.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">2. Modo de empleo</p>                                                                            
+                                                                            <p class="p_black justificado">
+                                                                                Especifica las proporciones de dilución, con que sustancia debe diluirse el producto, y bajo qué condiciones. 
+                                                                                Además, se debe definir el tiempo de estabilidad de la solución preparada. También deberá especificarse el modo 
+                                                                                de aplicación de producto, por ejemplo, por aspersión, o por sumersión, el tiempo que debe dejarse en contacto 
+                                                                                el producto con el material que se desea desinfectar y el método de retiro del producto. La dilución depende, 
+                                                                                especialmente, de los niveles de suciedad para los detergentes o del tipo de microorganismo para el caso de los 
+                                                                                desinfectantes.</p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div class="col-md-1">
+                                                            <p class="text-right"><a href="#carouselFichaTecnica" data-slide="next" onclick="showDiv67()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row justify-content-center" style="align-items: center;">
+                                                        <div class="col-md-1">
+                                                            <p class="text-right"><a href="#carouselFichaTecnica" data-slide="prev" onclick="showDiv67()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div id="condiciones-frente" style="">
+                                                                <div class="caja-tarjeta-blanco" onclick="showDiv57()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/productos.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">3. Condiciones de Conservación – Vida útil del producto</p>                                                                            
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id="condiciones-atras" style="display: none;">
+                                                                <div class="caja-tarjeta-blanco-atras" onclick="showDiv58()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/productos.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">3. Condiciones de Conservación – Vida útil del producto</p>                                                                            
+                                                                            <p class="p_black justificado">
+                                                                                Se indica las condiciones de conservación y almacenamiento de los productos, que certifican la vida útil 
+                                                                                considerada para el producto, incluye la temperatura de conservación. </p>
+                                                                            <p class="p_black justificado">
+                                                                                Es necesario que se cuente con información tanto para el producto sin abrir, como para después de abierto</p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div id="precauciones-frente" style="">
+                                                                <div class="caja-tarjeta-blanco" onclick="showDiv59()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/aerosol-limpieza1.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">4. Precauciones</p>                                                                            
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id="precauciones-atras"style="display: none;">
+                                                                <div class="caja-tarjeta-blanco-atras" onclick="showDiv60()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/aerosol-limpieza1.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">4. Precauciones</p>                                                                            
+                                                                            <p class="p_black justificado">
+                                                                                El fabricante describe la información relevante de seguridad, que garanticen 
+                                                                                la estabilidad del producto y la seguridad del operador y el medio ambiente.</p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div class="col-md-1">
+                                                            <p class="text-right"><a href="#carouselFichaTecnica" data-slide="next" onclick="showDiv67()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row justify-content-center" style="align-items: center;">
+                                                        <div class="col-md-1">
+                                                            <p class="text-right"><a href="#carouselFichaTecnica" data-slide="prev" onclick="showDiv67()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div id="presentacion-frente" style="">
+                                                                <div class="caja-tarjeta-blanco" onclick="showDiv61()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/quimico.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">5. Tipo y material de envase – Presentación</p>                                                                            
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id="presentacion-atras" style="display: none;">
+                                                                <div class="caja-tarjeta-blanco-atras" onclick="showDiv62()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/quimico.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">5. Tipo y material de envase – Presentación</p>                                                                            
+                                                                            <p class="p_black justificado">
+                                                                                El fabricante describe las presentaciones disponibles en el mercado del producto.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div id="revision-frente" style="">
+                                                                <div class="caja-tarjeta-blanco" onclick="showDiv63()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/calendario.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">6. Fecha de revisión</p>                                                                            
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id="revision-atras" style="display: none;">
+                                                                <div class="caja-tarjeta-blanco-atras" onclick="showDiv64()" >
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/calendario.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">6. Fecha de revisión</p>                                                                            
+                                                                            <p class="p_black justificado">
+                                                                                Esta información indica cual fue la fecha final de revisión de la ficha, lo que permite definir la actualización de esta información.</p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div class="col-md-1">
+                                                            <p class="text-right"><a href="#carouselFichaTecnica" data-slide="next" onclick="showDiv67()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row justify-content-center" style="align-items: center;">
+                                                        <div class="col-md-1">
+                                                            <p class="text-right"><a href="#carouselFichaTecnica" data-slide="prev" onclick="showDiv67()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div id="invima-frente" >
+                                                                <div class="caja-tarjeta-blanco" onclick="showDiv65()" >
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/documentos-oficiales.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">7.Registro Sanitario expedido por el INVIMA.</p>                                                                            
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id="invima-atras" style="display: none;">
+                                                                <div class="caja-tarjeta-blanco-atras"onclick="showDiv66()">
+                                                                    <div class="row" style="align-items: center; align-content: center;">
+                                                                        <div class="col-md-3 columna-blanca" >
+                                                                            <img src="assets/image/documentos-oficiales.png" class="img-fluid">
+                                                                        </div>                                                                    
+                                                                        <div class="col-md-9">
+                                                                            <p class="justificado p_black font-weight-bold text-center">7.Registro Sanitario expedido por el INVIMA.</p>                                                                            
+                                                                            <p class="p_black justificado">
+                                                                                Para el caso de los equipos de laboratorio que sean considerados dispositivos médicos (Decreto 4725 de 2005), 
+                                                                                los productos desinfectantes también deberán estar considerados por el INVIMA como dispositivos médicos. Para 
+                                                                                el resto de productos debe contar con autorización sanitaria expedida por el INVIMA.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
                                 </div>
                             </div>
-                            
-                                                                               
                         </div>
 
 
-
-
+                        <!-- 206 -->
+                        <div id="unidad9_24" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
                             
+                            <!--<div id="mensajeJuegoEmparejamiento" class="row" style="display: none;">
+                                <div class="col-md-12" style="display: -webkit-inline-flex;">
+                                    <p class="titulo_aprendizaje">
+                                        <span class="font-weight-bold">
+                                            Ejercicio de aprendizaje
+                                        </span>
+                                    </p>
+                                    <img src="assets/image/aprendizaje.png" alt="Aprendizaje" class="img-fluid" width="50px">
+                                </div>                                
+                                <div class="col-md-12">
+                                    <p><span class="font-weight-bold">EMPAREJAMIENTO</span></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p class="p_black caja-texto-borde-b justificado">Debes utilizar un computador para desarrollar el ejercicio de aprendizaje</p>
+                                </div>
+                            
+                            </div> -->                           
+                            <div class="row">
+                                <div class="col-md-12" style="display: -webkit-inline-flex;">
+                                    <p class="titulo_aprendizaje">
+                                        <span class="font-weight-bold">
+                                            Ejercicio de aprendizaje
+                                        </span>
+                                    </p>&nbsp;
+                                    <img src="assets/image/aprendizaje.png" alt="Aprendizaje" class="img-fluid" width="50px">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p style="margin-left: 50px;">
+                                            <span class="font-weight-bold">
+                                                EMPAREJAMIENTO
+                                            </span>
+                                        </p>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="p_black caja-texto-borde-b">Une cada tiempo con la temperatura adecuada, correspondiente al proceso de esterilización del contenido de una autoclave.</p>
+                                </div>
+                                <div class="col" style="margin-bottom: 10px;">
+                                    <button onclick="validarResultado()" class="button-3d" >Validar Ejercicio</button>
+                                </div>
+                                
+                            </div>
+                            <div id="contentEmparejamiento">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div id="cardPile"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="containerSlots" class="col-md-7">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div id="cardSlots"></div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="justificado dashed-box">
+                                                            Temperatura de 134º C.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="justificado dashed-box">
+                                                            Temperatura de 126º C.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="justificado dashed-box">
+                                                            Temperatura de 121º C.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="justificado dashed-box">
+                                                            Temperatura de 115º C.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                                
+                            </div>                            
+                        </div>
 
 
+                        <!-- 207-210 -->
+                        <div id="unidad9_25" class="tab-pane" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="imagen100" src="assets/image/Personajes.png" style="margin-bottom: 50px">
+                                </div>
+                                <div class="col-md-6" style="padding-right: 30px;">
+                                    <h4 class="text-center tituloh4_center">Actividad de aprendizaje 2</h4>
+                            
+                                    <div id="carouselActividadAprendizaje2" class="carousel slide" data-interval="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="caja-texto" >
+                                                    <p class="p_black justificado">
+                                                        Bienvenidos a la actividad de aprendizaje N° 2 condiciones de funcionamiento de equipos básicos de laboratorio químico.
+                                                        <br><br>
+                                                        A continuación, se presenta la situación a resolver dentro de esta actividad. Clic en el botón siguiente:
+                                                        <br>                            
+                                                    </p>
+                                                    <p class="text-right"><a class="pull-right" href="#carouselActividadAprendizaje2" role="button" data-slide="next"><img
+                                                        class="boton-dialogo" src="assets/image/btn_siguiente.png"></a></p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="caja-texto ">
+                                                    <p class="bocadilloAmarillo">
+                                                        <span class="font-weight-bold">Profesor:</span>
+                                                        ¡Hola! Bienvenidos a la segunda actividad de esta unidad donde abordaremos el tema condiciones de funcionamiento 
+                                                        de equipos básicos de laboratorio químico.
+                                                    </p>
+                                                    <p class="bocadilloAzul">
+                                                        <span class="font-weight-bold">Estudiante: </span>
+                                                        Muy bien profesor ¿Y de qué se trata la actividad?
+                                                    </p>
+                                                    <p class="text-center"><a class="" href="#carouselActividadAprendizaje2" role="button"
+                                                            data-slide="prev"><img class="boton-dialogo" src="assets/image/btn_anterior.png"></a>
+                                                        <a class="" href="#carouselActividadAprendizaje2" role="button" data-slide="next"><img
+                                                                class="boton-dialogo" src="assets/image/btn_siguiente.png"></a></p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="caja-texto p_black">
+                                                    <p class="bocadilloAmarillo">
+                                                        <span class="font-weight-bold">Profesor:</span>
+                                                        Debes comprender las condiciones de funcionamiento de equipos básicos de laboratorio químico.
+                                                    </p>
+                                                    <p class="bocadilloAzul">
+                                                        <span class="font-weight-bold">Estudiante: </span>
+                                                        Comprendo lo que debo realizar profesor, ¿Cuál es la información que necesito para resolver la actividad?
+                                                    </p>
+                                                    <p class="text-center">
+                                                        <a class="" href="#carouselActividadAprendizaje2" role="button" data-slide="prev"><img class="boton-dialogo" src="assets/image/btn_anterior.png"></a>
+                                                        <a class="" href="#carouselActividadAprendizaje2" role="button" data-slide="next"><img class="boton-dialogo" src="assets/image/btn_siguiente.png"></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="caja-texto p_black">
+                                                    <p class="bocadilloAmarillo">
+                                                        <span class="font-weight-bold">Profesor:</span>
+                                                        La información necesaria para resolver la actividad, la encontrarás en el contendido disponible a continuación. 
+                                                        Recuerda descargar y desarrollar la guía de aprendizaje.
+                                                    </p>
+                                                    <p class="bocadilloAzul">
+                                                        <span class="font-weight-bold">Estudiante: </span>
+                                                        ¡Está bien profesor, revisaré la información y resolveré la actividad!
+                                                    </p>
+                                                    <a class="" href="#carouselActividadAprendizaje2" role="button" data-slide="prev"><img
+                                                            class="boton-dialogo" src="assets/image/btn_anterior.png"></a>
+                                                </div>
+                                                <p class="p_black text-center">Haz clic en el botón descargar actividad:</p>
+                                                <p class="text-center"><a href="assets/docs/Actividad1.pdf" target="_blank"><img
+                                                            style="width: 160px" src="assets/image/btn_descargar.png"></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 211-213 -->
+                        <div id="unidad9_26" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Equipos de laboratorio: </span>balanzas, mecheros, planchas de calentamiento y 
+                                    agitación, potenciómetros, estufas, muflas, baño maría, purificador de agua, hornos, neveras, centrífugas, 
+                                    cabinas de extracción.</p>
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Información técnica de los manuales de operación de equipos (recomendaciones de manipulación).</span></p>
+                            </div>
+                            <div class="col-md-12">
+                                <h3 class="titulo-azul3 font-weight-bold text-center">Balanzas</h3>
+                                <img src="assets/image/borde.png" class="img-fluid" style="position: absolute; right: 0; top: 20%; z-index: -1;">
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-4">
+                                        <img src="assets/image/balanza.png" class="img-fluid" style="">
+                                    </div>
+                                    <div class="col-md-8" style="padding: 0 40px;">
+                                        <div id="carouselBalanzas" class="carousel slide" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="col-md-12">
+                                                        <p class="justificado p_black">
+                                                            Este equipo es un utensilio que calcula la masa de sólidos o cualquier otra sustancia, comparando con la gravedad 
+                                                            que es aplicada sobre un cuerpo. Es importante tener presente que, el peso de un cuerpo es la fuerza que la gravedad 
+                                                            ejerce sobre este, y así mismo siendo esta fuerza, el equivalente a; (F = m x g), medida en unidades de Newton. 
+                                                            Cuando se menciona un término local con relación a la gravedad, es para dejar claro que la aceleración depende de 
+                                                            diferentes factores según la ubicación en la que se mida como la extensión, la altura sobre el nivel del mar y la 
+                                                            densidad (peso) de la tierra. Este equipo de laboratorio también es denominado báscula y pesa, entre otros.
+                                                        </p>
+                                                    </div>        
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-12">
+                                                        <p class="justificado p_black">
+                                                            El propósito de la balanza es dar el valor a la masa de una muestra de medición o de igual manera el peso de estos, 
+                                                            ya que existe entre ellos una relación determinada. Generalmente, en un área de análisis se utilizan las balanzas 
+                                                            para realizar actividades interventoría en la calidad, para la preparación de mezclas con diversos componentes, en 
+                                                            proporciones definidas y para establecer resultados específicos.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-12">
+                                                        <p class="justificado p_black">
+                                                            Las balanzas varían según su diseño, los lineamientos para su funcionamiento y los criterios de metrología utilizados. 
+                                                            Actualmente, podría decirse que hay dos conjuntos macro de estos equipos: las manuales y las digitales.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-6">
+                                                <p class="text-right" style="position: relative; top: 10%;">Desliza</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#carouselBalanzas" data-slide-to="0" style="margin-right: 5px;"><i class="fas fa-circle"></i></a>
+                                                <a href="#carouselBalanzas" data-slide-to="1" style="margin-right: 5px;"><i class="fas fa-circle"></i></a>
+                                                <a href="#carouselBalanzas" data-slide-to="2" style="margin-right: 5px;"><i class="fas fa-circle"></i></a>    
+                                            </div>
+                                            
+                                            &nbsp;
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-
-
-
-
+                        <!-- 214 -->
+                        <div id="unidad9_27" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Equipos de laboratorio: </span>balanzas, mecheros, planchas de calentamiento y 
+                                    agitación, potenciómetros, estufas, muflas, baño maría, purificador de agua, hornos, neveras, centrífugas, 
+                                    cabinas de extracción.</p>
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Información técnica de los manuales de operación de equipos (recomendaciones de manipulación).</span></p>
+                            </div>
+                            <div class="col-md-12">
+                                <h3 class="titulo-azul3 font-weight-bold text-center">Balanzas</h3>
+                                <p class="caja-borde-amarillo p_black"><span class="font-weight-bold">Balanzas mecánicas</span>
+                                    Da clic en los botones para ampliar la información sobre las balanzas mecánicas</p>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-7">
+                                        <img src="assets/image/balanza2.png" class="img-fluid" style="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="text-center font-weight-bold"><a data-toggle="modal" href="#modal_balanzasComunes" class="button-tab-azul">Balanzas mecánicas más comunes</a></p>
+                                        <p class="text-center font-weight-bold"><a data-toggle="modal" href="#modal_balanzasVerificacion" class="button-tab-azul">Verificación de operación de balanza mecánica</a></p>
+                                        <p class="text-center font-weight-bold"><a data-toggle="modal" href="#modal_tratamientoAutoclaves" class="button-tab-azul">Mantenimiento de los equipos mecánicos</a></p>
+                                    </div>
+                                </div>                                
+                            </div>                            
+                        </div>
 
 
 
@@ -3446,786 +3981,289 @@
         </div>
     </div>
 
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--Viejos-->
-    <div class="modal fade" id="modal_codigoColores" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
+    <div class="modal fade" id="modal_balanzasComunes" tabindex="-1" role="dialog" aria-labelledby="m_balanzasComunes" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content" id="m_interruptor">
+            <div class="modal-content" id="m_balanzasComunes">
                 <span class="mod-close" data-dismiss="modal" aria-hidden="true">
-                    <i class="fas fa-times-circle fa-3x"></i>
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
                 </span>
                 <div class="modal-body">
-                    <img src="assets/image/figura1.png" class="img-fluid">
+                    <h6 class="titulo-azul-modal text-center font-weight-bold p_white"><i class="fas fa-circle" 
+                        style="position: relative; left: -19%;"></i>Balanzas mecánicas más comunes
+                        <i class="fas fa-circle"  style="position: relative; right: -15%;"></i></h6>
+                    <div class="row">
+                        FALTA IMAGEN
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="modal_formasGeometricas" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
+    <div class="modal fade" id="modal_balanzasVerificacion" tabindex="-1" role="dialog" aria-labelledby="m_balanzasVerificacion" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content" id="m_interruptor">
+            <div class="modal-content" id="m_balanzasVerificacion">
                 <span class="mod-close" data-dismiss="modal" aria-hidden="true">
-                    <i class="fas fa-times-circle fa-3x"></i>
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
                 </span>
                 <div class="modal-body">
-                    <img src="assets/image/figura2.png" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal_extintores" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content" id="m_interruptor">
-                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
-                    <i class="fas fa-times-circle fa-3x"></i>
-                </span>
-                <div class="modal-body" style="padding: 3em;">
-                    <div class="col my-auto">
-                        <div id="carouselExtintores" class="carousel slide" data-interval="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
+                    <h6 class="titulo-azul-modal text-center font-weight-bold p_white"><i class="fas fa-circle" 
+                        style="position: relative; left: -19%;"></i>Verificación de operación de balanza mecánica
+                        <i class="fas fa-circle"  style="position: relative; right: -15%;"></i></h6>
+                    <div class="col-md-12">
+                        <p class="justificado p_black">
+                            Seguidamente, se expondrá la forma de operación de la balanza mecánica más común: la manual de sustitución.
+                        </p>                            
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-3 espacio">
+                                <div class="boton-caja-texto-azul">
+                                    <img src="assets/image/btn_1.png" class="img-fluid">
+                                    <p class="text-center p_white">Revisar y garantizar que el equipo esté nivelado.</p>
+                                </div>
+                                <div class="boton-caja-texto-azul">
+                                    <p class="text-center p_white">Cotejar el punto cero.</p>
+                                </div>
+                                <div class="boton-caja-texto-azul">
+                                    <p class="text-center p_white">Comprobar y ajustar la sensibilidad.</p>
+                                </div>
+                                <div class="boton-caja-texto-azul">
+                                    <p class="text-center p_white">Verificar el freno del platillo.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9 espacio" >
+                                <div id="verificacion" style="z-index: -2;">
+                                    <p class="text-center" style="opacity: 0.5;"><img src="assets/image/balanza2.png" class="img-fluid"></p>
+                                    <p class="text-center">Da clic sobre los recuadros para ampliar la información</p>
+                                </div>
+                                <div id="verificacion1">
+                                    <div class="caja-texto4">
+                                        <p class="justificado p_white">
+                                            Este proceso se consigue a través de mecanismos de ajustes propios en el roscado, que se encuentra en la parte baja 
+                                            de la balanza. Se debe centrar una burbuja sobre una escala que se visualiza en el extremo delantero de la parte 
+                                            baja de la balanza.
+                                        </p>                                        
+                                    </div>
+                                </div>
+                                <div id="verificacion2">
+                                    <div class="caja-texto4">
+                                        <p class="justificado p_white">
+                                            Este proceso se logra, mediante un ajuste en cero del panel de control de la balanza. Si este nivel de lectura no 
+                                            se encuentra en cero, se debe modificar el módulo de ajuste, el cual se realiza por medio de un tornillo entallado 
+                                            que se ubica horizontalmente al fulcro. Para realizar lo anterior, se debe bloquear la balanza y ajustar lentamente 
+                                            en cero. Esto debe realizarse hasta conseguir que el equipo se reinicie en cero de manera correcta.
+                                        </p>                                        
+                                        <p class="font-weight-bold text-right p_black"><a data-toggle="modal" href="#modal_balanzaSustitucion" class="button-tab-amarillo">Ver</a></p>
+                                    </div>
+                                </div>
+                                <div id="verificacion3">
+                                    <div class="caja-texto4">
                                         <div class="col-md-12">
-                                            <p class="text-left font-weight-bold"><span class="p_black">
-                                                Extintores</span>
-                                            </p>
-                                            <p class="justificado p_black">
-                                                Los extintores son equipos portátiles que contiene un agente o sustancia extintora utilizados para 
-                                                extinguir o controlar cualquier tipo de fuego incipiente (inicio del fuego o conato), generado y así 
-                                                evitar su transformación en incendios mayores. Existen varios tipos de extintores dependiendo del tipo 
-                                                de incendio que se necesite controlar.
-                                            </p>
-                                            <p class="justificado p_black">
-                                                A continuación, se dan las normas para decidir cuándo y cómo se usa el extintor teniendo en cuenta su tipo:
-                                            </p>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="row caja-color-y-claro">
-                                                <div>
-                                                    <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                                        Tipo A: </span> &nbsp;Sustancias combustibles: maderas, telas, papel, caucho y plásticos.
-                                                    </p>
-                                                    <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                                        Tipo B: </span> &nbsp;Líquidos inflamables: aceites, grasa y diluyentes de pinturas.
-                                                    </p>
-                                                    <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                                        Tipo C: </span> &nbsp;Equipos eléctricos conectados a la corriente.
-                                                    </p>
-                                                    <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                                        Tipo D: </span> &nbsp;Metales combustibles (magnesio, titanio, sodio, litio, potasio).
-                                                    </p>
+                                            <div id="carouselSensibilidad" class="carousel slide" data-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div class="row">
+                                                            <div class="col-md-10 espacio">
+                                                                <p class="justificado p_white">
+                                                                    Estos pasos se llevan a cabo siempre que se haya realizado un ajuste interno y se verifica 
+                                                                    utilizando una pesa patrón conocida:
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para continuar
+                                                                </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_white">
+                                                                    a) Mantener el equipo bloqueado
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para continuar
+                                                                </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-md-1 espacio">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                            </div>
+                                                            <div class="col-md-10 espacio">
+                                                                <p class="justificado p_white">
+                                                                    b) Instalar una medida patrón en la bandeja, que equivalga a la categoría de la escala óptica.
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para continuar
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-md-1 espacio">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_white">
+                                                                    c) Ubicar la porción del parámetro de peso y que este sea inferior en uno (1).
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para continuar
+                                                                </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_white">
+                                                                    d) Desbloquear el equipo
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para continuar
+                                                                </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_white">
+                                                                    e) Modificar el punto cero
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para continuar
+                                                                </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-md-1">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_white">
+                                                                    f) Colocar nuevamente la graduación del parámetro de peso inferior en cero (0). El equipo debe señalar 100. Si 
+                                                                    la escala, dispone de menos o más que 100, se debe regular el control de sensibilidad. Por lo que debe bloquearse 
+                                                                    el equipo, elevar el revestimiento superior y ajustar mediante el tornillo correspondiente:
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para continuar
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-md-1">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="text-right"><a class="" href="#carouselSensibilidad" role="button"
+                                                                    data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_white">
+                                                                    ahora bien, si la señal (escala) muestra más de cien, gire el tornillo hacia el lado derecho, o lo que es lo mismo, 
+                                                                    hacia abajo. Si esta señala un valor inferior a 100, resulta obligatorio desenroscar la pieza de ajuste. Finalmente, 
+                                                                    este proceso deberá repetirse hasta que el equipo quede ajustado correctamente.
+                                                                </p>
+                                                                <p class="p_white">
+                                                                    Clic para volver
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <br>
-                                    <p class="text-center"><a class="" href="#carouselExtintores" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-12">
-                                        <p class="text-left font-weight-bold"><span class="p_black">
-                                            Tipos de extintores y características:</span>
-                                        </p>
-                                        <br>
-                                        <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                            Extintores de agua: </span> &nbsp;Instrumentos adecuados para extinguir fuegos de tipo A, debido a que el 
-                                            agua tiene la propiedad de absorber calor con rapidez, por consiguiente, el fuego producido no se puede 
-                                            regenerar, sin embargo, no puede ser utilizado en lugares donde haya electricidad o corrientes eléctrica, 
-                                            debido al riesgo de electrocución.
-                                        </p>
-                                        <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                            Extintores de polvo: </span> &nbsp;Su utilización es muy frecuente, es apropiado para extinguir fuegos de 
-                                            tipos A, B y C, debido a su composición, (polvo), no hay riesgo de emplearlo en áreas donde exista 
-                                            electricidad, por lo tanto, son muy adecuados en viviendas, oficinas y empresas. 
-                                        </p>
-                                        <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                            Extintores de CO2: </span> &nbsp;Óptimos para extinguir fuegos de tipo A, B y C, es un extintor limpio, 
-                                            ideal para equipos eléctricos, sin embargo, debido a su composición puede provocar intoxicaciones, lo cual 
-                                            se hace necesario evacuar el área después de haber utilizado este equipo.
-                                        </p>
-                                        <p class="justificado p_black"><span class="font-weight-bold p_black">
-                                            Extintores para fuegos especiales: </span> &nbsp;Adecuados para extinguir fuegos de clase D, actúan por 
-                                            sofocación y algunos absorben calor actuando por enfriamiento.
-                                        </p>
                                     </div>
-                                    <br>
-                                    <p class="text-center"><a class="" href="#carouselExtintores" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a>
-                                        <a class="" href="#carouselExtintores" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-12">
-                                        <p class="text-left font-weight-bold"><span class="p_black">
-                                            Tener en cuenta:</span>
-                                        </p>
-                                        <br>
-                                        <ul>
-                                            <li>Estos instrumentos deben estar identificados con la señalización indicada y ubicados en la pared 
-                                                cerca de una salida de emergencia.
-                                            </li>
-                                            <li>El mantenimiento de estos equipos debe realizarse cada 12 meses, en este proceso se revisa roturas 
-                                                de sellos, deterioro, baja presión, montaje indebido o cualquier otra situación que ponga en riesgo 
-                                                su correcto funcionamiento.
-                                            </li>
-                                            <li>Si se evidencia que el extintor se ha utilizado, descargado o deteriorado, se debe informar para 
-                                                recargarlo o reemplazarlo.
-                                            </li>
-                                            <li>Por seguridad, nunca permita que el fuego se interponga entre usted y la salida de emergencia y nunca 
-                                                se acerque a él.
-                                            </li>
-                                            <li>Está prohibido entrar a un lugar desconocido para extinguir un fuego.</li>
-                                            <li>Ante cualquier conato de incendio se debe informar y alertar.</li>
-                                        </ul>
+                                <div id="verificacion4">
+                                    <div class="caja-texto4">
+                                        <p class="justificado p_white">
+                                            Este se haya ubicado encima de un eje que se encuentra roscado y cuando el equipo está bloqueado, se debe tocar la 
+                                            bandeja con la finalidad de que esta no oscile. Ahora, si se presenta desajuste, se deberá mover lentamente el eje, 
+                                            hasta tanto la diferencia entre el freno y la bandeja alcance el valor mínimo inferior, estando el equipo en 
+                                            posición de bloqueo. 
+                                        </p>    
                                     </div>
-                                    <br>
-                                    <p class="text-center"><a class="" href="#carouselExtintores" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a>
-                                        <a class="" href="#carouselExtintores" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="justificado p_black">
-                                        A continuación, se relaciona un instructivo gráfico para el uso de un extintor
-                                    </p>
-                                    <br>
-                                    <p class="text-center"><img src="assets/image/figura8.png" class="img-fluid"></p>
-                                    <br>
-                                    <p class="text-center"><a class="" href="#carouselExtintores" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a></p>
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="modal_lavaojos" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
+    <div class="modal fade" id="modal_balanzaSustitucion" tabindex="-1" role="dialog" aria-labelledby="m_balanzaSustitucion" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content" id="m_interruptor">
+            <div class="modal-content" id="m_balanzaSustitucion">
                 <span class="mod-close" data-dismiss="modal" aria-hidden="true">
                     <i class="fas fa-times-circle fa-3x"></i>
                 </span>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-7">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Lavaojos:</span>
-                            </p>
-                            <p class="justificado p_black">Instrumento de seguridad que debe hacer parte del equipo principal de un 
-                                laboratorio, su función es lavar y limpiar los ojos de una persona que entró en contacto con algún material 
-                                contaminado o con sustancias extrañas, debe ser de fácil acceso, estar claramente señalizado, de tal manera 
-                                que la persona lesionada pueda llegar hasta este instrumento sin ningún inconveniente, para tener en cuenta, 
-                                las lesiones oculares suelen ir acompañadas de ceguera temporal.
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img src="assets/image/lavaojos.png" class="img-fluid imagen80">
-                        </div>
-                    </div>
+                        <p class="font-weight-bold">Balanza de sustitución </p>
+                        <img src="assets/image/balanza-sustitucion.jpg" class="img-fluid">    
+                    </div>                    
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="modal_duchas" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content" id="m_interruptor">
-                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
-                    <i class="fas fa-times-circle fa-3x"></i>
-                </span>
-                <div class="modal-body" style="padding: 3em;">
-                    <div class="col my-auto">
-                        <div id="carouselDuchas" class="carousel slide" data-interval="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-7">
-                                            <p class="text-left font-weight-bold"><span class="p_black">
-                                                Duchas de seguridad:</span>
-                                            </p>
-                                            <p class="justificado p_black">Al igual que los lavaojos son instrumentos de emergencia para los 
-                                                casos de derrames o salpicaduras de sustancias químicas sobre las personas, con riesgo de 
-                                                contaminación o peor aún, una posible quemadura, estas herramientas hacen parte de primeros 
-                                                auxilios y por ningún motivo deben reemplazar a los elementos de protección personal.
-                                            </p>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <img src="assets/image/duchaseguridad.png" class="imagen80 img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="text-center"><a class="" href="#carouselDuchas" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-12">
-                                        <p class="text-left font-weight-bold"><span class="p_black">
-                                            Uso y mantenimiento de los lavaojos y duchas de seguridad:</span>
-                                        </p>
-                                        <br>
-                                        <ul>
-                                            <li>Sólo utilice estos instrumentos en caso de entrar en contacto con alguna sustancia química.</li>
-                                            <li>Para utilizarlo se debe activar la palanca de accionamiento con la mano o el pie, según el 
-                                                instrumento que necesite emplear.
-                                            </li>
-                                            <li>En caso de alguna salpicadura en los ojos, abrirlos con ayuda de los dedos para asegurar el 
-                                                lavado detrás de los mismos.
-                                            </li>
-                                            <li>Lo ideal es no utilizar lentes de contacto en el laboratorio, en caso contrario, extraérselos 
-                                                inmediatamente para lavar los ojos y eliminar los contaminantes.
-                                            </li>
-                                            <li>Evitar la aplicación directa del agua o la solución ocular en el ojo, se recomienda realizarlo 
-                                                en la base de la nariz, es más efectivo para extraer las sustancias químicas. (los chorros potentes 
-                                                de agua pueden introducir nuevamente partículas en los ojos). 
-                                            </li>
-                                            <li>Verificar que el lavado se realice desde la nariz hacia las orejas, esto evitará la contaminación 
-                                                del ojo que no está afectado.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p class="text-center"><a class="" href="#carouselDuchas" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a>
-                                        <a class="" href="#carouselDuchas" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-12">
-                                        <ul>
-                                            <li>Lavar los ojos y párpados durante 15 minutos, después de realizar este proceso, se recomienda 
-                                                cubrir ambos ojos con una gasa limpia o estéril.
-                                            </li>
-                                            <li>Para utilizar la ducha de emergencia, se debe quitar la ropa, zapatos y demás elementos 
-                                                mientras está debajo del agua.
-                                            </li>
-                                            <li>Lave el lugar que ha sido afectado con abundante agua y permanezca allí durante 20 minutos 
-                                                como mínimo, mientras se consigue ayuda médica.
-                                            </li>
-                                            <li>El mantenimiento de las duchas de emergencia debe realizarse cada seis meses, tener en cuenta 
-                                                que el lavaojos debe tener cubiertas protectoras (tapas), para evitar la acumulación de contaminantes 
-                                                del aire en las boquillas.
-                                            </li>
-                                            <li>Si se observa algún daño, obstrucción o desgaste en estas herramientas informar inmediatamente 
-                                                al supervisor del laboratorio.
-                                            </li>
-                                        
-                                        </ul>
-                                        <p class="justificado p_black">La eficacia de estos instrumentos depende de su correcto funcionamiento, su buen 
-                                            estado de mantenimiento y una formación suficiente del personal de laboratorio. Como se mencionó anteriormente,
-                                            se recomienda inspeccionarlas periódicamente, tenerlas siempre libres de objetos, así como informar de 
-                                            cualquier falla o rotura, tener en cuenta que estas herramientas nos pueden salvar la vida en caso de un accidente.
-                                        </p>
-                                    </div>
-                                    <p class="text-center"><a class="" href="#carouselDuchas" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="modal_recomendacion"tabindex="-1" role="dialog" aria-labelledby="m_recomendacion" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_recomendacion" style="border: 3px solid #ffc107;">
-                
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/guantes.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 5em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Recomendaciones para uso de guantes:</span>
-                            </p>
-                            <ul>
-                                <li class="justificado p_black">Utilizar los guantes de la talla adecuada.</li>
-                                <li class="justificado p_black">Se deben eliminar después de haber realizado la práctica, ya que se convierten en fuente 
-                                    de contaminación externa y ambiental.</li>
-                                <li class="justificado p_black">Evite tocar o manipular objetos comunes como: Teléfono, computador, lapiceros, entre otros, 
-                                    con los guantes puestos.</li>
-                                <li class="justificado p_black">Los guantes deben ser seleccionados dependiendo del material que se requiera manipular.</li>
-                                <li class="justificado p_black">El laboratorio debe disponer de otros tipos de guantes que protejan al personal ante situaciones 
-                                    específicas: ensayos que impliquen temperaturas extremas, ácidos y bases concentradas, entre otros.</li>
-                            </ul>
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>
-                        
-                    </div>
-            </div>
-        </div>
-    </div>
+    
 
-    <div class="modal fade" id="modal_tipo" tabindex="-1" role="dialog" aria-labelledby="m_tipo" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_tipo" style="border: 3px solid #ffc107;">
-                
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/guantes.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 5em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Tipos de guantes:</span>
-                            </p>
-                            <p class="p_black justificado">Existen varios tipos de guantes, dependiendo de las condiciones y/o 
-                                de los materiales a manipular, algunos de ellos son:
-                            </p>
-                            <ul>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Guantes desechables:</span>&nbsp;Empleados para manipular sustancias potencialmente infectantes, 
-                                    son conocidos como guantes de procedimientos, son de látex (goma natural) o de material sintético 
-                                    (vinilo), éstos últimos, además de tener mayor resistencia, son indicados para personas alérgicas a 
-                                    los guantes de goma natural.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Guantes de goma gruesa antideslizante:</span>&nbsp;Generalmente, se utilizan para manipulación de 
-                                    residuos, procedimientos de limpieza o lavado de material de sustancias químicas, pueden ser reutilizados.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Guantes de fibra térmica artificial:</span>&nbsp;Se emplean para manipular muestras que son sometidas a 
-                                    temperaturas altas y/o bajas, pueden ser reutilizados.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Guantes de neopreno:</span> &nbsp;Utilizados para manipular muestras ácidas, bases concentradas o 
-                                    productos químicos tóxicos.
-                                </p></li>     
-                            </ul>
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>
-                        
-                    </div>
-            </div>
-        </div>
-    </div>
+    
 
-    <div class="modal fade" id="modal_uso" tabindex="-1" role="dialog" aria-labelledby="m_uso" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_uso" style="border: 3px solid #ffc107;">
-                
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/guantes.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 3em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Procedimiento para colocarse los guantes:</span>
-                            </p>
-                            <p class="p_black justificado">Inicialmente, extraer un guante de la caja y enfundarlo en una mano, 
-                                hasta tener una perfecta adaptación, (ausencia de arrugas), estirando desde el extremo abierto, 
-                                para esto, es necesario utilizar la talla correcta.                                
-                            </p>
-                            <p class="p_black justificado">Extraer el segundo guante y realizar el mismo procedimiento anterior.</p>
-                            <p class="p_black justificado">En caso de entrar en contacto con sustancias o elementos que causen algún 
-                                tipo de daño, es necesaria la sustitución inmediata del mismo.</p>
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <p class="justificado p_black caja-color-y-claro">
-                            A continuación, se muestra la manera correcta de retirarse los guantes para evitar posibles contaminaciones.
-                        </p>
-                        <br>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <img src="assets/image/1.png" class="zoom" style="width: 70%;">
-                        <br><br>
-                    </div>
-                    <br><br>
-                    <div class="col-md-12 text-center">
-                        <img src="assets/image/2.png" class="zoom" style="width: 70%;">
-                        <br><br>
-                    </div>
-                    <br><br>
-                    <div class="col-md-12 text-center">
-                        <img src="assets/image/3.png" class="zoom" style="width: 70%;">
-                        <br><br>
-                    </div>
-                    <br><br>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="modal_tipoGafas" tabindex="-1" role="dialog" aria-labelledby="m_tipoGafas" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_tipoGafas" style="border: 3px solid #ffc107;">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/gafas.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 5em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Tipos de gafas:</span>
-                            </p>
-                            <p class="p_black justificado">Existe gran variedad de tipos de protección ocular, dependiendo del trabajo 
-                                a realizar y del ambiente, los tipos de lentes de seguridad que se encuentran en el mercado se clasifican 
-                                por su uso, entre ellos están:
-                            </p>
-                            <ul>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Lentes de cristal:</span>&nbsp;Utilizados para manipular productos químicos agresivos.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Lentes de plástico:</span>&nbsp;Su función es proteger contra salpicaduras de soldadura, es resistente 
-                                    al empañamiento.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Lentes de policarbonato:</span>&nbsp;Son más ligeros, no se empañan, son más fuertes que los de vidrio 
-                                    y los de plástico y resistentes al impacto, por eso son los más utilizados en los Laboratorios. 
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Lentes de sol de seguridad:</span> &nbsp;Protegen contra los rayos del sol, se recomienda para trabajos 
-                                    exteriores.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Lentes de seguridad por prescripción:</span>&nbsp;son para las personas que normalmente utilizan gafas 
-                                    por prescripción médica, se fabrican con receta médica.
-                                </p></li>     
-                            </ul>
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>                        
-                    </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="modal_usoGafas" tabindex="-1" role="dialog" aria-labelledby="m_usoGafas" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_usoGafas" style="border: 3px solid #ffc107;">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/gafas.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 5em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Uso y mantenimiento de las gafas protectoras:</span>
-                            </p>
-                            <p class="p_black justificado">Estos elementos deben ser lo más cómodos posibles, ajustándose a la nariz, 
-                                la cara y no interferir en los movimientos del personal, se utiliza cuando se maneja:
-                            </p>
-                            <br>
-                            <p class="justificado p_black"><i class="fas fa-check"></i>
-                                Material de vidrio a presión reducida y/o a presión elevada.
-                            </p>
-                            <p class="justificado p_black"><i class="fas fa-check"></i>
-                                Materiales criogénicos y radioactivos.
-                            </p>
-                            <p class="justificado p_black"><i class="fas fa-check"></i>
-                                Materiales inflamables.
-                            </p>
-                            <p class="justificado p_black"><i class="fas fa-check"></i>
-                                Sustancias cáusticas, irritantes, corrosivas y explosivas.
-                            </p>
-                            <p class="justificado p_black"><i class="fas fa-check"></i>
-                                Sustancias biológicas con riesgos para la salud.
-                            </p>
-                            <p class="justificado p_black"><i class="fas fa-check"></i>
-                                Luz ultra violeta y luz láser.
-                            </p>
-                            <p class="justificado p_black"><i class="fas fa-check"></i>
-                                Sustancias químicas tóxicas y carcinógena.
-                            </p>
-                            <br>
-                            <p class="p_black justificado">Las gafas de seguridad ocular deben ser lavadas inicialmente con agua fría para 
-                                eliminar el polvo que hay en ellas, utilizar paños para limpiar los lentes y guardarlas en un estuche de 
-                                protección, si se evidencia que alguno de los lentes se encuentra rayado o quebrado y la montura se encuentra 
-                                deteriorada debe reemplazarlas inmediatamente.
-                            </p>
-
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>                        
-                    </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal_tipoRespirador" tabindex="-1" role="dialog" aria-labelledby="m_tipoRespirador" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_tipoRespirador" style="border: 3px solid #ffc107;">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/mascara.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 5em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Tipos de respiradores:</span>
-                            </p>
-                            <ul>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Filtro mecánico:</span>&nbsp;Se utilizan para polvos y neblinas.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Cartucho químico:</span>&nbsp; Vapores orgánicos y gases.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Máscaras de depósito: </span>&nbsp;Cuando el ambiente está contaminado de un gas o vapor.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Con suministro de aire:</span> &nbsp;Para atmósferas donde hay menos de 16% de oxígeno en volumen.
-                                </p></li>
-                            </ul>
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                Limitaciones generales de su uso:</span>
-                            </p>
-                            <ul style="list-style: none;">
-                                <li><p class="justificado p_black"><i class="fas fa-check"></i>
-                                    Tener en cuenta que los protectores respiratorios no suministran oxigeno.
-                                </p></li>
-                                <li><p class="justificado p_black"><i class="fas fa-check"></i>
-                                    Los filtros deben cambiarse regularmente, esto depende del tiempo de exposición.
-                                </p></li>
-                            </ul>
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>                        
-                    </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal_bata" tabindex="-1" role="dialog" aria-labelledby="m_bata" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_bata" style="border: 3px solid #ffc107;">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/bata.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 5em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                La bata:</span>
-                            </p>
-                            <p class="p_black justificado">La bata protege ropa y piel de los productos químicos que se manipulan en el 
-                                laboratorio, por eso es indispensable llevarla siempre bien abrochada, cuando se realicen las prácticas 
-                                se recomienda no llevar faldas cortas debido a que las piernas quedarían expuestas ante salpicaduras de 
-                                alguna sustancia química, adicionalmente, no se debe usar medias veladas ya que las fibras sintéticas en 
-                                contacto con determinados productos químicos se adhieren a la piel.                                
-                            </p>
-                            <p class="p_black justificado">Evitar estar en sitios públicos con la bata de laboratorio, cafeterías, 
-                                bibliotecas, baños y demás lugares, debido a que pueden llegar a contaminar con productos químicos otras 
-                                zonas limpias, por esta misma razón, no debe guardarse en los casilleros donde se guarda la ropa de calle. 
-                                Existen diferentes materiales con los que se elaboran las batas, dependiendo del uso que se les va a dar, 
-                                entre ellas:
-                            </p>
-
-                            <ul>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Algodón:</span>&nbsp;Se utiliza en los lugares donde se manejen productos químicos peligrosos y mecheros.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Lana:</span>&nbsp;Se utilizan para proteger contra salpicaduras de materiales fundidos, cantidades pequeñas 
-                                    de ácidos y flamas pequeñas.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Fibras sintéticas:</span>&nbsp;Usadas para proteger contra salpicaduras y radiaciones infrarrojas y ultravioleta, 
-                                    sin embargo, estos materiales incrementan los riesgos ya que algunos de ellos pueden ser disueltos por algunos 
-                                    disolventes, disminuyendo la capacidad protectora de la bata.
-                                </p></li>                                    
-                            </ul>
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>                        
-                    </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal_calzado" tabindex="-1" role="dialog" aria-labelledby="m_calzado" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
-            <div class="modal-content" id="m_calzado" style="border: 3px solid #ffc107;">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="content-circle">
-                                <div class="circle-div" onclick="audioTipoEquipos('electrodos')" >
-                                    <img style="width: 70%" src="assets/image/bota.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="margin-top: 5em;">
-                            <p class="text-left font-weight-bold"><span class="p_black">
-                                El calzado:</span>
-                            </p>
-                            <p class="p_black justificado">El calzado debe ser cerrado, para evitar posibles salpicaduras de sustancias o 
-                                algún otro material que pueda causar daño, se utiliza en lugares donde se manipulan productos químicos, 
-                                objetos pesados que pueden caer, electricidad o para dar tracción en pisos mojados. Existen diferentes 
-                                tipos de calzado dependiendo de las funciones a realizar, entre ellos están:
-                            </p>
-                            <ul>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Calzado de protección:</span>&nbsp;Se utiliza en áreas donde no están expuestos a riesgos mecánicos ni 
-                                    derrames de sustancias químicas.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Calzado de protección con puntera:</span>&nbsp;Su función es proteger tanto el pie como los dedos de 
-                                    caídas de objetos pesados y/o corto punzantes.
-                                </p></li>
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Calzado de protección dieléctrico:</span>&nbsp; Riesgo de descargas eléctricas.
-                                </p></li> 
-                                <li><p class="justificado p_black"><span class="font-weight-bold p_black">
-                                    Calzado de protección impermeable:</span>&nbsp; Evita la filtración de líquidos o polvos finos.
-                                </p></li>                                    
-                            </ul>
-                            <br><br><br>
-                        </div>
-                        <div class="col-md-1">
-                            <span class="mod-close" data-dismiss="modal" aria-hidden="true" style="margin-right: 1em;">
-                                <i class="fas fa-times-circle fa-3x"></i>
-                            </span>
-                        </div>                        
-                    </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal_indicacion" tabindex="-1" role="dialog" aria-labelledby="m_indicacion" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content" id="m_indicacion">
-                <span class="mod-close2" data-dismiss="modal" aria-hidden="true">
-                    <i class="fas fa-times-circle fa-3x"></i>
-                </span>
-                <div class="modal-body" style="padding: 3em; height: auto; margin: 2em;">
-                    <div class="col my-auto">
-                        <div id="carouselIndicacion" class="carousel slide" data-interval="false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row" id="row_indicacion">
-                                        <div class="col-md-10 text-center">
-                                            <img src="assets/image/tabla1.png" class="zoom2 img-fluid" style="margin-top: 3em; margin-left: 2em;">
-                                        </div>
-                                        <div class="col-md-1" style="margin-left: 2em;">
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row" id="row_indicacion">
-                                        <div class="col-md-1" >
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a></p>
-                                        </div>
-                                        <div class="col-md-10 text-center">
-                                            <img src="assets/image/tabla2.png" class="zoom2 img-fluid" style="margin-top: 3.5em; ">
-                                        </div>
-                                        <div class="col-md-1" >
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row" id="row_indicacion">
-                                        <div class="col-md-1" >
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a></p>
-                                        </div>
-                                        <div class="col-md-10 text-center">
-                                            <img src="assets/image/tabla3.png" class="zoom2 img-fluid" style="margin-top: 3.5em;" >
-                                        </div>
-                                        <div class="col-md-1" >
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                        </div>                                        
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row" id="row_indicacion">
-                                        <div class="col-md-1" >
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a></p>
-                                        </div>
-                                        <div class="col-md-10 text-center">
-                                            <img src="assets/image/tabla4.png" class="zoom2 img-fluid" style="margin-top: 3.5em;" >
-                                        </div>
-                                        <div class="col-md-1" >
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
-                                        </div>                                        
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row" id="row_indicacion">
-                                        <div class="col-md-1" >
-                                            <p class="text-center"><a class="" href="#carouselIndicacion" role="button" data-slide="prev"><img class="flecha2" src="assets/image/fle_anterior.png"></a></p>
-                                        </div>
-                                        <div class="col-md-10 text-center">
-                                            <img src="assets/image/tabla5.png" class="zoom2 img-fluid" style="margin-top: 3.5em; margin-right: 3em;">
-                                        </div>                                       
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </div>    
     
     <!-- 
         #############################################################################################

@@ -238,6 +238,16 @@ function cerrarMedidas() { //btn-close
     document.getElementById('medidas8').style.display = "none";
 }
 
+function cerrarFicha() { //btn-close
+    document.getElementById('ficha').style.display = "block";
+    document.getElementById('ficha1').style.display = "none";
+}
+
+function mostrarFicha() { //btn-close
+    document.getElementById('ficha').style.display = "none";
+    document.getElementById('ficha1').style.display = "block";
+}
+
 function showDiv() {
     document.getElementById('unidad_necesitas').style.display = "none";
     document.getElementById('unidad_aprenderas').style.display = "block";
@@ -1160,6 +1170,115 @@ function showMedidas8() {
     document.getElementById('medidas7').style.display = "none";
     document.getElementById('medidas8').style.display = "block";
 }
+
+function showDiv53() {
+    document.getElementById('descripcion-frente').style.display = "none";
+    document.getElementById('descripcion-atras').style.display = "block";
+    document.getElementById('empleo-frente').style.display = "block";
+    document.getElementById('empleo-atras').style.display = "none";
+}
+
+function showDiv54() {
+    document.getElementById('descripcion-frente').style.display = "block";
+    document.getElementById('descripcion-atras').style.display = "none";
+}
+
+function showDiv55() {
+    document.getElementById('empleo-frente').style.display = "none";
+    document.getElementById('empleo-atras').style.display = "block";
+    document.getElementById('descripcion-frente').style.display = "block";
+    document.getElementById('descripcion-atras').style.display = "none";
+}
+
+function showDiv56() {
+    document.getElementById('empleo-frente').style.display = "block";
+    document.getElementById('empleo-atras').style.display = "none";
+}
+
+
+
+
+function showDiv57() {
+    document.getElementById('condiciones-frente').style.display = "none";
+    document.getElementById('condiciones-atras').style.display = "block";
+    document.getElementById('precauciones-frente').style.display = "block";
+    document.getElementById('precauciones-atras').style.display = "none";
+}
+
+function showDiv58() {
+    document.getElementById('condiciones-frente').style.display = "block";
+    document.getElementById('condiciones-atras').style.display = "none";
+}
+
+function showDiv59() {
+    document.getElementById('condiciones-frente').style.display = "block";
+    document.getElementById('condiciones-atras').style.display = "none";
+    document.getElementById('precauciones-frente').style.display = "none";
+    document.getElementById('precauciones-atras').style.display = "block";
+}
+
+function showDiv60() {
+    document.getElementById('precauciones-frente').style.display = "block";
+    document.getElementById('precauciones-atras').style.display = "none";
+}
+
+
+function showDiv61() {
+    document.getElementById('presentacion-frente').style.display = "none";
+    document.getElementById('presentacion-atras').style.display = "block";
+    document.getElementById('revision-frente').style.display = "block";
+    document.getElementById('revision-atras').style.display = "none";
+}
+
+function showDiv62() {
+    document.getElementById('presentacion-frente').style.display = "block";
+    document.getElementById('presentacion-atras').style.display = "none";
+}
+
+function showDiv63() {
+    document.getElementById('presentacion-frente').style.display = "block";
+    document.getElementById('presentacion-atras').style.display = "none";
+    document.getElementById('revision-frente').style.display = "none";
+    document.getElementById('revision-atras').style.display = "block";
+}
+
+function showDiv64() {
+    document.getElementById('revision-frente').style.display = "block";
+    document.getElementById('revision-atras').style.display = "none";
+}
+
+function showDiv65() {
+    document.getElementById('invima-frente').style.display = "none";
+    document.getElementById('invima-atras').style.display = "block";
+}
+
+function showDiv66() {
+    document.getElementById('invima-frente').style.display = "block";
+    document.getElementById('invima-atras').style.display = "none";
+}
+
+
+function showDiv67() {
+    document.getElementById('descripcion-frente').style.display = "block";
+    document.getElementById('descripcion-atras').style.display = "none";
+    document.getElementById('empleo-frente').style.display = "block";
+    document.getElementById('empleo-atras').style.display = "none";
+    document.getElementById('condiciones-frente').style.display = "block";
+    document.getElementById('condiciones-atras').style.display = "none";
+    document.getElementById('precauciones-frente').style.display = "block";
+    document.getElementById('precauciones-atras').style.display = "none";
+    document.getElementById('presentacion-frente').style.display = "block";
+    document.getElementById('presentacion-atras').style.display = "none";
+    document.getElementById('revision-frente').style.display = "block";
+    document.getElementById('revision-atras').style.display = "none";
+    document.getElementById('invima-frente').style.display = "block";
+    document.getElementById('invima-atras').style.display = "none";
+}
+
+
+
+
+
 
 
 

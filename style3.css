@@ -866,6 +866,8 @@ button:focus{
 .mod-close {
     color: #ffc107;
     cursor: pointer;
+    text-align: end;
+    z-index: 1; 
 }
 
 .mod-close-azul {
@@ -1124,6 +1126,8 @@ a.article:hover {
     margin: 14px;
 }
 
+
+
 .titulo-azul{
     text-align: center;
     background: #2c538e;
@@ -1145,6 +1149,18 @@ a.article:hover {
     height: 80px;
     width: 60%;
     box-shadow: 2px 2px 4px 0px gray;
+}
+
+.titulo-azul3{
+    text-align: center;
+    background: #2c538e;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 14px;
+    height: 60px;
+    width: 250px;
+    
 }
 
 .titulo_amarillo{
@@ -1383,6 +1399,35 @@ a.article:hover {
     box-shadow: 2px 2px 4px 0px gray;
 }
 
+.caja-tarjeta-blanco{ /**/
+    background-color: #ffc107;
+    border-radius: 3px;
+    height: 335px;
+    width: 100%;   
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.caja-tarjeta-blanco-atras{ /**/
+    
+    background: #fff;
+    border-radius: 3px;
+    padding: 16px;
+    height: auto;
+    width: 100%;
+    align-content: center;
+}
+
+.columna-blanca{
+    background: #fff; 
+    height: 340px; 
+    width: 100%;
+    margin-top: -15px;
+    padding-top: 16%;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
 .espacio {
     padding-right: 2px;
     padding-left: 2px;
@@ -1494,6 +1539,16 @@ a.article:hover {
     border: 4px solid #2c538e !important;
     border-radius: 10px;
     padding: 10px;
+}
+
+.caja-borde-amarillo{
+    border-left: 4px solid #ffc107 !important;
+    border-bottom: 4px solid #ffc107 !important;
+    border-radius: 2px;
+    padding: 10px;
+    width: 85%;
+    margin-top: -15px; 
+    margin-left: 45px;
 }
 
 .caja-texto-yellow{
@@ -2638,6 +2693,23 @@ picture img {
   justify-content: center;
 }
 
+.titulo-tab {
+    position:relative;
+    display:inline-block;
+    color: black;
+    text-decoration:none;
+    border-radius:5px;
+    background:#ffc107;
+    text-align:center;
+    padding: 10px;
+    margin: 10px 2px;
+    width: 181px;
+    height: auto;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 55px;
+  }
+
 .button-tab3 {
     position:relative;
   display:inline-block;
@@ -2666,10 +2738,41 @@ picture img {
     text-align:center;
     padding: 10px;
     margin-top: 15px;
-    width: auto;
-    height: auto;
+    width: 68%;
+    height: 68px;
     justify-content: center;
-  }
+}
+
+.button-tab-azul:hover {
+    position:relative;
+    display:inline-block;
+    color: white;
+    text-decoration:none;
+    border-radius:5px;
+    background:#2c538e;
+    text-align:center;
+    padding: 10px;
+    margin-top: 15px;
+    width: 68%;
+    height: 68px;
+    justify-content: center;
+}
+
+.button-tab-azul:active {
+    position:relative;
+    display:inline-block;
+    color: white;
+    text-decoration:none;
+    border-radius:5px;
+    background:#2c538e;
+    text-align:center;
+    padding: 10px;
+    margin-top: 15px;
+    width: 68%;
+    height: 68px;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 7px #ffc107;
+}
 
   
 
@@ -2731,6 +2834,21 @@ picture img {
     text-decoration:none;
     border-radius:5px;
     background:white;
+    text-align:center;
+    padding: 10px;
+    margin-top: 15px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .button-tab-amarillo {
+    position:relative;
+    display:inline-block;
+    color: black;
+    text-decoration:none;
+    border-radius:5px;
+    background: #ffc107;
     text-align:center;
     padding: 10px;
     margin-top: 15px;
@@ -2866,13 +2984,21 @@ picture img {
     height: auto;
 }
 
-
-.button-tab-azul:active{
-    position:relative;
-    background-color: #ffc107;
-    color:#ecf0f1;
-    top:4px;
+.boton-caja-texto-azul {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    background: #2c538e;
+    text-align: center;
+    padding: 5px;
+    margin-top: 11px;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
 }
+
 
 .button-tab:hover{
     color:#ecf0f1;
@@ -2881,11 +3007,7 @@ picture img {
 
 
 
-.button-tab-azul:hover{
-    background: #ffc107;
-    color: black;
-    cursor: pointer;
-}
+
 
 .button-tab:active{
     position:relative;
@@ -3396,6 +3518,8 @@ picture img {
     border-radius: 20px;
     color: #2c538e;
     padding: 10px;
+    width: 250px;
+    margin-top: 10px;
 }
 
 .titulo_aprendizaje  {
@@ -3438,6 +3562,19 @@ picture img {
     top: -39px;
     left: -20px;
     background: #ffc107;
+    width: 106%;
+    padding: 8px 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.titulo-azul-modal {
+    position: absolute;
+    top: -39px;
+    left: -20px;
+    background: #2c538e;
     width: 106%;
     padding: 8px 45px;
     border-radius: 5px;
