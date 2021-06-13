@@ -1326,8 +1326,7 @@ function showFunciones2() {
     document.getElementById('funciones5').style.display = "none";
 }
 
-function showFunciones3() { 
-    
+function showFunciones3() {     
     document.getElementById('funciones').style.display = "none";
     document.getElementById('funciones1').style.display = "none";
     document.getElementById('funciones2').style.display = "none";
@@ -1336,8 +1335,7 @@ function showFunciones3() {
     document.getElementById('funciones5').style.display = "none";
 }
 
-function showFunciones4() { 
-    
+function showFunciones4() {     
     document.getElementById('funciones').style.display = "none";
     document.getElementById('funciones1').style.display = "none";
     document.getElementById('funciones2').style.display = "none";
@@ -1346,14 +1344,39 @@ function showFunciones4() {
     document.getElementById('funciones5').style.display = "none";
 }
 
-function showFunciones5() { 
-    
+function showFunciones5() {     
     document.getElementById('funciones').style.display = "none";
     document.getElementById('funciones1').style.display = "none";
     document.getElementById('funciones2').style.display = "none";
     document.getElementById('funciones3').style.display = "none";
     document.getElementById('funciones4').style.display = "none";
     document.getElementById('funciones5').style.display = "block";
+}
+
+function showRutinas() {     
+    document.getElementById('rutinas').style.display = "block";
+    document.getElementById('rutinas1').style.display = "none";
+    document.getElementById('rutinas2').style.display = "none";
+    document.getElementById('rutinas3').style.display = "none";
+}
+
+function showRutinas1() {     
+    document.getElementById('rutinas').style.display = "none";
+    document.getElementById('rutinas1').style.display = "block";
+    document.getElementById('rutinas2').style.display = "none";
+    document.getElementById('rutinas3').style.display = "none";
+}
+function showRutinas2() {     
+    document.getElementById('rutinas').style.display = "none";
+    document.getElementById('rutinas1').style.display = "none";
+    document.getElementById('rutinas2').style.display = "block";
+    document.getElementById('rutinas3').style.display = "none";
+}
+function showRutinas3() {     
+    document.getElementById('rutinas').style.display = "none";
+    document.getElementById('rutinas1').style.display = "none";
+    document.getElementById('rutinas2').style.display = "none";
+    document.getElementById('rutinas3').style.display = "block";
 }
 
 
