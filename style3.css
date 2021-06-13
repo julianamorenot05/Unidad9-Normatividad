@@ -90,6 +90,7 @@ p {
     cursor: pointer;
 }
 
+
 .button-number{
     color: #DEEBF7; 
     font-weight: bold; 
@@ -272,6 +273,13 @@ p {
     padding-top: 15px;
     z-index: 2;
     box-shadow: 0px 0px 5px 5px #2c538e;
+}
+
+.btn-numero{
+    position: relative;
+    top: 20%;
+    left: 71%;
+    z-index: 1;
 }
 
 .button-tab-azul3{
@@ -1243,6 +1251,15 @@ a.article:hover {
     width: 100%
 }
 
+.caja-texto5{
+    background: #2c538e;
+    border-radius: 2px;
+    padding: 15px 15px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0;
+}
+
 .caja-texto2:active{
     background:  #ffc107;
     border-radius: 15px;
@@ -1450,6 +1467,15 @@ a.article:hover {
     margin-left: -13%;
 }
 
+
+.caja-color-blue-claro2{
+    background-color: #b9d5ff;
+    border-radius: 10%;
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
 .caja-rosado-transparente{
     position: absolute;
     background-color: #F9E5CD;
@@ -1538,6 +1564,12 @@ a.article:hover {
 .caja-texto-borde-b{
     border: 4px solid #2c538e !important;
     border-radius: 10px;
+    padding: 10px;
+}
+
+.caja-borde-azul{
+    border: 3px solid #2c538e !important;
+    border-radius: 20px;
     padding: 10px;
 }
 
@@ -2857,6 +2889,21 @@ picture img {
     justify-content: center;
   }
 
+  .button-tab-amarillo:hover {
+    position:relative;
+    display:inline-block;
+    color: black;
+    text-decoration:none;
+    border-radius:5px;
+    background: #ffc107;
+    text-align:center;
+    padding: 10px;
+    margin-top: 15px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
 
 
 .button-tab-amarillo3 {
@@ -2997,6 +3044,7 @@ picture img {
     width: 100%;
     height: 70px;
     justify-content: center;
+    font-weight: bold;
 }
 
 
@@ -3046,6 +3094,40 @@ picture img {
     margin: 5px;
     width: 53px;
     height: 53px;
+    justify-content: center;
+    
+}
+
+.button-tab2-amarillo {
+    position: static;
+    display:inline-block;
+    color: black;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px #ffbf00;
+    background:#ffbf00;
+    text-align:center;
+    padding-top: 15px;
+    margin: 5px;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    
+}
+
+.button-tab2-amarillo:active {
+    position: static;
+    display:inline-block;
+    color: #fff;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px #2c538e;
+    background:#2c538e;
+    text-align:center;
+    padding-top: 15px;
+    margin: 5px;
+    width: 48px;
+    height: 48px;
     justify-content: center;
     
 }
@@ -3570,6 +3652,20 @@ picture img {
     box-shadow: 2px 2px 4px 0px gray;
 }
 
+.titulo-amarillo2 {
+    top: -39px;
+    left: -20px;
+    background: #ffc107;
+    width: 50%;
+    padding: 8px 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    box-shadow: 2px 2px 4px 0px gray;
+    font-weight: bold;
+}
+
 .titulo-azul-modal {
     position: absolute;
     top: -39px;
@@ -3750,7 +3846,7 @@ Estilos de tarjetas interactivas.
 */
 
 
-.card_animada {  
+/**.card_animada {  
     box-shadow: 0 2.5em .9em -2em #555;
     position: relative;
     backface-visibility: hidden;
@@ -3806,7 +3902,7 @@ Estilos de tarjetas interactivas.
     border-right: none;
     border-color: #2c538e;
     border-radius: 0px;
-  }
+  }*//
 
   .circleImage{
     border: 4px solid #2c538e;
@@ -3908,6 +4004,37 @@ Estilos de tarjetas interactivas.
     background: transparent;
     margin-bottom: 10px;
     height: 166px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.boton-doble{
+    border: 4px solid #2c538e;
+    border-radius: 10px;
+    padding: 2px 2px; 
+    background: #2c538e;
+    height: 65px;
+    box-shadow: 2px 2px 4px 0px gray;
+    margin: 10px;
+}
+
+.boton-doble:active{
+    border: 4px solid #2c538e;
+    border-radius: 10px;
+    padding: 2px 2px; 
+    background: #2c538e;
+    height: 65px;
+    box-shadow: 0px 0px 12px 5px #ffc107;
+    margin: 10px;
+}
+
+
+.boton-doble-interno{
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 3px 0; 
+    background: transparent;
+    margin-bottom: 10px;
+    height: 66px;
     box-shadow: 2px 2px 4px 0px gray;
 }
 

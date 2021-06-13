@@ -1275,10 +1275,86 @@ function showDiv67() {
     document.getElementById('invima-atras').style.display = "none";
 }
 
+function showVerificacion1() {
+    document.getElementById('verificacion').style.display = "none";
+    document.getElementById('verificacion1').style.display = "block";
+    document.getElementById('verificacion2').style.display = "none";
+    document.getElementById('verificacion3').style.display = "none";
+    document.getElementById('verificacion4').style.display = "none";
+}
 
+function showVerificacion2() {
+    document.getElementById('verificacion').style.display = "none";
+    document.getElementById('verificacion1').style.display = "none";
+    document.getElementById('verificacion2').style.display = "block";
+    document.getElementById('verificacion3').style.display = "none";
+    document.getElementById('verificacion4').style.display = "none";
+}
 
+function showVerificacion3() {
+    document.getElementById('verificacion').style.display = "none";
+    document.getElementById('verificacion1').style.display = "none";
+    document.getElementById('verificacion2').style.display = "none";
+    document.getElementById('verificacion3').style.display = "block";
+    document.getElementById('verificacion4').style.display = "none";
+}
+function showVerificacion4() {
+    document.getElementById('verificacion').style.display = "none";
+    document.getElementById('verificacion1').style.display = "none";
+    document.getElementById('verificacion2').style.display = "none";
+    document.getElementById('verificacion3').style.display = "none";
+    document.getElementById('verificacion4').style.display = "block";
+}
 
+function showFunciones1() { 
+    
+    document.getElementById('funciones').style.display = "none";
+    document.getElementById('funciones1').style.display = "block";
+    document.getElementById('funciones2').style.display = "none";
+    document.getElementById('funciones3').style.display = "none";
+    document.getElementById('funciones4').style.display = "none";
+    document.getElementById('funciones5').style.display = "none";
+}
 
+function showFunciones2() { 
+    
+    document.getElementById('funciones').style.display = "none";
+    document.getElementById('funciones1').style.display = "none";
+    document.getElementById('funciones2').style.display = "block";
+    document.getElementById('funciones3').style.display = "none";
+    document.getElementById('funciones4').style.display = "none";
+    document.getElementById('funciones5').style.display = "none";
+}
+
+function showFunciones3() { 
+    
+    document.getElementById('funciones').style.display = "none";
+    document.getElementById('funciones1').style.display = "none";
+    document.getElementById('funciones2').style.display = "none";
+    document.getElementById('funciones3').style.display = "block";
+    document.getElementById('funciones4').style.display = "none";
+    document.getElementById('funciones5').style.display = "none";
+}
+
+function showFunciones4() { 
+    
+    document.getElementById('funciones').style.display = "none";
+    document.getElementById('funciones1').style.display = "none";
+    document.getElementById('funciones2').style.display = "none";
+    document.getElementById('funciones3').style.display = "none";
+    document.getElementById('funciones4').style.display = "block";
+    document.getElementById('funciones5').style.display = "none";
+}
+
+function showFunciones5() { 
+    
+    document.getElementById('funciones').style.display = "none";
+    document.getElementById('funciones1').style.display = "none";
+    document.getElementById('funciones2').style.display = "none";
+    document.getElementById('funciones3').style.display = "none";
+    document.getElementById('funciones4').style.display = "none";
+    document.getElementById('funciones5').style.display = "block";
+}
 
 
 
