@@ -1379,6 +1379,133 @@ function showRutinas3() {
     document.getElementById('rutinas3').style.display = "block";
 }
 
+function showZonaFria() {     
+    document.getElementById('zona_fria').style.display = "none";
+    document.getElementById('zona_fria1').style.display = "block";
+    document.getElementById('zona_luminosa').style.display = "block";
+    document.getElementById('zona_luminosa1').style.display = "none";
+    document.getElementById('zona_azul').style.display = "block";
+    document.getElementById('zona_azul1').style.display = "none";
+    document.getElementById('zona_observacion').style.display = "block";
+    document.getElementById('zona_observacion1').style.display = "none";
+}
+
+function showZonaLuminosa() {     
+    document.getElementById('zona_fria').style.display = "block";
+    document.getElementById('zona_fria1').style.display = "none";
+    document.getElementById('zona_luminosa').style.display = "none";
+    document.getElementById('zona_luminosa1').style.display = "block";
+    document.getElementById('zona_azul').style.display = "block";
+    document.getElementById('zona_azul1').style.display = "none";
+    document.getElementById('zona_observacion').style.display = "block";
+    document.getElementById('zona_observacion1').style.display = "none";
+}
+
+function showZonaAzul() {     
+    document.getElementById('zona_fria').style.display = "block";
+    document.getElementById('zona_fria1').style.display = "none";
+    document.getElementById('zona_luminosa').style.display = "block";
+    document.getElementById('zona_luminosa1').style.display = "none";
+    document.getElementById('zona_azul').style.display = "none";
+    document.getElementById('zona_azul1').style.display = "block";
+    document.getElementById('zona_observacion').style.display = "block";
+    document.getElementById('zona_observacion1').style.display = "none";
+}
+
+function showZonaObservacion() {     
+    document.getElementById('zona_fria').style.display = "block";
+    document.getElementById('zona_fria1').style.display = "none";
+    document.getElementById('zona_luminosa').style.display = "block";
+    document.getElementById('zona_luminosa1').style.display = "none";
+    document.getElementById('zona_azul').style.display = "block";
+    document.getElementById('zona_azul1').style.display = "none";
+    document.getElementById('zona_observacion').style.display = "none";
+    document.getElementById('zona_observacion1').style.display = "block";
+}
+
+function showNoLuminosaAtras() {
+    document.getElementById('noluminosa-frente').style.display = "none";
+    document.getElementById('noluminosa-atras').style.display = "block";
+    document.getElementById('luminosa-frente').style.display = "block";
+    document.getElementById('luminosa-atras').style.display = "none";
+}
+
+function showNoLuminosaFrente() {
+    document.getElementById('noluminosa-frente').style.display = "block";
+    document.getElementById('noluminosa-atras').style.display = "none";
+    document.getElementById('luminosa-frente').style.display = "block";
+    document.getElementById('luminosa-atras').style.display = "none";
+}
+
+function showLuminosaAtras() {
+    document.getElementById('noluminosa-frente').style.display = "block";
+    document.getElementById('noluminosa-atras').style.display = "none";
+    document.getElementById('luminosa-frente').style.display = "none";
+    document.getElementById('luminosa-atras').style.display = "block";
+}
+
+function showLuminosaFrente() {
+    document.getElementById('noluminosa-frente').style.display = "block";
+    document.getElementById('noluminosa-atras').style.display = "none";
+    document.getElementById('luminosa-frente').style.display = "block";
+    document.getElementById('luminosa-atras').style.display = "none";
+}
+
+function showTipoMecheros() {
+    document.getElementById('mechero').style.display = "none";
+    document.getElementById('mechero1').style.display = "block";
+    document.getElementById('mechero2').style.display = "none";
+    document.getElementById('mechero3').style.display = "none";
+    document.getElementById('mechero4').style.display = "none";
+    document.getElementById('mechero5').style.display = "none";
+}
+
+function showComposicion() {
+    document.getElementById('mechero').style.display = "none";
+    document.getElementById('mechero1').style.display = "none";
+    document.getElementById('mechero2').style.display = "block";
+    document.getElementById('mechero3').style.display = "none";
+    document.getElementById('mechero4').style.display = "none";
+    document.getElementById('mechero5').style.display = "none";
+}
+
+function showZona() {
+    document.getElementById('mechero').style.display = "none";
+    document.getElementById('mechero1').style.display = "none";
+    document.getElementById('mechero2').style.display = "none";
+    document.getElementById('mechero3').style.display = "block";
+    document.getElementById('mechero4').style.display = "none";
+    document.getElementById('mechero5').style.display = "none";
+}
+
+function showLlamas() {
+    document.getElementById('mechero').style.display = "none";
+    document.getElementById('mechero1').style.display = "none";
+    document.getElementById('mechero2').style.display = "none";
+    document.getElementById('mechero3').style.display = "none";
+    document.getElementById('mechero4').style.display = "block";
+    document.getElementById('mechero5').style.display = "none";
+}
+
+function showObservaciones() {
+    document.getElementById('mechero').style.display = "none";
+    document.getElementById('mechero1').style.display = "none";
+    document.getElementById('mechero2').style.display = "none";
+    document.getElementById('mechero3').style.display = "none";
+    document.getElementById('mechero4').style.display = "none";
+    document.getElementById('mechero5').style.display = "block";
+}
+
+function cerrarMecheros() {
+    document.getElementById('mechero').style.display = "block";
+    document.getElementById('mechero1').style.display = "none";
+    document.getElementById('mechero2').style.display = "none";
+    document.getElementById('mechero3').style.display = "none";
+    document.getElementById('mechero4').style.display = "none";
+    document.getElementById('mechero5').style.display = "none";
+}
+
+
 
 
 

@@ -505,7 +505,7 @@ function validarRespuesta() {
 }
 
 
-/** Cambios botone */ 
+/** Cambios botones */ 
 $(".caja-texto2").click(function(){
     $(".caja-texto2").removeClass("caja-texto2-amarillo");
     $(this).addClass("caja-texto2-amarillo");
@@ -514,6 +514,11 @@ $(".caja-texto2").click(function(){
 $(".button-tab2").click(function(){
     $(".button-tab2").removeClass("button-tab2-activo");
     $(this).addClass("button-tab2-activo");
+});
+
+$(".button-tab3").click(function(){
+    $(".button-tab3").removeClass("button-tab3-activo");
+    $(this).addClass("button-tab3-activo");
 });
 
 
