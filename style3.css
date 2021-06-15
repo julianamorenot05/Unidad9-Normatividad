@@ -1414,7 +1414,7 @@ a.article:hover {
 
 .caja-color-y{ /**/
     background-color: #ffc107;
-    border-radius: 8x;
+    border-radius: 8px;
     padding-top: 5px;
     padding-bottom: 2em;
     margin-left: 1em;
@@ -1423,7 +1423,7 @@ a.article:hover {
 
 .caja-color-y-texto{ /**/
     background-color: #ffc107;
-    border-radius: 8x;
+    border-radius: 8px;
     padding-top: 5px;
     padding: 15px;
     margin-left: 1em;
@@ -1501,6 +1501,7 @@ a.article:hover {
     padding: 18px;
     height: auto;
     width: 100%;    
+    margin-bottom: 5px;
 }
 
 .caja-tarjeta4-atras{ /**/
@@ -1510,6 +1511,7 @@ a.article:hover {
     height: auto;
     width: 100%;
     align-content: center;
+    margin-bottom: 5px;
 }
 
 
@@ -1659,6 +1661,12 @@ a.article:hover {
     padding-right: 2px;
     padding-left: 2px;
     padding-bottom: 2px;
+}
+
+.espacio2 {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .p-tarjeta{ /**/
@@ -3111,6 +3119,39 @@ picture img {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 20px 6px #2c538e;
+  }
+
+  .button-tab-modal-amarillo2 {
+    position:relative;
+    display: flex;
+    color: black;
+    text-decoration:none;
+    border-radius: 10px;
+    background:#ffc107;
+    text-align:center;
+    padding: 10px;
+    margin: 10px 2px;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-tab-modal-amarillo2:active {
+    position:relative;
+    display: flex;
+    color: black;
+    text-decoration:none;
+    border-radius: 10px;
+    background:#ffc107;
+    text-align:center;
+    padding: 10px;
+    margin: 10px 2px;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 6px #ffc107;
   }
 
 
@@ -4965,8 +5006,28 @@ img.zoom2{
     margin-left: -105%;
 }
 
+.caja-amarilla-transparente2{
+    position: absolute;
+    background-color: #ffc107;
+    opacity: 0.3;
+    border-radius: 0;
+    padding: 30px;
+    width: 225%;
+    height: 204px;
+    margin-left: -105%;
+    z-index:1;
+}
+
 .caja-transparente3{
     padding: 20px;
+    padding-right: 50px;
+    height: 170px;
+    z-index: 1; 
+}
+
+.caja-transparente4{
+    padding: 20px;
+    padding-top: 10px;
     padding-right: 50px;
     height: 170px;
     z-index: 1; 
@@ -5038,3 +5099,207 @@ img.zoom2{
 
 }
 
+#pointer {
+  display: inline-flex;
+  font-size: 20pt; /*Width of pointer*/
+  width: 400px;
+  height: 3em;
+  position: relative;
+  background: #2c538e;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.6em;
+}
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: -1.25em;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 1.25em solid #2c538e;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+}
+/*#pointer:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 1.25em solid #2c538e;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+}*/
+
+.cnt {
+  position: relative;
+  top: 0.25em;
+  left: 1em;
+  color: white;
+}
+
+
+#pointer-mini {
+    
+  display: inline-flex;
+  font-size: 20pt; /*Width of pointer*/
+  width: 40px;
+  height: 3em;
+  position: relative;
+  background: #2c538e;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.6em;
+}
+#pointer-mini:after {
+  content: "";
+  position: absolute;
+  left: -1.25em;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 1.25em solid #2c538e;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+}
+#pointer-mini:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 1.25em solid white;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+}
+
+/**/
+
+#pointer-mini2 {
+    
+    display: inline-flex;
+    font-size: 20pt; /*Width of pointer*/
+    width: 40px;
+    height: 108px;
+    position: relative;
+    background: #2c538e;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.6em;
+  }
+  #pointer-mini2:after {
+    content: "";
+    position: absolute;
+    left: -1.25em;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 1.25em solid #2c538e;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+  }
+  #pointer-mini2:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 1.25em solid white;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+  }
+
+  #pointer2 {
+  display: inline-flex;
+  font-size: 20pt; /*Width of pointer*/
+  width: 400px;
+  height: 108px;
+  position: relative;
+  background: #2c538e;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.6em;
+}
+#pointer2:after {
+  content: "";
+  position: absolute;
+  left: -1.25em;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 1.25em solid #2c538e;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+}
+
+
+/**/
+
+#pointer-mini3 {
+    
+    display: inline-flex;
+    font-size: 20pt; /*Width of pointer*/
+    width: 40px;
+    height: 132px;
+    position: relative;
+    background: #2c538e;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.6em;
+  }
+  #pointer-mini3:after {
+    content: "";
+    position: absolute;
+    left: -1.25em;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 1.25em solid #2c538e;
+    border-top: 2.5em solid transparent;
+    border-bottom: 2.5em solid transparent;
+  }
+  #pointer-mini3:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 1.25em solid white;
+    border-top: 2.5em solid transparent;
+    border-bottom: 2.5em solid transparent;
+  }
+
+  #pointer3 {
+  display: inline-flex;
+  font-size: 20pt; /*Width of pointer*/
+  width: 400px;
+  height: 132px;
+  position: relative;
+  background: #2c538e;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.6em;
+}
+#pointer3:after {
+  content: "";
+  position: absolute;
+  left: -1.25em;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 1.25em solid #2c538e;
+  border-top: 2.5em solid transparent;
+  border-bottom: 2.5em solid transparent;
+}
+
+.cnt {
+  position: relative;
+  top: 0.25em;
+  left: 1em;
+  color: white;
+}

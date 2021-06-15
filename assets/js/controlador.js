@@ -1701,7 +1701,6 @@ function electrodoAtras8() {
     document.getElementById('electrodo8-atras').style.display = "block";
 }
 
-electrodoFrente
 function electrodoFrente() {
     document.getElementById('electrodo1-frente').style.display = "block";
     document.getElementById('electrodo2-frente').style.display = "block";
@@ -1721,6 +1720,41 @@ function electrodoFrente() {
     document.getElementById('electrodo8-atras').style.display = "none";
 }
 
+function componentesAtras() {
+    document.getElementById('caja-componentes-frente').style.display = "none";
+    document.getElementById('caja-componentes-atras').style.display = "block";
+    document.getElementById('caja-resistencias-frente').style.display = "block";
+    document.getElementById('caja-resistencias-atras').style.display = "none";
+    document.getElementById('caja-ventilador-frente').style.display = "block";
+    document.getElementById('caja-ventilador-atras').style.display = "none";
+}
+
+function resistenciasAtras() {
+    document.getElementById('caja-componentes-frente').style.display = "block";
+    document.getElementById('caja-componentes-atras').style.display = "none";
+    document.getElementById('caja-resistencias-frente').style.display = "none";
+    document.getElementById('caja-resistencias-atras').style.display = "block";
+    document.getElementById('caja-ventilador-frente').style.display = "block";
+    document.getElementById('caja-ventilador-atras').style.display = "none";
+}
+
+function ventiladorAtras() {
+    document.getElementById('caja-componentes-frente').style.display = "block";
+    document.getElementById('caja-componentes-atras').style.display = "none";
+    document.getElementById('caja-resistencias-frente').style.display = "block";
+    document.getElementById('caja-resistencias-atras').style.display = "none";
+    document.getElementById('caja-ventilador-frente').style.display = "none";
+    document.getElementById('caja-ventilador-atras').style.display = "block";
+}
+
+function componentes() {
+    document.getElementById('caja-componentes-frente').style.display = "block";
+    document.getElementById('caja-componentes-atras').style.display = "none";
+    document.getElementById('caja-resistencias-frente').style.display = "block";
+    document.getElementById('caja-resistencias-atras').style.display = "none";
+    document.getElementById('caja-ventilador-frente').style.display = "block";
+    document.getElementById('caja-ventilador-atras').style.display = "none";
+}
 
 
 
