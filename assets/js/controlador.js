@@ -238,15 +238,59 @@ function cerrarMedidas() { //btn-close
     document.getElementById('medidas8').style.display = "none";
 }
 
-function cerrarFicha() { //btn-close
+function cerrarFicha() { 
     document.getElementById('ficha').style.display = "block";
     document.getElementById('ficha1').style.display = "none";
 }
 
-function mostrarFicha() { //btn-close
+function mostrarFicha() { 
     document.getElementById('ficha').style.display = "none";
     document.getElementById('ficha1').style.display = "block";
 }
+
+function mostrarCampo() { 
+    document.getElementById('planchas').style.display = "none";
+    document.getElementById('planchas1').style.display = "block";
+    document.getElementById('planchas2').style.display = "none";
+    document.getElementById('planchas3').style.display = "none";
+}
+
+function mostrarPrincipios() { 
+    document.getElementById('planchas').style.display = "none";
+    document.getElementById('planchas1').style.display = "none";
+    document.getElementById('planchas2').style.display = "block";
+    document.getElementById('planchas3').style.display = "none";
+}
+
+function mostrarMantenimiento() { 
+    document.getElementById('planchas').style.display = "none";
+    document.getElementById('planchas1').style.display = "none";
+    document.getElementById('planchas2').style.display = "none";
+    document.getElementById('planchas3').style.display = "block";
+}
+
+function cerrarPlancha() { 
+    document.getElementById('planchas').style.display = "block";
+    document.getElementById('planchas1').style.display = "none";
+    document.getElementById('planchas2').style.display = "none";
+    document.getElementById('planchas3').style.display = "none";
+}
+
+function showUnPunto() {
+    document.getElementById('un_punto_frente').style.display = "none";
+    document.getElementById('un_punto_atras').style.display = "block";
+    document.getElementById('dos_puntos_frente').style.display = "block";
+    document.getElementById('dos_puntos_atras').style.display = "none";
+}
+
+function showDosPuntos() {
+    document.getElementById('un_punto_frente').style.display = "block";
+    document.getElementById('un_punto_atras').style.display = "none";
+    document.getElementById('dos_puntos_frente').style.display = "none";
+    document.getElementById('dos_puntos_atras').style.display = "block";
+}
+
+
 
 function showDiv() {
     document.getElementById('unidad_necesitas').style.display = "none";
@@ -1506,79 +1550,179 @@ function cerrarMecheros() {
 }
 
 
-
-
-
-/*
-
-function showDiv25() { //btn-close
-    
-    document.getElementById('medidas9').style.display = "none";
-    document.getElementById('medidas10').style.display = "none";
-    document.getElementById('medidas11').style.display = "none";
-    document.getElementById('medidas12').style.display = "none";
-    document.getElementById('medidas13').style.display = "none";
+function electrodoAtras1() {
+    document.getElementById('electrodo1-frente').style.display = "none";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "block";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "none";
 }
 
-function showDiv26() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas2').style.display = "block";
+function electrodoAtras2() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "none";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "block";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "none";
 }
 
-function showDiv27() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas3').style.display = "block";
+function electrodoAtras3() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "none";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "block";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "none";
 }
 
-function showDiv28() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas4').style.display = "block";
+function electrodoAtras4() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "none";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "block";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "none";
+}
+function electrodoAtras5() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "none";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "block";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "none";
 }
 
-function showDiv29() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas5').style.display = "block";
+function electrodoAtras6() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "none";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "block";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "none";
 }
 
-function showDiv30() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas6').style.display = "block";
+function electrodoAtras7() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "none";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "block";
+    document.getElementById('electrodo8-atras').style.display = "none";
 }
 
-function showDiv31() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas7').style.display = "block";
+function electrodoAtras8() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "none";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "block";
 }
 
-function showDiv32() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas8').style.display = "block";
+electrodoFrente
+function electrodoFrente() {
+    document.getElementById('electrodo1-frente').style.display = "block";
+    document.getElementById('electrodo2-frente').style.display = "block";
+    document.getElementById('electrodo3-frente').style.display = "block";
+    document.getElementById('electrodo4-frente').style.display = "block";
+    document.getElementById('electrodo5-frente').style.display = "block";
+    document.getElementById('electrodo6-frente').style.display = "block";
+    document.getElementById('electrodo7-frente').style.display = "block";
+    document.getElementById('electrodo8-frente').style.display = "block";
+    document.getElementById('electrodo1-atras').style.display = "none";
+    document.getElementById('electrodo2-atras').style.display = "none";
+    document.getElementById('electrodo3-atras').style.display = "none";
+    document.getElementById('electrodo4-atras').style.display = "none";
+    document.getElementById('electrodo5-atras').style.display = "none";
+    document.getElementById('electrodo6-atras').style.display = "none";
+    document.getElementById('electrodo7-atras').style.display = "none";
+    document.getElementById('electrodo8-atras').style.display = "none";
 }
 
-function showDiv33() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas9').style.display = "block";
-}
 
-function showDiv34() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas10').style.display = "block";
-}
 
-function showDiv35() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas11').style.display = "block";
-}
-
-function showDiv36() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas12').style.display = "block";
-}
-
-function showDiv37() {
-    document.getElementById('medidas1').style.display = "none";
-    document.getElementById('medidas13').style.display = "block";
-}*/
 
 
 

@@ -4266,7 +4266,7 @@
                         </div>
 
 
-                        <!-- 306 -->
+                        <!-- 306-330 -->
                         <div id="unidad9_35" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
                             <div class="col-md-12">
                                 <p><span class="font-weight-bold">Equipos de laboratorio: </span>balanzas, mecheros, planchas de calentamiento y 
@@ -4301,11 +4301,11 @@
                                             <div class="row justify-content-center" >
                                                 <div class="col-md-12">
                                                     <p class="font-weight-bold text-left p_black"><i class="fas fa-circle" id="circulo_azul"></i>&nbsp;
-                                                        <a data-toggle="modal" href="#modal_balanzaSustitucion" class="button-tab-amarillo">Campo de uso de este equipo</a></p>
+                                                        <a onclick="mostrarCampo()" class="button-tab-amarillo2">Campo de uso de este equipo</a></p>
                                                     <p class="font-weight-bold text-left p_black"><i class="fas fa-circle" id="circulo_azul"></i>&nbsp;
-                                                        <a data-toggle="modal" href="#modal_balanzaSustitucion" class="button-tab-amarillo">Principios de operación</a></p>
+                                                        <a onclick="mostrarPrincipios()" class="button-tab-amarillo2">Principios de operación</a></p>
                                                     <p class="font-weight-bold text-left p_black"><i class="fas fa-circle" id="circulo_azul"></i>&nbsp;
-                                                        <a data-toggle="modal" href="#modal_balanzaSustitucion" class="button-tab-amarillo">Mantenimiento</a></p>
+                                                        <a onclick="mostrarMantenimiento()" class="button-tab-amarillo2">Mantenimiento</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -4313,7 +4313,7 @@
                                     <br>
                                     <div class="col-md-4">
                                         <div class="col-md-12">
-                                            <div id="planchas" style="display:none;">
+                                            <div id="planchas" >
                                                 <p class="text-center">Clic en los botones para ampliar la información</p>
                                             </div>
                                             <div id="planchas1" style="display: none;">
@@ -4322,7 +4322,7 @@
                                                         <div class="carousel-inner">
                                                             <div class="carousel-item active">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Química</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     Agitación de sustancias, reactivos en síntesis orgánica, estudios de catálisis orgánica, disolución y mezcla de 
@@ -4332,7 +4332,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Bioquímica</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     Elaboración de soluciones, para sedimentación, diálisis, construcción de gradiente en cromatografía de columnas, entre otros.
@@ -4341,7 +4341,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Ciencia del suelo</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     Estudio de los compuestos bioquímicos y químicos provenientes de muestras del suelo y la tierra, extracción de 
@@ -4351,7 +4351,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Biotecnología</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     Cultivo de microorganismos, elaboración homogénea de los medios de cultivo, entre otros. 
@@ -4373,13 +4373,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div id="planchas2">
+                                            <div id="planchas2" style="display: none;">
                                                 <div class="col-md-12 caja-borde-amarillo2">
                                                     <div id="carouselPlanchas2" class="carousel slide " data-interval="false">
                                                         <div class="carousel-inner">
                                                             <div class="carousel-item active">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     1. Revisar que la plancha esté conectada al sistema eléctrico según indicaciones del fabricante. 
@@ -4388,7 +4388,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     2. Encender la plancha del interruptor, ubicado en la parte lateral, bajo las perillas de graduación
@@ -4397,7 +4397,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     3. Cuando el equipo se vaya a utilizar por primera vez o después de estar almacenado, se debe definir el valor de 
@@ -4408,7 +4408,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     4. Colocar un recipiente de cristal u otro recipiente con líquido en la placa de trabajo y coloque un agitador 
@@ -4419,7 +4419,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     5. Indicar la temperatura deseada. No se debe tocar las superficies que se calienten durante la operación, se debe 
@@ -4429,7 +4429,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     6. Indicar la intensidad de agitación deseada.
@@ -4438,7 +4438,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     7. Una vez terminado el proceso, apagar el equipo del interruptor. 
@@ -4447,7 +4447,7 @@
                                                             </div>
                                                             <div class="carousel-item">                                                                
                                                                 <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
-                                                                <span class="mod-close" role="button" onclick="cerrarLavado()"><i class="fas fa-times fa-3x"
+                                                                <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
                                                                     style="position: relative; bottom: 45px; left: 85%;"></i></span>
                                                                 <p class="justificado p_black">
                                                                     8. Desconectar la unidad del circuito eléctrico, limpiar la superficie con un paño seco y colocar la cubierta protectora.
@@ -4466,8 +4466,79 @@
                                                             <a href="#carouselPlanchas2" data-slide-to="5" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">6</p></a>
                                                             <a href="#carouselPlanchas2" data-slide-to="6" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">7</p></a>
                                                             <a href="#carouselPlanchas2" data-slide-to="7" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">8</p></a>
-                                                        </div>                          
+                                                        </div>  
+                                                        <br>
+                                                        <p class="text-center">Clic para navegar</p> <br>
                                                     </div>  
+                                                </div>
+                                            </div>
+                                            <div id="planchas3" style="display:none;">
+                                                <div class="col-md-12 caja-borde-amarillo2">
+                                                    <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Principios de operación</h6>
+                                                    <span class="mod-close" role="button" onclick="cerrarPlancha()"><i class="fas fa-times fa-3x"
+                                                        style="position: relative; bottom: 45px; left: 85%;"></i></span>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-1" style="z-index: 1;">
+                                                            <a href="#carouselPlanchas3" data-slide-to="1" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3-2">1</p></a>
+                                                            <a href="#carouselPlanchas3" data-slide-to="2" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3-2">2</p></a>
+                                                            <a href="#carouselPlanchas3" data-slide-to="3" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3-2">3</p></a>
+                                                            <a href="#carouselPlanchas3" data-slide-to="4" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3-2">4</p></a>
+                                                            <a href="#carouselPlanchas3" data-slide-to="5" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3-2">5</p></a>
+                                                            <a href="#carouselPlanchas3" data-slide-to="6" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3-2">6</p></a>
+                                                        </div> 
+                                                        <div class="col-md-10">
+                                                            <div class="col-md-12">
+                                                                <div id="carouselPlanchas3" class="carousel slide " data-interval="false">
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <p class="text-center"><img src="assets/image/personal-mantenimiento.png" class="img-fluid"></p>
+                                                                            <p class="text-center">Clic en los números para ver la información</p>
+                                                                        </div>
+                                                                        <div class="carousel-item caja-texto-azul-claro">  
+                                                                            <p class="justificado p_black">
+                                                                                En caso de que el equipo requiera mantenimiento, se debe desconectar de la corriente eléctrica, si no se cuentan 
+                                                                                con personal entrenado deberá contactarse al proveedor del equipo. 
+                                                                            </p>
+                                                                            <p class="text-center"><img src="assets/image/toma-corriente.png" class="img-fluid"></p>
+                                                                        </div>
+                                                                        <div class="carousel-item caja-texto-azul-claro">  
+                                                                            <p class="justificado p_black">
+                                                                                Los procedimientos de reparación y de mantenimiento del equipo deben ser realizadas solo por personal entrenado. 
+                                                                            </p>
+                                                                            <p class="text-center"><img src="assets/image/tecnico.png" class="img-fluid"></p>
+                                                                        </div>
+                                                                        <div class="carousel-item caja-texto-azul-claro">  
+                                                                            <p class="justificado p_black">
+                                                                                Si el equipo emite una alarma sonora repetidamente, se debe revisar el sensor de temperatura interno de la placa
+                                                                            </p>
+                                                                            <p class="text-center"><img src="assets/image/alerta.png" class="img-fluid"></p>
+                                                                        </div>
+                                                                        <div class="carousel-item caja-texto-azul-claro">  
+                                                                            <p class="justificado p_black">
+                                                                                El etanol 75% y otros productos de limpieza recomendados por el fabricante, son los indicados para la limpieza y 
+                                                                                desinfección de este equipo de laboratorio
+                                                                            </p>
+                                                                            <p class="text-center"><img src="assets/image/aerosol.png" class="img-fluid"></p>
+                                                                        </div>
+                                                                        <div class="carousel-item caja-texto-azul-claro">  
+                                                                            <p class="justificado p_black">
+                                                                                El incorrecto almacenamiento de los agitadores magnéticos (almacenamiento de varios juntos, genera una desorientación 
+                                                                                no predecible del agitador y su magnetismo) generando deterioro de las condiciones magnéticas del agitador.
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="carousel-item caja-texto-azul-claro">  
+                                                                            <p class="justificado p_black">
+                                                                                Trabajar a temperaturas próximas a la temperatura de curie que es de200 °C, la cual es la temperatura por encima de 
+                                                                                la cual el agitador magnético (cualquier cuerpo con magnetismo) pierde su propiedad de magnetismo, puede causar 
+                                                                                deterioro en este equipo. En este caso el agitador debe colocarse sobre la placa de trabajo del equipo, ubicado 
+                                                                                precisamente en el centro entre aproximadamente 8 y 12 horas, a la espera de que se recuperen sus propiedades iniciales.
+                                                                            </p>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>                                        
@@ -4481,11 +4552,322 @@
                             </div>
                         </div>
 
-                        
+
+                        <!-- 331 -->
+                        <div id="unidad9_36" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Equipos de laboratorio: </span>balanzas, mecheros, planchas de calentamiento y 
+                                    agitación, potenciómetros, estufas, muflas, baño maría, purificador de agua, hornos, neveras, centrífugas, 
+                                    cabinas de extracción.</p>
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Información técnica de los manuales de operación de equipos (recomendaciones de manipulación).</span></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Potenciómetros – analizadores de pH</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row ">
+                                    <div class="col-md-7">
+                                        <p class="justificado p_black">
+                                            Es usado para definir la concentración de iones de hidrógeno (gaseoso) en una solución.</p>
+                                        <p class="justificado p_black">
+                                            Realiza mediciones de concentración de la acidez en soluciones acuosas. A estos equipos también 
+                                            se les llama pH-metros, potenciómetros y monitores de pH.</p>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <img src="assets/image/potenciometro.png" class="img-fluid" >
+                                            </div>
+                                            <div class="col-md-5">
+                                                <p class="justificado">
+                                                    Clic en los números para ver información
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 caja-texto5">
+                                        <p class="justificado p_white">
+                                            Este equipo es usado en cualquier campo, siempre y cuando se utilicen soluciones acuosas.
+                                        </p>
+                                        <p class="justificado p_white">
+                                            Es usado en campos como farmacéuticas, investigación y desarrollo de productos, tratamiento y purificación de aguas, 
+                                            procesos petroquímicos, elaboración de papel, agricultura, elaboración de alimentos, metal-mecánica, control de 
+                                            caldos para cultivo, control y medición de concentración ácida y alcalinidad de medios de cultivo y soluciones 
+                                            buffer, en equipos especializados, se utilizan la misma base metodológica para analizar la concentración de acidez 
+                                            y alcalinidad de los componentes sanguíneos; el pH del plasma sanguíneo permite detectar y analizar la salud de una 
+                                            persona, este dato oscila entre 7,35 y 7,45, normalmente, este valor se relaciona con el metabolismo del ser humano.
+                                        </p>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
 
 
+                        <!-- 338 -->
+                        <div id="unidad9_37" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Equipos de laboratorio: </span>balanzas, mecheros, planchas de calentamiento y 
+                                    agitación, potenciómetros, estufas, muflas, baño maría, purificador de agua, hornos, neveras, centrífugas, 
+                                    cabinas de extracción.</p>
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Información técnica de los manuales de operación de equipos (recomendaciones de manipulación).</span></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Potenciómetros – analizadores de pH</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row ">
+                                    <div class="col-md-5 justify-content-center">
+                                        <div class="col-md-8"><br> 
+                                            <p class="justificado">Clic en el botón siguiente para ampliar la información técnica de los potenciómetros</p>
+                                        </div>                                        
+                                        <img src="assets/image/ph.png" class="img-fluid" >
+                                    </div>
+                                    <div class="col-md-7 caja-texto-amarillo-borde">
+                                        <div id="carouselPotenciometro" class="carousel slide" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="col-md-12">
+                                                        <h6 class="titulo-azul4 font-weight-bold text-center" style="z-index: 1;">Valores de pH en algunos  fluidos orgánicos</h6>
+                                                        <img src="assets/image/tabla-fluidos.png" class="img-fluid" >
+                                                        <p class="text-center"><a href="#carouselPotenciometro" data-slide="next"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <div class="col-md-12">
+                                                        <h6 class="titulo-azul4 font-weight-bold text-center" style="z-index: 1;">Funcionamiento del equipo</h6>
+                                                        <p class="justificado p_black">
+                                                            Este equipo calcula la presencia cuantitativa de Iones usando electrodos sensibles a estos. Idealmente, este 
+                                                            electrodo debería detectar solamente la presencia de un solo tipo de ion, sin embargo, hay interferencias con 
+                                                            otros iones presentes dentro de la solución. 
+                                                        </p>
+                                                        <p class="justificado p_black">
+                                                            El electrodo es universalmente un electrodo mixto, en este se encuentra un electrodo de vidrio y otro de referencia 
+                                                            con una sola sonda.
+                                                        </p>
+                                                        <p class="justificado p_black">
+                                                            El electrodo que es de referencia es el mismo tubo interno de la sonda que analiza el pH, el cual no debe perder 
+                                                            iones debido a la interacción con el exterior, este debe permanecer quieto, no debe variar durante la medición. 
+                                                        </p>
+                                                        <p class="text-right">
+                                                            <a data-toggle="modal" href="#modal_analizadorPh" class="button-tab-amarillo">Ver esquema de analizador de pH</a>
+                                                        </p>
+                                                        <p class="text-center"><a href="#carouselPotenciometro" data-slide="prev"><i class="fas fa-caret-square-left fa-3x"></i></a>
+                                                            <a href="#carouselPotenciometro" data-slide="next"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <div class="col-md-12">
+                                                        <h6 class="titulo-azul4 font-weight-bold text-center" style="z-index: 1;">Servicios requeridos</h6>
+                                                        <p class="justificado p_black">
+                                                            Generalmente un pH-metro funciona a través de un sistema eléctrico que cumple los siguientes requerimientos, o 
+                                                            según recomendaciones del fabricante: energía monofásica, voltaje de 110 V o de 220 V, frecuencia de 60 Hz. En el 
+                                                            mercado también se ofrecen pH metro portátil que trabajan mediante baterías.
+                                                        </p><br>
+                                                        <p class="text-center"><a href="#carouselPotenciometro" data-slide="prev"><i class="fas fa-caret-square-left fa-3x"></i></a>
+                                                            <a href="#carouselPotenciometro" data-slide="next"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <div class="col-md-12">
+                                                        <h6 class="titulo-azul4 font-weight-bold text-center" style="z-index: 1;">Servicios requeridos</h6>
+                                                        <p class="justificado"><span class="p_black">Estos equipos generalmente deben calibrarse antes de ser usados, con el 
+                                                            objetivo de verificar y garantizar la eficacia y la precisión de la información emitida. </span>
+                                                            Clic en las tarjetas para ampliar información
+                                                        </p>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div id="un_punto_frente" class="button-tab-tarjeta-azul" role="button" onclick="showUnPunto()">
+                                                                    <p class="text-center p_white font-weight-bold">1. Calibración de un punto </p>
+                                                                </div> 
+                                                                <div id="un_punto_atras" class="caja-texto-azul-borde" style="display: none;">
+                                                                    <p class="justificado p_white font-weight-bold">1. Calibración de un punto</p>
+                                                                    <p class="justificado p_white">Se ejecuta bajo situaciones normales de trabajo y operación, mediante una solución de referencia conocida.</p>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div id="dos_puntos_frente" class="button-tab-tarjeta-azul" role="button" onclick="showDosPuntos()">
+                                                                    <p class="text-center p_white font-weight-bold">2. Calibración de dos puntos</p>
+                                                                </div> 
+                                                                <div id="dos_puntos_atras" class="caja-texto-azul-borde" style="display: none;">
+                                                                    <p class="justificado p_white font-weight-bold">2. Calibración de dos puntos</p>
+                                                                    <p class="justificado p_white">Se ejecuta en caso de necesitar mediciones muy precisas.</p>
+                                                                    <p class="justificado p_white">En este caso se usan dos soluciones de referencia con valores de pH conocidos. 
+                                                                        Este procedimiento se repite si el equipo es usado de manera esporádica y en caso de que el mantenimiento 
+                                                                        recibido sea eventual.</p>
+                                                                    
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-center"><a href="#carouselPotenciometro" data-slide="prev"><i class="fas fa-caret-square-left fa-3x"></i></a>
+                                                            <a href="#carouselPotenciometro" data-slide="next"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <div class="col-md-12">
+                                                        <h6 class="titulo-azul4 font-weight-bold text-center" style="z-index: 1;">Medir pH en una solución</h6>
+                                                        <ul class="justificado" style="list-style: decimal;">
+                                                            <li>Sacar el electrodo de la solución para la calibración.</li>
+                                                            <li>Lavar el electrodo completamente con agua destilada y secarlo.</li>
+                                                            <li>Introducir el electrodo en la muestra con pH no conocido.</li>
+                                                            <li>Llevar al selector de funciones desde la posición Stand by a la opción de medición de pH.</li>
+                                                            <li>Realizar la lectura del pH de la solución</li>
+                                                            <li>Registrar el valor arrojado de pH.</li>
+                                                            <li>Llevar el panel de funciones nuevamente a la opción de Stand by.</li>
+                                                            <li>Para realizar medición de otros valores de pH se deben repetir lo anterior. En caso de que se vaya a realizar 
+                                                                numerosas mediciones se recomienda calibrar el analizador frecuentemente </li>
+                                                        </ul>
+                                                        <p class="text-center"><a href="#carouselPotenciometro" data-slide="prev"><i class="fas fa-caret-square-left fa-3x"></i></a>
+                                                            <a href="#carouselPotenciometro" data-slide="next"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <div class="col-md-12">
+                                                        <h6 class="titulo-azul4 font-weight-bold text-center" style="z-index: 1;">Apagar el analizador pH</h6>
+                                                        <ul class="justificado" style="list-style: decimal;">
+                                                            <li>Sacar el electrodo de la última solución que se analizó.</li>
+                                                            <li>Lavar con agua destilada el electrodo y secar.</li>
+                                                            <li>Devolver el electrodo al recipiente de almacenamiento.</li>
+                                                            <li>Colocar el panel de funciones en la en la opción de Stand by.</li>
+                                                            <li>Apagar</li>
+                                                            <li>Desconectar de la corriente eléctrica.</li>
+                                                            <li>Realizar limpieza del área de trabajo.</li>
+                                                        </ul>
+                                                        <p class="text-center"><a href="#carouselPotenciometro" data-slide="prev"><i class="fas fa-caret-square-left fa-3x"></i></a>
+                                                            <a href="#carouselPotenciometro" data-slide="next"><i class="fas fa-caret-square-right fa-3x"></i></a></p>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="col-md-12">
+                                                        <h6 class="titulo-azul4 font-weight-bold text-center" style="z-index: 1;">Mantenimiento general del potenciómetro</h6>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-md-5">
+                                                                <p class="text-center"><img src="assets/image/mantenimiento-web.png" class="img-fluid" style="position: relative; top: 22px; z-index: 1;"></p>
+                                                                <a data-toggle="modal" href="#modal_mantenimientoPH" class="button-tab-modal-amarillo">
+                                                                    <p class="text-center p_black"><span class="font-weight-bold">Mantenimiento al cuerpo del analizador de pH</span><br>
+                                                                        Frecuencia: Semestral</p></a>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <p class="text-center"><img src="assets/image/tecnico1.png" class="img-fluid" style="position: relative; top: 22px; z-index: 1;"></p>
+                                                                <a data-toggle="modal" href="#modal_mantenimientoElectrodo" class="button-tab-modal-amarillo">
+                                                                    <p class="text-center p_black"><span class="font-weight-bold">Mantenimiento básico del electrodo</span><br>
+                                                                        Frecuencia: Cada cuatro meses</p></a>
+                                                            </div>
+                                                        </div><br>
+                                                        <p>Clic para ver la información</p>
+                                                        <p class="text-center"><a href="#carouselPotenciometro" data-slide="prev"><i class="fas fa-caret-square-left fa-3x"></i></a></p>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
 
-                        
+                        <!-- 331 -->
+                        <div id="unidad9_38" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Equipos de laboratorio: </span>balanzas, mecheros, planchas de calentamiento y 
+                                    agitación, potenciómetros, estufas, muflas, baño maría, purificador de agua, hornos, neveras, centrífugas, 
+                                    cabinas de extracción.</p>
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                                <p><span class="font-weight-bold">Información técnica de los manuales de operación de equipos (recomendaciones de 
+                                    manipulación).</span></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-azul3 font-weight-bold text-center" style="z-index: 1;">Estufas de secado y muflas</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="justificado p_black">
+                                    Las estufas de secado y muflas son equipos de laboratorio que se utilizan para secar, esterilizar y carbonizar; 
+                                    gracias a su estado de calor. Veamos la información técnicas de estos equipos de laboratorio. Da clic en los botones para ampliar.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <div class="row">                                        
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">1</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_estufas" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Estufas</p></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">2</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_muflas" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Muflas</p></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">3</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_principios" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Principios de operación</p></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">4</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_requerimientosEstufas" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Requerimientos de uso</p></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">5</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_operacionEstufa" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Operación de la estufa</p></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">6</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_rutina" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Rutina de operación</p></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">7</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_controlCalidad" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Control de calidad de las estufas</p></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row justify-content-center">
+                                                    <p class="p_black font-weight-bold circle-div-s" style="font-size: 20px;">8</p>
+                                                </div>
+                                                <a data-toggle="modal" href="#modal_mantenimientoEstufa" class="button-tab-modal-azul">
+                                                    <p class="text-center p_white font-weight-bold">Mantenimiento</p></a>
+                                            </div>                                    
+                                    </div>
+                                </div> 
+                            </div>
+                                                       
+                        </div>
+
 
                         
 
@@ -5690,7 +6072,930 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modal_analizadorPh" tabindex="-1" role="dialog" aria-labelledby="m_analizadorPh" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_analizadorPh">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times-circle fa-3x"></i>
+                </span>
+                <div class="modal-body text-center">
+                    <img src="assets/image/esquema-analizador-ph.png" class="img-fluid">    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_mantenimientoPH" tabindex="-1" role="dialog" aria-labelledby="m_mantenimientoPH" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_mantenimientoPH">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <h6 class="titulo-azul-modal text-center p_white"><span class="font-weight-bold">Mantenimiento al cuerpo del analizador de pH</span>
+                        <br>Frecuencia: Semestral</h6>
+                    <div class="col-md-5">
+                        <p class="text-right">
+                            <img src="assets/image/mantenimiento-web.png" class="img-fluid" style="position: relative; bottom: 25px; left: 22px;">
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="carouselAnalizador" class="carousel slide" data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">1</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            Inspeccionar externamente el equipo y valorar el aspecto físico de manera usual. Revisar las condiciones de limpieza y ajuste externo
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">2</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            Ensayar conexiones y acoples. Revisar funcionamiento y limpieza
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">3</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            Revisar que los controles estén limpios y puedan accionarse sin dificultad.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">4</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            Revisar que el bombillo de encendido funcione normalmente.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">5</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            Revisar el brazo para descansar el electrodo, su mecanismo de fijación del electrodo y su montaje, 
+                                                            para prevenir que el electrodo se pueda soltar. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">6</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            En caso de que aplique, verificar las baterías y cambiarlas si se requiere.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">7</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            Realizar una verificación midiendo el valor de un pH conocido.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center" >
+                                            <div class="col-md-8 caja-borde-azul2">
+                                                <div class="row justify-content-center" style="align-items: center;">
+                                                    <div class="col-md-3 circle-div2">8</div>
+                                                    <div class="col-md-9">
+                                                        <p class="justificado p_black">
+                                                            Examinar las corrientes de energía.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="col-md-12 ">
+                        <div class="row justify-content-center" >
+                            <p class="text-center">Clic para ver la información</p> &nbsp; &nbsp;
+                            <a href="#carouselAnalizador" data-slide-to="0" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">1</p></a>
+                            <a href="#carouselAnalizador" data-slide-to="1" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">2</p></a>
+                            <a href="#carouselAnalizador" data-slide-to="2" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">3</p></a>
+                            <a href="#carouselAnalizador" data-slide-to="3" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">4</p></a>
+                            <a href="#carouselAnalizador" data-slide-to="4" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">5</p></a>
+                            <a href="#carouselAnalizador" data-slide-to="5" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">6</p></a>
+                            <a href="#carouselAnalizador" data-slide-to="6" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">7</p></a>
+                            <a href="#carouselAnalizador" data-slide-to="7" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab3">8</p></a>
+                        </div>  
+                        <br>
+                        
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_mantenimientoElectrodo" tabindex="-1" role="dialog" aria-labelledby="m_mantenimientoElectrodo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_mantenimientoElectrodo">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <h6 class="titulo-azul-modal text-center p_white"><span class="font-weight-bold">Mantenimiento básico del electrodo</span>
+                        <br>Frecuencia: Cada cuatro meses</h6>
+                    <div class="col-md-5">
+                        <p class="text-right">
+                            <img src="assets/image/tecnico.png" class="img-fluid" style="position: relative; bottom: 25px; left: 22px;">
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3 ">
+                                    <div id="electrodo1-frente">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras1()">1</div>
+                                    </div>
+                                    <div id="electrodo1-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            1
+                                            <p class="justificado p_black">
+                                                Sacar electrodo del buffer donde se almacena.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="margin-top: 17px;">
+                                    <div id="electrodo2-frente">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras2()">2</div>
+                                    </div>
+                                    <div id="electrodo2-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            2
+                                            <p class="justificado p_black">
+                                                Sacar electrodo del buffer donde se almacena.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div id="electrodo3-frente">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras3()">3</div>
+                                    </div>
+                                    <div id="electrodo3-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            3
+                                            <p class="justificado p_black">
+                                                Quitar la cubierta del electrodo detector.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div id="electrodo4-frente" style="margin-top: 17px;">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras4()">4</div>
+                                    </div>
+                                    <div id="electrodo4-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            4
+                                            <p class="justificado p_black">
+                                                Llenar este electrodo con solución de cloruro de potasio saturada. Este llenado se realiza mediante el 
+                                                conducto que se encarga de proteger la tapa superior de este electrodo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div id="electrodo5-frente">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras5()">5</div>
+                                    </div>
+                                    <div id="electrodo5-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            5
+                                            <p class="justificado p_black">
+                                                Rodear una parte pequeña de esta tapa superior del electrodo con el fin de cubrir la apertura 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div id="electrodo6-frente">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras6()">6</div>
+                                    </div>
+                                    <div id="electrodo6-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            6
+                                            <p class="justificado p_black">
+                                                Utilizar la punta de la aguja de esta jeringa para realizar una perforación al área de la tapa 
+                                                para permitir que haya un equilibrio entre las presiones internas y externas del electrodo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div id="electrodo7-frente">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras7()">7</div>
+                                    </div>
+                                    <div id="electrodo7-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            7
+                                            <p class="justificado p_black">
+                                                Lavar el electrodo con abundante agua destilada
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div id="electrodo8-frente">
+                                        <div class="col-md-12 caja-numero-azul" onclick="electrodoAtras8()">8</div>
+                                    </div>
+                                    <div id="electrodo8-atras" style="display: none;">
+                                        <div class="col-md-12 caja-numero-azul-atras"  onclick="electrodoFrente()">
+                                            8
+                                            <p class="justificado p_black">
+                                                Colocar nuevamente el electrodo dentro de la solución de conservación.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            <p>Clic sobre la tarjeta para ver la información</p>
+                        </div>
+                    </div>                                       
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_estufas" tabindex="-1" role="dialog" aria-labelledby="m_estufas" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_estufas">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" style="padding: 30px 0px;" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white">Estufas</p>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12" style="margin-top: 40px;">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="col-md-11 espacio">
+                                    <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                        <div class="col-md-12 caja-amarilla-borde-interna">
+                                            <p class="justificado p_black">
+                                                Equipo que se utiliza para secar y esterilizar recipientes de vidrio y metal en el laboratorio. Llamada también 
+                                                Horno de secado. Actualmente se conocen fundamentalmente dos tipos de estufas: las que operan mediante convección 
+                                                natural y las que operan mediante convección forzada. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 espacio">
+                                    <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                        <div class="col-md-12 caja-amarilla-borde-interna">
+                                            <p class="justificado p_black">
+                                                Las estufas de convección natural funcionan mediante un tipo de transporte de calor, donde el movimiento del fluido 
+                                                no es formado por una fuente externa, (como una bomba, ventilador, dispositivo de succión, entre otros), sino que 
+                                                ocurre por diferencial de temperaturas, el fluido que envuelve una fuente calorífica recibe energía térmica y por 
+                                                la separación de las partículas (fenómeno que ocurre por el aumento de temperatura) disminuye su densidad y asciende; 
+                                                el fluido próximo que está más frio es entonces calentado y nuevamente inicia el proceso formando una corriente de 
+                                                convección natural.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 espacio">
+                                <img src="assets/image/horno1.png" class="img-fluid" >
+                            </div>
+                        </div>
+                        <div class="col-md-11 espacio">
+                            <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna">
+                                    <p class="justificado p_black">
+                                        Las estufas de convección forzada, funcionan a través de un tipo mecanismo en el que el fluido (corriente de calor) 
+                                        es generado por una fuente externa a la estufa, por ejemplo, un ventilador, una bomba, un dispositivo de succión, 
+                                        entre otros; de esta manera un gas (en la mayoría de casos aire) fluye a través del horno para transferir el calor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 espacio">
+                            <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna">
+                                    <p class="justificado p_black">
+                                        La estufa se utiliza para desinfectar o secar material de vidrio y metal usado en los ensayos. La esterilización 
+                                        es llamada de calor seco y se ejecuta a una temperatura de 180 °C por más o menos dos horas. Los materiales de 
+                                        cristal, cuando son calentados a alta temperatura, absorben humedad y suprimen la posibilidad de que se conserve 
+                                        alguna actividad biológica gracias a las altas temperaturas y a los tiempos secado.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_muflas" tabindex="-1" role="dialog" aria-labelledby="m_muflas" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_muflas">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" style="padding: 30px 0px;" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white">Muflas</p>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12" style="margin-top: 40px;">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                    <div class="col-md-12 caja-amarilla-borde-interna">
+                                        <p class="justificado p_black">
+                                            La mufla es un prototipo de horno que logra temperaturas muy altas (0°C a -1200°C). Se utiliza para carbonizar 
+                                            sustancias orgánicas, intervienen en pruebas de ignición, análisis de cenizas y en diferentes análisis de control 
+                                            de calidad.  Este tipo de hornos se calientan ágilmente con un pequeño consumo de energía. 
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 espacio">
+                                <img src="assets/image/horno.png" class="img-fluid" >
+                            </div>                            
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna">
+                                    <p class="justificado p_black">
+                                        Los modelos de muflas más grandes pueden almacenar hasta 110 crisoles.Para ejecutar un proceso de esterilización 
+                                        es necesario llevar el aire interno a una temperatura entre 150°C y 190°C. Uno de los primeros equipos utilizados 
+                                        para esto fue el horno de Pasteur, que luego fue sustituido por la estufa de aire caliente. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_principios" tabindex="-1" role="dialog" aria-labelledby="m_principios" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_principios">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white">Principios de operación</p>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div><br>
+
+                    <div class="col-md-12">
+                        En las siguientes notas podrás ver los principales elementos de operación de las estufas de secado y muflas.
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna">
+                                    <p class="justificado p_black">
+                                        Normalmente las estufas para secado cuentan con 2 cámaras, interna y externa. La interna es hecha en material de 
+                                        aluminio o en material de acero inoxidable, lo que es imprescindible para una adecuada transmisión del calor; 
+                                        dispone de un conjunto de estantes elaborados en alambre de acero inoxidable, que tienen como objetivo permitir 
+                                        y garantizar que el aire fluya de manera libre. 
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-right" style="z-index: 1; position: relative; top: -30px;">
+                                <img src="assets/image/curva-derecha.png" class="img-fluid" >
+                            </p>                            
+                            <div class="col-md-12 caja-amarilla-borde espacio" style="margin-top: -64px;">
+                                <div class="col-md-12 caja-amarilla-borde-interna">
+                                    <p class="justificado p_black">
+                                        La cámara externa está elaborada en lámina de acero, revestida con una capa preservadora con pintura electrostática. 
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-left" style="z-index: 1; position: relative; top: -25px;">
+                                <img src="assets/image/curva-izquierda.png" class="img-fluid" >
+                            </p>                        
+                            <div class="col-md-12 caja-amarilla-borde" style="margin-top: -60px;">
+                                <div class="col-md-12 caja-amarilla-borde-interna">
+                                    <p class="justificado p_black">
+                                        El calor del interior se genera mediante un sistema eléctrico de resistencias, que transportan la energía térmica 
+                                        al interior. Estas resistencias se encuentran en el área inferior del equipo. El calor interno se traslada y es 
+                                        distribuido a través de convección natural o convección forzada (estufa con ventiladores internos).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="col-md-12 caja-amarilla-borde" style="">
+                                <div class="col-md-12 caja-amarilla-borde-interna">
+                                    <p class="justificado p_black">
+                                        La estufa moderna es manejada por medio de microprocesadores, desde los cuales se puede parametrizar el sistema de 
+                                        operación del equipo. También posee de alarmas, con las cuales es posible programar ciclos o determinados procesos 
+                                        térmicos, donde no solo se pueden controlar las temperaturas, sino también como debe ser su comportamiento en el tiempo. 
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-right" style="z-index: 1; position: relative; top: -22px;">
+                                <img src="assets/image/curva-derecha.png" class="img-fluid" >
+                            </p>
+                            <div class="col-md-11 espacio">
+                                <div class="col-md-12 caja-amarilla-borde" style="margin-top: -55px;">
+                                    <div class="col-md-12 caja-amarilla-borde-interna">
+                                        <p class="justificado p_black">
+                                            Las estufas funcionan generalmente desde temperatura ambiente, hasta aproximadamente los 350 °C. Algunos modelos 
+                                            no cuentan con intervalos de temperatura tan amplios. Las más antiguas cuentan con un sistema de resistencias 
+                                            manejadas a través de un termostato.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_requerimientosEstufas" tabindex="-1" role="dialog" aria-labelledby="m_requerimientosEstufas" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_requerimientosEstufas">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white">Requerimientos de uso</p>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div><br>
+                    <br>
+
+                    <div class="col-md-12">
+                        <p class="text-center p_black">
+                            Para ser usada adecuadamente se deben garantizar los siguientes puntos: 
+                        </p>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="row justify-content-center">
+                                <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">1</p>
+                            </div>
+                            <div class="col-md-12 caja-amarilla-borde2" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna2">
+                                    <p class="justificado p_black">
+                                        Instalar en una mesa de trabajo bien nivelada y resistente.    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row justify-content-center">
+                                <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">2</p>
+                            </div>
+                            <div class="col-md-12 caja-amarilla-borde2" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna2">
+                                    <p class="justificado p_black">
+                                        Garantizar alrededor del equipo un espacio libre de más o menos 5cm y de un área libre para disponer el 
+                                        material que se utilizará en el procesamiento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="row justify-content-center">
+                                <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">3</p>
+                            </div>
+                            <div class="col-md-12 caja-amarilla-borde2" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna2">
+                                    <p class="justificado p_black">
+                                        Ubicar un toma eléctrico adecuado, para proporcionar la potencia eléctrica que requiere la estufa, cumpliendo la 
+                                        normativa vigente aplicable. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="modal fade" id="modal_operacionEstufa" tabindex="-1" role="dialog" aria-labelledby="m_operacionEstufas" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_operacionEstufas">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white">Operación de la estufa</p>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div><br>
+                    <br>
+
+                    <div class="col-md-12">
+                        <p class="p_black">
+                            Es necesario considerar las siguientes recomendaciones para la adecuada funcionalidad de la estufa:
+                        </p>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="row justify-content-center">
+                                <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">1</p>
+                            </div>
+                            <div class="col-md-12 caja-amarilla-borde2" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna2">
+                                    <p class="justificado p_black">
+                                        No utilizar en la estufa materiales combustibles o explosivos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row justify-content-center">
+                                <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">2</p>
+                            </div>
+                            <div class="col-md-12 caja-amarilla-borde2" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna2">
+                                    <p class="justificado p_black">
+                                        Impedir derrames en el interior de la estufa de compuestos ácidos o que produzcan gases corrosivos, para prevenir 
+                                        el deterioro de las superficies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="row justify-content-center">
+                                <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">3</p>
+                            </div>
+                            <div class="col-md-12 caja-amarilla-borde2" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna2">
+                                    <p class="justificado p_black">
+                                        Para manipular elementos dentro de la estufa se deben manejar todos los elementos de protección individual, 
+                                        como guantes que aíslen calor, gafas y pinzas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_rutina" tabindex="-1" role="dialog" aria-labelledby="m_rutina" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_rutina">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white">Rutina de operación</p>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div><br>
+                    <br>
+
+                    <div class="row justify-content-center" style="align-items: center;">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6 espacio">
+                                    <div class="row justify-content-center">
+                                        <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">1</p>
+                                    </div>
+                                    <div class="col-md-12 caja-amarilla-borde3" style="z-index: 1;">
+                                        <div class="col-md-12 caja-amarilla-borde-interna3">
+                                            <p class="justificado p_black">
+                                                Prender con el interruptor, presionando el botón [I].
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 espacio">
+                                    <div class="row justify-content-center">
+                                        <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">2</p>
+                                    </div>
+                                    <div class="col-md-12 caja-amarilla-borde3" style="z-index: 1;">
+                                        <div class="col-md-12 caja-amarilla-borde-interna3">
+                                            <p class="justificado p_black">
+                                                Oprima la tecla de programación.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 espacio">
+                                    <div class="row justify-content-center">
+                                        <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">3</p>
+                                    </div>
+                                    <div class="col-md-12 caja-amarilla-borde3" style="z-index: 1;">
+                                        <div class="col-md-12 caja-amarilla-borde-interna3">
+                                            <p class="justificado p_black">
+                                                Parametrice la temperatura requerida para la operación. La estufa iniciará el calentamiento hasta alcanzar la 
+                                                temperatura seleccionada.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 espacio">
+                                    <div class="row justify-content-center">
+                                        <p class="p_white font-weight-bold circle-div-s-azul" style="font-size: 20px;">4</p>
+                                    </div>
+                                    <div class="col-md-12 caja-amarilla-borde3" style="z-index: 1;">
+                                        <div class="col-md-12 caja-amarilla-borde-interna3">
+                                            <p class="justificado p_black">
+                                                Si es programable, se deben seguir los pasos que para cada caso específico defina el fabricante con relación a 
+                                                tiempo, tipos de calentamiento y sistema de alarma.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 espacio">
+                            <img src="assets/image/control-electrico.png" class="img-fluid" >
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_controlCalidad" tabindex="-1" role="dialog" aria-labelledby="m_controlCalidad" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_controlCalidad">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-5">
+                                <p class="font-weight-bold p_white">Control de calidad de las estufas</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div><br>
+                    <br>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                <div class="col-md-12 caja-amarilla-borde-interna1">
+                                    <p class="justificado p_black">
+                                        El control de calidad en estos equipos es complejo, el proceso de esterilización mediante la aplicación de calor 
+                                        seco posee como puntos críticos el valor de temperatura y tiempo. 
+                                        <br><br>
+                                        Generalmente, se usan indicadores biológicos de esporas de Bacillus subtilis, variedad níger, son incubadas por 
+                                        varias horas posterior al proceso de esterilización. 
+                                        <br><br>
+                                        La efectividad depende directamente de la calidad de difusión del calor, su cantidad disponible y el porcentaje de 
+                                        calor perdido.  La esterilización por esta técnica seca debe usarse solamente en materiales sensibles al proceso 
+                                        en autoclave.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_mantenimientoEstufa" tabindex="-1" role="dialog" aria-labelledby="m_mantenimientoEstufa" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_mantenimientoEstufa">
+                <span class="mod-close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body" >
+                    <div class="titulo-azul-modal text-center p_white">
+                        <div class="row">
+                            <i class="fas fa-circle" ></i>
+                            <div class="col-md-4">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Estufas de secado y muflas</p>
+                            </div>
+                            <div class="col-md-5">
+                                <p class="font-weight-bold p_white">Mantenimiento</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" ></i>
+                        </div>
+                    </div><br>
+                    <br>
+
+                    <p class="justificado p_black">
+                        El mantenimiento que requiere este equipo no es complejo, no requiere instrucciones periódicas de mantenimiento con 
+                        técnicas avanzadas. Las instrucciones podrían variar según el tipo de equipo y las especialidades de diseño de los 
+                        fabricantes.
+                    </p>      
+                    <br>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row" style="align-items: center; ">
+                                <div>
+                                    <p> <img src="assets/image/alerta.png" class="img-fluid" style="position: relative; left: 30%; z-index: 2;"></p>
+                                </div>
+                                <div>
+                                    <div class="col-md-12 caja-amarilla-borde" style="z-index: 1;">
+                                        <div class="col-md-12 caja-amarilla-borde-interna1-2">
+                                            <p class="text-center justificado p_black"><span class="font-weight-bold">Advertencia: </span>
+                                                Verificar que el equipo no se encuentra caliente. <br>
+                                                Algunas rutinas generales de mantenimiento son:
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div> 
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row ">
+                                <div class="col-md-11">
+                                    <div class="col-md-12 caja-tarjeta4" role="button" id="caja1-frente" onclick="showDiv3()" style="text-align: center; align-items: center; margin-right: 17px;">
+                                        <p class="text-center p_white font-weight-bold" style="font-size: 35px;"><u>A</u></p><br>
+                                        <p class="text-center font-weight-bold p_black">Acceso a los componentes electrónicos</p><br>
+                                        <p class="text-center p_black"><span class="font-weight-bold">Frecuencia: </span>según necesidad.</p>
+                                    </div>
+                                    <div class="col-md-12 caja-tarjeta4-atras" role="button" id="caja1-atras" onclick="showDiv4()" style="display: none; ">
+                                        <p class="justificado p_black"><span class="font-weight-bold">Suciedad pigmentaria: </span>polvo, arenilla, hollín, 
+                                            entre otros. El polvo son partículas muy pequeñas y dispersas que se encuentran sobre el suelo o suspendidas 
+                                            en aire, las cuales se depositan sobre los objetos.</p>
+                                        <p class="justificado p_black">El polvo se descarta de forma fácil por aspiración o por barrido húmedo, pero en 
+                                            ningún caso por barrido seco, pues lo que se logra es colocar las partículas contenidas a dispersarse por el 
+                                            movimiento, estas partículas pueden estar suspendidas en el aire hasta por 7 horas, quedando nuevamente en el 
+                                            mismo o en otro sitio. 
+                                        </p>
+                                        <p class="justificado p_black">Al utilizar productos como la cera, para limpiar superficies, el problema sería mayor, 
+                                            ya que, por su poder de depósito de electricidad estática, estas partículas suspendidas quedarían pegadas en las superficies.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="row justify-content-center">
+                                <div class="col-md-11">
+                                    <div class="col-md-12 caja-tarjeta4" role="button" id="caja1-frente" onclick="showDiv3()" style="text-align: center; align-items: center; margin-right: 17px;">
+                                        <p class="text-center p_white font-weight-bold" style="font-size: 35px;"><u>B</u></p><br>
+                                        <p class="text-center font-weight-bold p_black">Cambio de las resistencias de calefacción</p><br>
+                                        <p class="text-center p_black"><span class="font-weight-bold">Frecuencia: </span>cuando se requiera.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="row justify-content-end">
+                                <div class="col-md-11">
+                                    <div class="col-md-12 caja-tarjeta4" role="button" id="caja1-frente" onclick="showDiv3()" style="text-align: center; align-items: center; margin-right: 17px;">
+                                        <p class="text-center p_white font-weight-bold" style="font-size: 35px;"><u>C</u></p><br>
+                                        <p class="text-center font-weight-bold p_black">Cambio del ventilador de enfriamiento</p><br>
+                                        <p class="text-center p_black"><span class="font-weight-bold">Frecuencia: </span>según necesidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
 

@@ -521,6 +521,15 @@ $(".button-tab3").click(function(){
     $(this).addClass("button-tab3-activo");
 });
 
+$(".button-tab3-2").click(function(){
+    $(".button-tab3-2").removeClass("button-tab3-activo2");
+    $(this).addClass("button-tab3-activo2");
+});
+
+$(".button-tab-amarillo2").click(function(){
+    $(".button-tab-amarillo2").removeClass("button-tab-amarillo2-activo");
+    $(this).addClass("button-tab-amarillo2-activo");
+});
 
 $(".medio-circulo-der2").click(function(){
     $(".medio-circulo-der2").removeClass("medio-circulo-der2-activo");
