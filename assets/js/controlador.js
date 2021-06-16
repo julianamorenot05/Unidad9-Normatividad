@@ -1756,6 +1756,24 @@ function componentes() {
     document.getElementById('caja-ventilador-atras').style.display = "none";
 }
 
+function muestraExternas() {
+    document.getElementById('principiosBaño1').style.display = "none";    
+    document.getElementById('principiosBaño2').style.display = "none";    
+    document.getElementById('principiosBaño3').style.display = "block";    
+}
+
+function muestraInmersion() {
+    document.getElementById('principiosBaño1').style.display = "none";    
+    document.getElementById('principiosBaño2').style.display = "block";    
+    document.getElementById('principiosBaño3').style.display = "none";  
+}
+
+function cierraPrincipiosBaño() {
+    document.getElementById('principiosBaño1').style.display = "block";    
+    document.getElementById('principiosBaño2').style.display = "none";    
+    document.getElementById('principiosBaño3').style.display = "none";    
+}
+
 
 
 

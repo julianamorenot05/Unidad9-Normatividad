@@ -531,6 +531,16 @@ $(".button-tab-amarillo2").click(function(){
     $(this).addClass("button-tab-amarillo2-activo");
 });
 
+$(".button-tab2-amarillo").click(function(){
+    $(".button-tab2-amarillo").removeClass("button-tab2-amarillo-active");
+    $(this).addClass("button-tab2-amarillo-active");
+});
+
+$(".button-tab-amarillo4").click(function(){
+    $(".button-tab-amarillo4").removeClass("button-tab-amarillo4-activo");
+    $(this).addClass("button-tab-amarillo4-activo");
+});
+
 $(".medio-circulo-der2").click(function(){
     $(".medio-circulo-der2").removeClass("medio-circulo-der2-activo");
     $(".medio-circulo-izq2").removeClass("medio-circulo-izq2-activo");

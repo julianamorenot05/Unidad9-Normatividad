@@ -140,6 +140,10 @@ p {
     color: #2c538e ;
 }
 
+.fa-arrow-alt-up{
+    color: #2c538e ;
+}
+
 #circulo_azul{
     color: #2c538e ;
 }
@@ -1352,6 +1356,49 @@ a.article:hover {
     justify-content: center;
 }
 
+.caja-texto8{
+    background: #2c538e;
+    border-radius: 1px;
+    padding: 5px 9px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 7px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-texto9{
+    background: #2c538e;
+    border-radius: 1px;
+    padding: 10px 15px;
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 7px;
+    box-shadow: 2px 2px 4px 0px grey;
+}
+
+.caja-texto-amarillo4{
+    background: #ffc107;
+    border-radius: 1px;
+    padding: 5px 9px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 7px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-texto-amarillo5{
+    background: #ffc107;
+    border-radius: 1px;
+    padding: 5px 9px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 7px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+
+
 .caja-texto2:active{
     background:  #ffc107;
     border-radius: 15px;
@@ -1798,6 +1845,34 @@ a.article:hover {
     padding-left: 0px;
     padding-bottom: 20px;
 }
+
+.caja-borde-azul3{
+    border: 3px solid #2c538e !important;
+    border-radius: 20px;
+    padding: 0px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-borde-azul3-relleno{
+    background: #2c538e;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 0px;
+    height: 90%;
+    margin-top: 50px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-borde-amarillo3{
+    border: 3px solid #ffc107 !important;
+    border-radius: 20px;
+    padding: 17px;
+    transform: rotate(-5deg);
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+
 
 .caja-borde-amarillo{
     border-left: 4px solid #ffc107 !important;
@@ -3154,6 +3229,39 @@ picture img {
     box-shadow: 0px 0px 20px 6px #ffc107;
   }
 
+  .button-tab-modal-amarillo3 {
+    position: relative;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #ffc107;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 2px;
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-tab-modal-amarillo3:active {
+    position: relative;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #ffc107;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 2px;
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 6px #2c538e;
+  }
+
 
 
 .button-tab-azul {
@@ -3346,6 +3454,39 @@ picture img {
     width: 160px;
     height: auto;
     justify-content: center;
+}
+
+.button-tab-amarillo4 {
+    position: relative;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #ffc107;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 2px;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-tab-amarillo4-activo {
+    position: relative;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #ffc107;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 2px;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 5px #2c538e;
 }
 
 .button-tab-amarillo-claro {
@@ -3616,7 +3757,7 @@ picture img {
     
 }
 
-.button-tab2-amarillo:active {
+.button-tab2-amarillo-active {
     position: static;
     display:inline-block;
     color: #fff;
@@ -3972,6 +4113,19 @@ picture img {
     box-shadow: 2px 2px 4px 0px grey;
 } 
 
+.circle-div-amarillo{
+    display: flex; 
+    width: 130px;
+    height: 130px;
+    background: #ffc107;
+    border-radius: 100px; 
+    justify-content: center;
+    box-shadow: 2px 2px 4px 0px gray; 
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
 
 .circle-div img{
     width: 70%;
@@ -4216,6 +4370,19 @@ picture img {
     margin-top: 25px;
     box-shadow: 2px 2px 4px 0px gray;
     font-weight: bold;
+}
+
+.titulo-amarillo3{
+    text-align: center;
+    background: #ffc107;
+    color: #302f2f;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 14px;
+    height: auto;
+    width: auto;   
+    font-weight: bold;
+    box-shadow: 2px 2px 4px 0px rgb(37, 37, 37);   
 }
 
 .titulo-azul-modal {
