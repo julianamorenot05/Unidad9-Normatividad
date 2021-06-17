@@ -556,7 +556,6 @@ $(".medio-circulo-izq2").click(function(){
 
 
 
-
 const horizontalAccordions = $(".accordion.width");
 
 horizontalAccordions.each((index, element) => {
@@ -569,3 +568,4 @@ horizontalAccordions.each((index, element) => {
   	$(element).parent().find("[data-toggle='collapse']").addClass("collapsed");
   });
 });
+

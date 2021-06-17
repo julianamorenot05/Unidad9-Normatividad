@@ -1,7 +1,7 @@
 var numSlide = 22
 
 $(document).ready(function () {
-    
+
     $("#sidebar").mCustomScrollbar({
         theme: "minimal"
     });
@@ -181,6 +181,41 @@ $(document).ready(function () {
     });
 
     customUnitReady();
+
+    var words = ['Balanza',
+                 'Mechero',
+                 'Planchas',
+                 'Potenciómetro',
+                 'Muflas',
+                 'Estufas',
+                 'Bañomaría',
+                 'Destilador',
+                 'Nevera',
+                 'Centrifugas'
+                ];
+
+
+    var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+    var intentosSopa = 0;
+
+    //var puzzle = wordfind.newPuzzle(words, { height: 15, width: 15, fillBlanks: false });
+    //wordfind.print(puzzle);
+
+    $("#tryAgainPuzzle").click(function(){
+        intentosSopa++
+        if (intentosSopa > 2) {
+            Swal.fire(
+                '¡Lo sentimos!',
+                'Deberías revisar nuevamente el contenido relacionado a esta unidad de aprendizaje.',
+                'warning'
+            )
+        }
+        gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');        
+        //var puzzle = wordfind.newPuzzle(words, { height: 15, width: 15, fillBlanks: false });
+        //wordfind.print(puzzle);
+    });
+
+    $("#solvePuzzle").click(function () { wordfindgame.solve(gamePuzzle, words) });
 });
 
   
@@ -1774,6 +1809,37 @@ function cierraPrincipiosBaño() {
     document.getElementById('principiosBaño3').style.display = "none";    
 }
 
+function mantenimientoDestilador1() {
+    document.getElementById('mantenimientoDestilador').style.display = "none";    
+    document.getElementById('mantenimientoDestilador1').style.display = "block";    
+    document.getElementById('mantenimientoDestilador2').style.display = "none";    
+    document.getElementById('mantenimientoDestilador3').style.display = "none";    
+    document.getElementById('mantenimientoDestilador4').style.display = "none";    
+}
+
+function mantenimientoDestilador2() {
+    document.getElementById('mantenimientoDestilador').style.display = "none";    
+    document.getElementById('mantenimientoDestilador1').style.display = "none";    
+    document.getElementById('mantenimientoDestilador2').style.display = "block";    
+    document.getElementById('mantenimientoDestilador3').style.display = "none";    
+    document.getElementById('mantenimientoDestilador4').style.display = "none";    
+}
+
+function mantenimientoDestilador3() {
+    document.getElementById('mantenimientoDestilador').style.display = "none";    
+    document.getElementById('mantenimientoDestilador1').style.display = "none";    
+    document.getElementById('mantenimientoDestilador2').style.display = "none";    
+    document.getElementById('mantenimientoDestilador3').style.display = "block";    
+    document.getElementById('mantenimientoDestilador4').style.display = "none";    
+}
+
+function mantenimientoDestilador4() {
+    document.getElementById('mantenimientoDestilador').style.display = "none";    
+    document.getElementById('mantenimientoDestilador1').style.display = "none";    
+    document.getElementById('mantenimientoDestilador2').style.display = "none";    
+    document.getElementById('mantenimientoDestilador3').style.display = "none";    
+    document.getElementById('mantenimientoDestilador4').style.display = "block";    
+}
 
 
 
