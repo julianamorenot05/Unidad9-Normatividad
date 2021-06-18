@@ -457,23 +457,17 @@ $('#validarFalsoVerdadero2').off('click').on('click', function(){
 
 let intentosJuegoEntradas = 0;
 function validarRespuesta() {
-    let respuesta1 = "Elementosdeproteccionpersonal";
-    let respuesta2 = "Losguantes";
-    let respuesta3 = "Gafasprotectoras";
+    let respuesta1 = "verdadero";
+    let respuesta2 = "falso";
 
     let entrada1 = document.getElementById("entrada1").value;
-    let entrada1_acento = entrada1.replace("ó", "o");
-    entrada1_modificada = entrada1_acento.replace(/ /g, ""); 
+    entrada1_modificada = entrada1.replace(/ /g, ""); 
     
     let entrada2 = document.getElementById("entrada2").value;
     entrada2_modificada = entrada2.replace(/ /g, ""); 
 
-    let entrada3 = document.getElementById("entrada3").value;
-    entrada3_modificada = entrada3.replace(/ /g, ""); 
-    
     if((String(respuesta1.toLowerCase()) == String(entrada1_modificada.toLowerCase())) 
-        && (String(respuesta2.toLowerCase()) == String(entrada2_modificada.toLowerCase()))
-        && (String(respuesta3.toLowerCase()) == String(entrada3_modificada.toLowerCase()))){
+        && (String(respuesta2.toLowerCase()) == String(entrada2_modificada.toLowerCase()))){
             
         console.log("iguales");
         Swal.fire(
@@ -553,6 +547,15 @@ $(".medio-circulo-izq2").click(function(){
     $(this).addClass("medio-circulo-izq2-activo");
 });
 
+$(".button-tab-div-amarillo").click(function(){
+    $(".button-tab-div-amarillo").removeClass("button-tab-div-amarillo-activo");
+    $(this).addClass("button-tab-div-amarillo-activo");
+});
+
+$(".button-tab3-3").click(function(){
+    $(".button-tab3-3").removeClass("button-tab3-activo3");
+    $(this).addClass("button-tab3-activo3");
+});
 
 
 

@@ -1842,6 +1842,135 @@ function mantenimientoDestilador4() {
 }
 
 
+function mostrarFrente() {
+    document.getElementById('pruebasFuncionamientoFrente').style.display = "block";    
+    document.getElementById('pruebasFuncionamientoAtras').style.display = "none";    
+    document.getElementById('ejecucionMantenimientoFrente').style.display = "block";    
+    document.getElementById('ejecucionMantenimientoAtras').style.display = "none";   
+    document.getElementById('inventariosFrente').style.display = "block";    
+    document.getElementById('inventariosAtras').style.display = "none";    
+    document.getElementById('capacitacionPersonalFrente').style.display = "block";    
+    document.getElementById('capacitacionPersonalAtras').style.display = "none"; 
+    document.getElementById('planificacionFrente').style.display = "block";    
+    document.getElementById('planificacionAtras').style.display = "none";  
+    document.getElementById('metodologiaMantenimientoFrente').style.display = "block";    
+    document.getElementById('metodologiaMantenimientoAtras').style.display = "none";  
+    document.getElementById('frecuenciaMantenimientoFrente').style.display = "block";    
+    document.getElementById('frecuenciaMantenimientoAtras').style.display = "none";    
+    document.getElementById('repuestosFrente').style.display = "block";    
+    document.getElementById('repuestosAtras').style.display = "none"; 
+    document.getElementById('identificacionProblemasFrente').style.display = "block";    
+    document.getElementById('identificacionProblemasAtras').style.display = "none";    
+    document.getElementById('registroActividadesFrente').style.display = "block";    
+    document.getElementById('registroActividadesAtras').style.display = "none";    
+} 
+
+
+
+function pruebasFuncionamientoAtras() {
+    document.getElementById('pruebasFuncionamientoFrente').style.display = "none";    
+    document.getElementById('pruebasFuncionamientoAtras').style.display = "block";    
+    document.getElementById('ejecucionMantenimientoFrente').style.display = "block";    
+    document.getElementById('ejecucionMantenimientoAtras').style.display = "none";    
+}
+
+function ejecucionMantenimientoAtras() {
+    document.getElementById('pruebasFuncionamientoFrente').style.display = "block";    
+    document.getElementById('pruebasFuncionamientoAtras').style.display = "none";    
+    document.getElementById('ejecucionMantenimientoFrente').style.display = "none";    
+    document.getElementById('ejecucionMantenimientoAtras').style.display = "block";    
+}
+
+function inventariosAtras() {
+    document.getElementById('inventariosFrente').style.display = "none";    
+    document.getElementById('inventariosAtras').style.display = "block";    
+    document.getElementById('capacitacionPersonalFrente').style.display = "block";    
+    document.getElementById('capacitacionPersonalAtras').style.display = "none";    
+}
+
+function capacitacionPersonalAtras() {
+    document.getElementById('inventariosFrente').style.display = "block";    
+    document.getElementById('inventariosAtras').style.display = "none";    
+    document.getElementById('capacitacionPersonalFrente').style.display = "none";    
+    document.getElementById('capacitacionPersonalAtras').style.display = "block";    
+}
+
+function planificacionAtras() {
+    document.getElementById('planificacionFrente').style.display = "none";    
+    document.getElementById('planificacionAtras').style.display = "block";      
+}
+
+function metodologiaMantenimientoAtras() {
+    document.getElementById('metodologiaMantenimientoFrente').style.display = "none";    
+    document.getElementById('metodologiaMantenimientoAtras').style.display = "block"; 
+}
+
+function frecuenciaMantenimientoAtras() {
+    document.getElementById('frecuenciaMantenimientoFrente').style.display = "none";    
+    document.getElementById('frecuenciaMantenimientoAtras').style.display = "block";    
+    document.getElementById('repuestosFrente').style.display = "block";    
+    document.getElementById('repuestosAtras').style.display = "none";    
+}
+
+function repuestosAtras() {
+    document.getElementById('frecuenciaMantenimientoFrente').style.display = "block";    
+    document.getElementById('frecuenciaMantenimientoAtras').style.display = "none";    
+    document.getElementById('repuestosFrente').style.display = "none";    
+    document.getElementById('repuestosAtras').style.display = "block";    
+}
+
+
+function identificacionProblemasAtras() {
+    document.getElementById('identificacionProblemasFrente').style.display = "none";    
+    document.getElementById('identificacionProblemasAtras').style.display = "block";    
+    document.getElementById('registroActividadesFrente').style.display = "block";    
+    document.getElementById('registroActividadesAtras').style.display = "none";    
+}
+
+function registroActividadesAtras() {
+    document.getElementById('identificacionProblemasFrente').style.display = "block";    
+    document.getElementById('identificacionProblemasAtras').style.display = "none";    
+    document.getElementById('registroActividadesFrente').style.display = "none";    
+    document.getElementById('registroActividadesAtras').style.display = "block";    
+}
+
+function mostrarCalibracion() {
+    document.getElementById('calibracion').style.display = "none";    
+    document.getElementById('calibracion1').style.display = "block";    
+    document.getElementById('calibracion2').style.display = "none";    
+}
+
+function mostrarVerificacion() {
+    document.getElementById('calibracion').style.display = "none";    
+    document.getElementById('calibracion1').style.display = "none";    
+    document.getElementById('calibracion2').style.display = "block";    
+}
+
+function mostrarActividadesCalibracion1() {
+    document.getElementById('actividadesCalibracion1').style.display = "block";    
+    document.getElementById('actividadesCalibracion2').style.display = "none";    
+    document.getElementById('actividadesCalibracion3').style.display = "none";    
+    document.getElementById('actividadesCalibracion4').style.display = "none";     
+}
+function mostrarActividadesCalibracion2() {
+    document.getElementById('actividadesCalibracion1').style.display = "none";    
+    document.getElementById('actividadesCalibracion2').style.display = "block";    
+    document.getElementById('actividadesCalibracion3').style.display = "none";    
+    document.getElementById('actividadesCalibracion4').style.display = "none";     
+}
+function mostrarActividadesCalibracion3() {
+    document.getElementById('actividadesCalibracion1').style.display = "none";    
+    document.getElementById('actividadesCalibracion2').style.display = "none";    
+    document.getElementById('actividadesCalibracion3').style.display = "block";    
+    document.getElementById('actividadesCalibracion4').style.display = "none";     
+}
+function mostrarActividadesCalibracion4() {
+    document.getElementById('actividadesCalibracion1').style.display = "none";    
+    document.getElementById('actividadesCalibracion2').style.display = "none";    
+    document.getElementById('actividadesCalibracion3').style.display = "none";    
+    document.getElementById('actividadesCalibracion4').style.display = "block";     
+}
+
 
 
 // tabs

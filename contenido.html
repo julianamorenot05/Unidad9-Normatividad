@@ -141,8 +141,17 @@
                         <li><a class="nav-link" href="#unidad9_53"></a></li> 
                         <li><a class="nav-link" href="#unidad9_54"></a></li> 
                         <li><a class="nav-link" href="#unidad9_55"></a></li> 
-                        <li><a class="nav-link" href="#unidad9_56"></a></li>  
-
+                        <li><a class="nav-link" href="#unidad9_56"></a></li>                                     
+                        <li><a class="nav-link" href="#unidad9_57"></a></li>    
+                        <li><a class="nav-link" href="#unidad9_58"></a></li>    
+                        <li><a class="nav-link" href="#unidad9_59"></a></li>
+                        <li><a class="nav-link" href="#unidad9_60"></a></li>                       
+                        <li><a class="nav-link" href="#unidad9_61"></a></li>                       
+                        <li><a class="nav-link" href="#unidad9_62"></a></li>                       
+                        <li><a class="nav-link" href="#unidad9_63"></a></li>                       
+                        <li><a class="nav-link" href="#unidad9_64"></a></li>                       
+                        <li><a class="nav-link" href="#unidad9_65"></a></li>                       
+                        <li><a class="nav-link" href="#unidad9_66"></a></li>
                     </ul>                 
                     <div class="tab-content divcontenido" style="padding: 6px;">
                         <div id="unidad9_0" class="tab-pane" role="tabpanel">
@@ -3203,7 +3212,7 @@
                             <div class="row">
                                 <div class="col-md-12" style="display: -webkit-inline-flex;">
                                     <p class="titulo_aprendizaje">
-                                        <span class="font-weight-bold">
+                                        <span class="font-weight-bold" style="font-size: 20px;">
                                             Ejercicio de aprendizaje
                                         </span>
                                     </p>&nbsp;
@@ -3211,8 +3220,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p style="margin-left: 50px;">
-                                            <span class="font-weight-bold">
+                                        <p style="margin-left: 15px;">
+                                            <span class="font-weight-bold" style="font-size: 22px;">
                                                 EMPAREJAMIENTO
                                             </span>
                                         </p>                                        
@@ -5460,7 +5469,7 @@
                             <div class="row">
                                 <div class="col-md-12" style="display: -webkit-inline-flex;">
                                     <p class="titulo_aprendizaje">
-                                        <span class="font-weight-bold">
+                                        <span class="font-weight-bold" style="font-size: 20px;">
                                             Ejercicio de aprendizaje
                                         </span>
                                     </p>&nbsp;
@@ -5468,7 +5477,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p style="margin-left: 50px;">
+                                        <p style="margin-left: 15px;" style="font-size: 22px;">
                                             <span class="font-weight-bold">
                                                 SOPA DE LETRAS
                                             </span>
@@ -5639,7 +5648,7 @@
                         </div>
 
 
-                        <!-- 538-542 -->
+                        <!-- 543-569 -->
                         <div id="unidad9_52" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
                             <div class="col-md-12">
                                 <p class="font-weight-bold">Solicitud de mantenimiento (preventivo, correctivo) y registro de datos de calibración.</p>
@@ -5654,21 +5663,21 @@
                             </div>
                             
                             <div class="col-md-12" style="padding-top: 10px;">
-                                <div id="mantenimientoEquipos" class="carousel slide" data-interval="false">
+                                <div id="carouselMantenimientoEquipos" class="carousel slide" data-interval="false">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <div class="row justify-content-center" style="align-items: center;">
                                                 <div class="col-md-5">
-                                                    <div class="row">
-                                                        <div id="pruebasMantenimientoFrente">
+                                                    <div class="col-md-12">
+                                                        <div id="pruebasFuncionamientoFrente">
                                                             <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="pruebasFuncionamientoAtras()" 
                                                                 style="text-align: center; align-items: center; margin-right: 17px;">
                                                                 <p class="p_black font-weight-bold">Pruebas de funcionamiento</p><br>
                                                                 <img src="assets/image/tecnico2.png" class="img-fluid" >
                                                             </div>
                                                         </div>
-                                                        <div id="pruebasMantenimientoAtras" style="">
-                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="pruebasFuncionamientoFrente()">
+                                                        <div id="pruebasFuncionamientoAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
                                                                 <p class="text-center p_black font-weight-bold">Pruebas de funcionamiento</p>
                                                                 <p class="justificado p_black">
                                                                     Son pruebas realizadas a cada equipo del laboratorio con el fin de determinar si su funcionamiento está de acuerdo 
@@ -5678,20 +5687,20 @@
                                                                     por personal especializado en cada tipo de equipo.
                                                                 </p>                                                            
                                                             </div>
-                                                        </div>                                                        
-                                                    </div>                                                        
+                                                        </div>  
+                                                    </div>                                                                                                    
                                                 </div>
                                                 <div class="col-md-5" >
-                                                    <div class="row">
+                                                    <div class="col-md-12">
                                                         <div id="ejecucionMantenimientoFrente">
-                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="pruebasFuncionamientoAtras()" 
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="ejecucionMantenimientoAtras()" 
                                                                 style="text-align: center; align-items: center; margin-right: 17px;">
                                                                 <p class="p_black font-weight-bold">Ejecución de mantenimiento</p><br>
                                                                 <img src="assets/image/guia.png" class="img-fluid" >
                                                             </div>
                                                         </div>
-                                                        <div id="ejecucionMantenimientoAtras" style="">
-                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="pruebasFuncionamientoFrente()">
+                                                        <div id="ejecucionMantenimientoAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
                                                                 <p class="text-center p_black font-weight-bold">Ejecución de mantenimiento</p>
                                                                 <ul class="justificado p_black" style="list-style: decimal;">
                                                                     <li>Inspeccionar el estado físico de los equipos.</li>
@@ -5700,86 +5709,1131 @@
                                                                     <li>Adquirir los repuestos necesarios para ejecutar acciones correctivas. </li>
                                                                 </ul>                                                          
                                                             </div>
-                                                        </div>                                                        
-                                                    </div>   
+                                                        </div>
+                                                    </div>                                                    
                                                 </div>  
-                                                <p class="text-right"><a class="pull-right" onclick="showDiv1()" href="#mantenimientoEquipos" role="button" data-slide="next"><img
-                                                    class="" src="assets/image/fle_siguiente.png"></a></p>                                               
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="next" onclick="mostrarFrente()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>                                              
                                             </div>
                                         </div>
                                         <div class="carousel-item ">
                                             <div class="row justify-content-center" style="align-items: center;">
-                                                <p class="text-right"><a class="pull-right" onclick="showDiv15()" href="#mantenimientoEquipos" role="button" data-slide="prev"><img
-                                                    class="" src="assets/image/fle_anterior.png"></a></p> 
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="prev" onclick="mostrarFrente()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>                                              
                                                 <div class="col-md-5">
-                                                    <div class="col caja-tarjeta" role="button" id="caja3-frente" onclick="showDiv7()" style="text-align: center; margin-right: 17px;">
-                                                        <img src="assets/image/muestra-biologica.png" class="img-fluid" >
-                                                        <br><br>
-                                                        <p class="p_black font-weight-bold">Suciedad biológica</p>
-                                                    </div>
-                                                    <div class="col caja-tarjeta-atras" role="button" id="caja3-atras" onclick="showDiv8()" style="display: none;">
-                                                        <p class="justificado p_black p-tarjeta"><span class="font-weight-bold">Suciedad biológica: </span>es la suciedad producida por 
-                                                            sangre, sudor, albúmina, entre otros. La suciedad biológica comúnmente se fija en seco y es muy complicada su separación.</p>
-                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div id="inventariosFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="inventariosAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Inventarios de equipos</p><br>
+                                                                <img src="assets/image/inventarios.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="inventariosAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Inventarios de equipos</p>
+                                                                <p class="justificado p_black">
+                                                                    El laboratorio deberá contar con un inventario actualizado de los equipos que tiene para la ejecución de todas sus 
+                                                                    actividades. Este inventario de equipos es realizado como un registro que describe detalladamente, que es dinámico 
+                                                                    y constante de las principales características de los equipos, sobre este listado se basa la planeación, la 
+                                                                    programación, la adquisición y control de partes, y la ejecución de otras acciones operativas propias del servicio 
+                                                                    de mantenimiento.
+                                                                </p>                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                                                                      
                                                 </div>
-                                                <div class="col-md-5">
-                                                    <div class="col caja-tarjeta" role="button" id="caja4-frente" onclick="showDiv9()" style="text-align: center; margin-right: 17px;">
-                                                        <img src="assets/image/camiseta-sucia.png" class="img-fluid" >
-                                                        <br><br>
-                                                        <p class="p_black font-weight-bold">Suciedad coloreada</p>
-                                                    </div>
-                                                    <div class="col caja-tarjeta-atras" role="button" id="caja4-atras" onclick="showDiv10()" style="display: none;">
-                                                        <p class="justificado p_black p-tarjeta"><span class="font-weight-bold">Suciedad coloreada: </span>generalmente son producidas por materias 
-                                                            de pigmentación. Principalmente son fijadas en materiales textiles, se hace muy complicada su separación.   
-                                                        </p>
-                                                    </div>
+                                                <div class="col-md-5" >
+                                                    <div class="col-md-12">
+                                                        <div id="capacitacionPersonalFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="capacitacionPersonalAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Elaboración de plan de capacitación de personal</p><br>
+                                                                <img src="assets/image/capacitacion.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="capacitacionPersonalAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Elaboración de plan de capacitación de personal</p>
+                                                                <p class="justificado p_black">
+                                                                    El laboratorio deberá contemplar dentro de su programa de capacitaciones, el entrenamiento en el manejo de sus 
+                                                                    equipos, al personal que lo opera, además, garantizar un adecuado proceso de inducción cuando se adquiera un 
+                                                                    equipo nuevo o en caso de que el personal solicite reinducción. 
+                                                                </p>                                                        
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                    
                                                 </div>  
-                                                <p class="text-right"><a class="pull-right" onclick="showDiv15()" href="#mantenimientoEquipos" role="button" data-slide="next"><img
-                                                    class="" src="assets/image/fle_siguiente.png"></a></p>                                               
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="next" onclick="mostrarFrente()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>                                              
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item ">
                                             <div class="row justify-content-center" style="align-items: center;">
-                                                <p class="text-right"><a class="pull-right" onclick="showDiv15()" href="#mantenimientoEquipos" role="button" data-slide="prev"><img
-                                                    class="" src="assets/image/fle_anterior.png"></a></p> 
-                                                <div class="col-md-5">
-                                                    <div class="col-md-12 caja-tarjeta" role="button" id="caja5-frente" onclick="showDiv11()" style="text-align: center; margin-right: 17px;">
-                                                        <img src="assets/image/emblema.png" class="img-fluid" >
-                                                        <br><br>
-                                                        <p class="p_black font-weight-bold">Suciedades conteniendo óxidos metálicos</p>
-                                                    </div>
-                                                    <div class="col-md-12 caja-tarjeta-atras" role="button" id="caja5-atras" onclick="showDiv12()" style="display: none;">
-                                                        <p class="justificado p_black p-tarjeta"><span class="font-weight-bold">Suciedades conteniendo óxidos metálicos:</span>
-                                                            son producidas por óxidos de plata, cobre, hierro, bronce, entre otros, especialmente son producidas por oxidación por 
-                                                            fricción con elementos metálicos. En estado seco se fija fuertemente. En estado mojado desaparece si se trata la 
-                                                            mancha con productos de pH ácido como el ácido clorhídrico. 
-                                                        </p>
-                                                    </div>
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="prev" onclick="mostrarFrente()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>                                              
+                                                <div class="col-md-10">
+                                                    <div class="col-md-12">
+                                                        <div id="planificacionFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="planificacionAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Planificación</p><br>
+                                                                <img src="assets/image/mantenimiento-web3.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="planificacionAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Planificación</p>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="col-md-12">
+                                                                            <p class="justificado p_black">
+                                                                                EL proceso que requiere planeación es el mantenimiento preventivo, la cual deberá realizarse mediante el diseño de 
+                                                                                un cronograma de mantenimiento preventivo, se debe realizar una programación para ejecución anual, definiendo las 
+                                                                                frecuencias estipuladas por el fabricante y/o las estipuladas por el área, de acuerdo con la frecuencia de uso 
+                                                                                determinado o las incidencias de mantenimiento correctivo que tengan históricamente.
+                                                                            </p> 
+                                                                            <p class="justificado p_black">
+                                                                                El cronograma deberá estar en actualización continua, ya que cada que ingrese un equipo al laboratorio deberá ingresarse al cronograma.
+                                                                            </p> 
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <p class="justificado p_black">
+                                                                            Se recomienda que los campos a diligenciar en el cronograma de mantenimiento preventivo sean:
+                                                                        </p> 
+                                                                        <ul class="fa-ul justificado">
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>DESCRIPCIÓN DEL EQUIPO.</li>
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>MARCA DEL EQUIPO.</li>                           
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>MODELO DEL EQUIPO.</li>
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>SERIE DEL EQUIPO.</li>                           
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>NIF (Número de Inventario Físico). Código asignado y 
+                                                                                rotulado en cada equipo. La institución define si suprime el NIF e identifica el equipo sólo con el número de 
+                                                                                serie.</li>
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>FECHA DE INICIO DE OPERACIÓN</li>
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>FECHA BAJA.</li>
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>UBICACIÓN DEL EQUIPO (área)</li>                           
+                                                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>PROVEEDOR/PROPIETARIO</li>                                  
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>                                                                                                                       
+                                                            </div>
+                                                        </div> 
+                                                    </div>                                                                                                     
                                                 </div>
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="next" onclick="mostrarFrente()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>                                              
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <div class="row justify-content-center" style="align-items: center;">
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="prev" onclick="mostrarFrente()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>                                              
+                                                <div class="col-md-10">
+                                                    <div class="col-md-12">
+                                                        <div id="metodologiaMantenimientoFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="metodologiaMantenimientoAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Metodología de Mantenimiento</p><br>
+                                                                <img src="assets/image/sitio-web.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="metodologiaMantenimientoAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Metodología de Mantenimiento</p>
+                                                                <p class="justificado p_black">
+                                                                    Es necesario determinar la metodología que se definirá para ejecutar el mantenimiento de los equipos del laboratorio:
+                                                                </p>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="caja-azul-relleno">
+                                                                            <p class="justificado p_white"><span class="font-weight-bold">1. Tercerización: </span>
+                                                                                se plantea definir un contrato con el objetivo de desplegar parcialmente o de manera total las actividades 
+                                                                                formuladas para el mantenimiento de los equipos. Se puede ejecutar con dos tipos de proveedores:
+                                                                            </p>
+                                                                            <p class="justificado p_white"><span class="font-weight-bold">a.</span>
+                                                                                Fabricantes, importadores o representante autorizado: Pueden ser persona natural o jurídica, responsable directo 
+                                                                                de la fabricación, este último considerado el actor con más idoneidad para hacer este tipo de actividades. 
+                                                                                Sabiendo que los equipos también son importados, se incluye los importadores o los titulares de los Registros 
+                                                                                sanitarios y permisos de comercialización, cuando aplique.
+                                                                            </p>
+                                                                            <p class="justificado p_white"><span class="font-weight-bold">b.</span>
+                                                                                Otras organizaciones (Tercero): Persona natural o jurídica que tiene como objeto ejecutar actividades de 
+                                                                                mantenimiento y que tiene algún nivel de experiencia o capacitación certificada para ejecutar estas actividades.
+                                                                            </p>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="caja-azul-relleno">
+                                                                            <p class="justificado p_white"><span class="font-weight-bold">2. Internos: </span>
+                                                                                incluye la realización del mantenimiento mediante del área de mantenimiento de equipos, la cual cuenta con personal 
+                                                                                idóneo para ejecutar las actividades de mantenimiento.
+                                                                            </p>
+                                                                            <p class="justificado p_white"><span class="font-weight-bold">NOTA: </span>
+                                                                                podría contarse con una ejecución mixta de las actividades de mantenimiento de equipos. Dentro del manual de 
+                                                                                mantenimiento y el cronograma preventivo deberá definirse quién es el responsable de ejecutar el mantenimiento.
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                                                                       
+                                                            </div>
+                                                        </div> 
+                                                    </div>                                                                                                     
+                                                </div>
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="next" onclick="mostrarFrente()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>                                              
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <div class="row justify-content-center" style="align-items: center;">
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="prev" onclick="mostrarFrente()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>                                              
                                                 <div class="col-md-5">
-                                                    <div class="col-md-12 caja-tarjeta" role="button" id="caja6-frente" onclick="showDiv13()" style="text-align: center; margin-right: 17px;">
-                                                        <img src="assets/image/virus2.png" class="img-fluid" >
-                                                        <br><br>
-                                                        <p class="p_black font-weight-bold">Suciedades producidas por microorganismos</p>
-                                                    </div>
-                                                    <div class="col-md-12 caja-tarjeta-atras" role="button" id="caja6-atras" onclick="showDiv14()" style="display: none;">
-                                                        <p class="justificado p_black p-tarjeta"><span class="font-weight-bold">Suciedades producidas por microorganismos: </span>
-                                                            producidas por hongos y por bacterias. 
-                                                        </p>
-                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div id="frecuenciaMantenimientoFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="frecuenciaMantenimientoAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Frecuencia de inspección y mantenimiento</p><br>
+                                                                <img src="assets/image/frecuencia.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="frecuenciaMantenimientoAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Frecuencia de inspección y mantenimiento</p>
+                                                                <p class="justificado p_black">
+                                                                    Las frecuencias de inspección y mantenimiento preventivo son establecidas por el fabricante, sin embargo, se 
+                                                                    pueden realizar modificaciones y adaptaciones según el entorno, las prácticas y soportes de cada equipo, anterior 
+                                                                    documentación con los pertinentes soportes en cada hoja de vida.
+                                                                </p>                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                                                                      
+                                                </div>
+                                                <div class="col-md-5" >
+                                                    <div class="col-md-12">
+                                                        <div id="repuestosFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="repuestosAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Repuestos</p><br>
+                                                                <img src="assets/image/repuestos.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="repuestosAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Repuestos</p>
+                                                                <p class="justificado p_black">
+                                                                    El reemplazo puede hacerse usando repuestos provistos por el fabricante, repuestos genéricos que posean las mismas 
+                                                                    propiedades o repuestos conseguidos de equipos considerados fuera de servicio u obsoletos siempre y cuando estén 
+                                                                    en perfectas condiciones de funcionamiento.
+                                                                </p>                                                        
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>  
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="next" onclick="mostrarFrente()"><i class="fas fa-caret-square-right fa-3x"></i></a></p>                                              
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <div class="row justify-content-center" style="align-items: center;">
+                                                <p class="text-right"><a href="#carouselMantenimientoEquipos" data-slide="prev" onclick="mostrarFrente()"><i class="fas fa-caret-square-left fa-3x"></i></a></p>                                              
+                                                <div class="col-md-5">
+                                                    <div class="col-md-12">
+                                                        <div id="identificacionProblemasFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="identificacionProblemasAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Identificación de problemas</p><br>
+                                                                <img src="assets/image/error.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="identificacionProblemasAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Identificación de problemas </p>
+                                                                <p class="justificado p_black">
+                                                                    Si durante la ejecución del mantenimiento preventivo se evidencia una falla y/o una limitación en su correcto 
+                                                                    funcionamiento se deben seguir los siguientes lineamientos:
+                                                                </p>  
+                                                                <p class="font-weight-bold text-right p_black"><a data-toggle="modal" href="#modal_identificacionProblemas" class="button-tab-amarillo">Ver</a></p>                                                          
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                                                                      
+                                                </div>
+                                                <div class="col-md-5" >
+                                                    <div class="col-md-12">
+                                                        <div id="registroActividadesFrente">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo" role="button"  onclick="registroActividadesAtras()" 
+                                                                style="text-align: center; align-items: center; margin-right: 17px;">
+                                                                <p class="p_black font-weight-bold">Registro de actividades (formatos)</p><br>
+                                                                <img src="assets/image/repuestos.png" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                        <div id="registroActividadesAtras" style="display: none;">
+                                                            <div class="col-md-12 caja-tarjeta-amarillo-atras" role="button" onclick="mostrarFrente()">
+                                                                <p class="text-center p_black font-weight-bold">Registro de actividades (formatos)</p>
+                                                                <p class="justificado p_black">
+                                                                    Las actividades de mantenimiento de equipos deberán soportarse mediante su registro en formatos que el laboratorio 
+                                                                    diseñe donde pueda consolidarse todas las revisiones, observaciones y acciones realizadas durante el proceso.
+                                                                </p>   
+                                                                <p class="justificado p_black">
+                                                                    Estos registros deberán tener como mínimo la siguiente información. Clic en el botón para ver
+                                                                </p>                    
+                                                                <p class="font-weight-bold text-right p_black"><a data-toggle="modal" href="#modal_registroActividades" class="button-tab-amarillo">Información del registro</a></p>                                 
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                    
                                                 </div> 
                                             </div>
                                         </div>
                                     </div>
-                                </div>                               
+                                </div>  <br>
+                                <p class="justificado">
+                                    Clic en las tarjetas para ampliar información
+                                </p>                             
                             </div>                                               
                         </div>
 
+                        <!-- 570-574 -->
+                        <div id="unidad9_53" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Solicitud de mantenimiento (preventivo, correctivo) y registro de datos de calibración.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-amarillo5 font-weight-bold text-center" style="z-index: 1;">Calibración</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12" style="padding-top: 10px;">
+                                <p class="justificado">A continuación ampliaras dos conceptos claves para el proceso de solicitud de mantenimiento y calibración. Haz clic en los botones para ver:</p>
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-3">
+                                        <p class="text-center" style="position: relative; top: 25px; z-index: 1;">
+                                            <img src="assets/image/mantenimiento.png" class=" img-fluid">
+                                        </p>
+                                        <div class="button-tab-div-amarillo" onclick="mostrarCalibracion()">
+                                            <p class="text-center p_black font-weight-bold">Calibración</p>
+                                        </div>
+                                        <p class="text-center" style="position: relative; top: 35px; z-index: 1;">
+                                            <img src="assets/image/lista.png" class=" img-fluid">
+                                        </p>
+                                        <div class="button-tab-div-amarillo" onclick="mostrarVerificacion()">
+                                            <p class="text-center p_black font-weight-bold">Verificación</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div id="calibracion">
+                                            <p class="text-center"><img src="assets/image/mantenimiento23.png" class=" img-fluid"></p>
+                                        </div>
+                                        <div id="calibracion1" style="display: none;">
+                                            <div class="col-md-12 caja-azul-relleno-claro">
+                                                <p class="justificado p_black">
+                                                    Conjunto de operaciones que instauran, en contextos detallados, la correspondencia existente entre los datos de 
+                                                    una magnitud, reportados por un utensilio de medida o un sistema de medida, o los datos representados por una 
+                                                    medida, por un material de referencia y los datos respectivos de esa magnitud realizados por los patrones. 
+                                                </p><br>
+                                                <p class="justificado p_black">
+                                                    Los datos obtenidos de un proceso de calibración admiten la apreciación de los errores de indicación de cada 
+                                                    equipo de medida, sistema de medida, o la asignación de valores a las marcas de escalas arbitrarias. Dichos datos 
+                                                    pueden reportarse en un "certificado de calibración" o en un "informe de calibración", y hay casos, donde el 
+                                                    resultado de una calibración se formula como una corrección o como un "factor de calibración"
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="calibracion2" style="display: none;">
+                                            <div class="col-md-12 caja-azul-relleno-claro">
+                                                <div id="carouselCalibracion" class="carousel slide" data-interval="false">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div class="col-md-12">
+                                                                <p class="justificado p_black">
+                                                                    Ratificación, por análisis y recolección de evidencias, de que las especificaciones se han alcanzado. 
+                                                                    (Guía ISO/IEC 25, 3.8:1990)
+                                                                </p>
+                                                                <p class="justificado p_black">
+                                                                    Suministra una forma para evidenciar si los desvíos de cada equipo derivados de un instrumento y los valores 
+                                                                    conocidos de una magnitud medida, son menores que el máximo error definido en una norma, o un reglamento o una 
+                                                                    especificación particular. Los resultados arrojados en un proceso de verificación ofrecen herramientas para tomar 
+                                                                    decisiones, ya sea usar nuevamente el equipo, programar ajuste, iniciar reparación, dejarlo como fuera de servicio 
+                                                                    o clasificarlo obsoleto.
+                                                                </p>
+                                                                <p class="justificado p_black">
+                                                                    La calibración es una versión especial de mantenimiento preventivo. La calibración compara los valores de un 
+                                                                    instrumento de medición con los valores de un patrón establecido, por lo que busca conservar estos instrumentos 
+                                                                    de medición y control dentro de los límites especificados.
+                                                                </p>
+                                                                <p class="text-right"><a href="#carouselCalibracion" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="col-md-12">
+                                                                <p class="justificado p_black">
+                                                                    Se recomienda que los laboratorios documenten e implementen un plan de calibración o verificación de cada uno de 
+                                                                    sus equipos de medición, con el fin de asegurar la fiabilidad de ellos con un grado de incertidumbre apropiado. 
+                                                                    Este plan debe tener definido: 
+                                                                </p>
+                                                                <ul class="fa-ul justificado">
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Equipos que se van a calibrar o verificar.</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Responsable de la calibración o verificación interna, 
+                                                                        si se encuentra acreditado, o a través de un externo acreditado                                                                        </li>                           
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Periodicidad de calibración.</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Definir las actividades que se van a realizar, como 
+                                                                        parámetros que se van a calibrar, las demonstraciones o las verificaciones, y los procesos y actividades a 
+                                                                        aplicar, como, requerimientos escritos, o los procesos de acción del servicio externo</li>                                                                        
+                                                                </ul>
+                                                                <p class="text-right"><a href="#carouselCalibracion" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a></p>
+                                                            </div>
+                                                        </div>                                                                                                                           
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>                                               
+                        </div>
+
+
+                        <!-- 575-577 -->
+                        <div id="unidad9_54" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Solicitud de mantenimiento (preventivo, correctivo) y registro de datos de calibración.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-amarillo5 font-weight-bold text-center" style="z-index: 1;">Calibración</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12" style="padding-top: 10px;">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="col-md-12">
+                                            <p class="text-center p_black font-weight-bold">Equipos susceptibles a calibración.</p>
+                                            <p class="justificado p_black">
+                                                Mínimamente, deberán incluirse en el plan de calibración todos los equipos que influyan directamente o 
+                                                indirectamente en los resultados. El plan metrológico debe contemplar equipos como: 
+                                            </p>
+                                            <ul class="fa-ul justificado">
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Medidores de caudal.</li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Medidores de temperatura y/o humedad.</li>                           
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Material o equipos volumétricos.</li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Equipos analíticos básicos como: balanzas, cromatógrafos, 
+                                                    espectrofotómetros, potenciómetros, polarógrafos, microscopios, etc.</li>                                                                        
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Equipos auxiliares o instalaciones: de estufas, baños, cabinas, vitrinas, etc.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="col-md-12 caja-azul-relleno-claro">
+                                            <p class="justificado p_black">
+                                                Es necesario tener clara la diferencia entre calibraciones y verificación programada o periódica, contempladas en 
+                                                el documento del plan general de calibraciones o verificaciones, de las calibraciones que estas relacionadas a la 
+                                                toma de muestras y/o análisis, como, los equipos de toma de muestras que son, generalmente, calibrados antes y 
+                                                después de cada medición y, los equipos analíticos de medida indirecta (espectrofotómetros de absorción atómica, 
+                                                ultravioleta-visibles, cromatógrafos de gases, etc.).
+                                            </p>
+                                            <p class="justificado p_black">
+                                                La calibración de los equipos que lo requieran se podría realizar por medios propios o por medio de contratación 
+                                                de una entidad externa, que disponga de las instalaciones y los patrones de comparación necesarios y que así mismo 
+                                                asegure la trazabilidad de los mismos. La calibración de equipos podrá realizarse solo por entidades acreditadas 
+                                                para este fin.  
+                                            </p>
+                                            <p class="justificado p_black">
+                                                La periodicidad de calibración se define según las especificaciones de cada equipo y dependiendo de la intensidad 
+                                                de su uso y la exactitud requerida. Estas frecuencias pueden variar en función de los parámetros mencionados.
+                                            </p>
+                                            <p class="font-weight-bold text-right p_black"><a data-toggle="modal" href="#modal_calibracion2" class="button-tab-amarillo">Ver tabla</a></p>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>                                               
+                        </div>
+
+
+                        <!-- 578 -->
+                        <div id="unidad9_55" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Solicitud de mantenimiento (preventivo, correctivo) y registro de datos de calibración.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-amarillo5 font-weight-bold text-center" style="z-index: 1;">Calibración</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12" style="padding-top: 10px;">
+                                <p class="justificado p_black font-weight-bold">Certificado de calibración. </p>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="row" style="align-items: center;">                                            
+                                            <div class="col-md-3">
+                                                <img src="assets/image/documentos-oficiales2.png" class="" style="width: 110%;">
+                                            </div>
+                                            <div class="col-md-9 caja-solo-borde" style="">                                                
+                                                <p class="justificado p_black">
+                                                    Los certificados de calibración / verificación, en todos los casos deben incluir al menos los siguientes datos:                                                </p>
+                                                <ul class="fa-ul justificado">
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Identificación única del certificado.</li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>La identificación del método utilizado.</li>                           
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Identificación del equipo calibrado.</li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Fecha de realización de la calibración.</li>                                                                        
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Los resultados de las calibraciones con su unidad de medida.</li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Los nombres, actividades/funciones y firmas de los 
+                                                        funcionarios que facultan el certificado de calibración.</li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Las condiciones en las que se hicieron las calibraciones.</li>                           
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>La incertidumbre de la medición.</li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Evidencia de la trazabilidad metrológica.</li>                                                                        
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Que el certificado de calibración no contenga alguna recomendación 
+                                                        sobre el rango de calibración.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="col-md-12 caja-azul-relleno-claro">
+                                            <p class="justificado p_black">
+                                                Los resultados de cada calibración deben registrarse en la ficha técnica y/o formato de mantenimiento de cada equipo.
+                                            </p>
+                                            <p class="justificado p_black">
+                                                Cuando se sospeche que un equipo está desajustado (por fuera de calibración), ya sea por haber superado el periodo 
+                                                definido o por mostrar evidencias de su falta de precisión se debe identificar inmediatamente con un rótulo visible.  
+                                            </p>
+                                            <p class="justificado p_black">
+                                                Los certificados de calibración expedidos por entes externos, tanto de patrones como de equipos deben ser 
+                                                pronunciados por laboratorios de metrología acreditados, que certifiquen la traza de los patrones nacionales e 
+                                                internacionales reconocidos y contengan información acerca las incertidumbres asociadas y las medidas realizadas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>                                               
+                        </div>
+
+
+                        <!-- 579 -->
+                        <div id="unidad9_56" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Solicitud de mantenimiento (preventivo, correctivo) y registro de datos de calibración.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-amarillo5 font-weight-bold text-center" style="z-index: 1;">Calibración</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12" style="padding-top: 10px;">
+                                <p class="justificado p_black font-weight-bold">Gestión de equipos de medición</p>
+                                <div class="row">
+                                    <div class="col-md-6" style="margin-right: -60px;">
+                                        <div class="row" style="align-items: center;">                                            
+                                            <div class="col-md-3">
+                                                <img src="assets/image/guia.png" class="" style="width: 110%;">
+                                            </div>
+                                            <div class="col-md-9 caja-solo-borde" style="padding-top: 60px; padding-bottom: 60px;">                                                
+                                                <p class="justificado p_black">
+                                                    Dentro del sistema de calidad se deben contemplar planes, objetivos generales y específicos, políticas, 
+                                                    procedimientos con los respectivos responsables de cada actividad, soportes y formatos diligenciados como 
+                                                    evidencia, con respecto a equipos de medición; se deben incluir las prácticas o lineamientos pertinentes 
+                                                    para la vigilancia, proceso de calibración, o para la verificación y el mantenimiento de equipos. 
+                                                </p>                                                
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-12 caja-azul-relleno-claro">
+                                            <p class="justificado p_black">
+                                                Aspectos más destacables en la gestión de equipos son: 
+                                            </p>
+                                            <ul class="fa-ul justificado">
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Adquisición y recepción de los equipos.</li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Inventario de equipos.</li>                           
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Etiqueta identificativa.</li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Fichas y registros.</li>                                                                        
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Procesos y procedimientos.</li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Manual de uso.</li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Mantenimiento.</li>                           
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Calibración o verificación. </li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Documento sobre plan de mantenimiento de equipos.</li>                                                                        
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Documento sobre plan de calibración y verificación de 
+                                                    los equipos, según aplique.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>                                               
+                        </div>
+
+
+                        <!-- 580-585 -->
+                        <div id="unidad9_57" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Solicitud de mantenimiento (preventivo, correctivo) y registro de datos de calibración.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-amarillo5 font-weight-bold text-center" style="z-index: 1;">Calibración</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12" style="padding-top: 10px;">
+                                <p class="justificado p_black font-weight-bold">Actividades para realizar una calibración</p><br>
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-4">
+                                        <div class="col-md-12">
+                                            <p>Clic en los números para ver cada actividad.</p>
+                                            <div class="row" style="align-items: center;">
+                                                <div class="col-md-8">
+                                                    <img src="assets/image/formulario-contacto.png" class="img-fluid">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="col-md-1" style="z-index: 1;">
+                                                        <div class="button-tab3-3" role="button" onclick="mostrarActividadesCalibracion1()">1</div>
+                                                        <div class="button-tab3-3" role="button" onclick="mostrarActividadesCalibracion2()">2</div>
+                                                        <div class="button-tab3-3" role="button" onclick="mostrarActividadesCalibracion3()">3</div>
+                                                        <div class="button-tab3-3" role="button" onclick="mostrarActividadesCalibracion4()">4</div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="col-md-12 caja-azul-relleno-claro">
+                                            <div id="actividadesCalibracion1" >
+                                                <p class="justificado p_black">
+                                                    Identificar con el personal encargado las mediciones que afectan directa e indirecta la prestación del servicio 
+                                                    del laboratorio, y requieren ser controladas para asegurar un adecuado diagnóstico, tratamiento y seguimiento de 
+                                                    los procesos del laboratorio, al igual que situaciones idóneas para para desarrollar las actividades al interior, 
+                                                    a través del registro de las características a medir, a partir del cual se evalúa, el grado de influencia de las 
+                                                    mediciones bajo los criterios de criticidad alta, media, baja o ninguna, con la calificación:
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-md-3 ">
+                                                        <div class="caja-borde-azul4">
+                                                            <p class="justificado p_black"><span class="font-weight-bold">Diagnóstico: </span>
+                                                                influencia que tiene el equipo a la hora de realizarle un diagnostico al usuario del servicio.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 ">
+                                                        <div class="caja-borde-azul4">
+                                                            <p class="justificado p_black"><span class="font-weight-bold">Tratamiento: </span>
+                                                                influencia que tiene el equipo a la hora de realizarle el tratamiento al usuario del servicio.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 ">
+                                                        <div class="caja-borde-azul4">
+                                                            <p class="justificado p_black"><span class="font-weight-bold">Seguimiento: </span>
+                                                                Que tanta influencia tiene el equipo en el monitoreo y seguimiento de las condiciones de salud del usuario del servicio.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 ">
+                                                        <div class="caja-borde-azul4">
+                                                            <p class="justificado p_black"><span class="font-weight-bold">Condiciones del servicio: </span>
+                                                                Que tanto influye la medición en las condiciones ambientales del servicio que se está prestando (Ej: 
+                                                                Termo-higrómetro en el control de medicamentos).
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="font-weight-bold text-right p_black"><a data-toggle="modal" href="#modal_actividadesCalibracion" class="button-tab-amarillo">Ver tablas</a></p>
+                                            </div>
+                                            <div id="actividadesCalibracion2" style="display: none;">
+                                                <p class="justificado p_black font-weight-bold">
+                                                    Selección del proveedor de calibración
+                                                </p>
+                                                <p class="justificado p_black">
+                                                    El laboratorio deberá solicitar al proveedor, mediante registros, el cumplimiento de los siguientes requisitos:
+                                                </p>
+                                                <ul class="fa-ul justificado">
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Estar acreditado por el ONAC (Organismo Nacional de 
+                                                        Acreditación en Colombia) o evidenciar que en sus procedimientos cumplan con los numerales de la norma NTC-ISO 
+                                                        IEC 17025:2005.</li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Disponer de patrones con clara trazabilidad a patrones tanto 
+                                                        nacionales como internacionales.</li>                           
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Poseer personal competente para realizar las calibraciones.</li>
+                                                </ul>
+                                            </div>
+                                            <div id="actividadesCalibracion3" style="display: none;">
+                                                <p class="justificado p_black font-weight-bold">
+                                                    Verificación Metrológica
+                                                </p>
+                                                <p class="justificado p_black">
+                                                    Se debe realizar la verificación de los dispositivos de medida, la cual consiste en confirmar mediante los 
+                                                    registros de calibración, el cumplimiento o no de los requisitos especificados, comparando para ello el error 
+                                                    encontrado con el error máximo permitido, y tomar las siguientes acciones:
+                                                </p>
+                                                <ul class="fa-ul justificado">
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Si el error encontrado está dentro del rango del error 
+                                                        permitido del equipo, entonces el dispositivo es apto para la prestación del servicio. </li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Si el error encontrado esta fuera del rango del error 
+                                                        permitido, entonces el dispositivo no es apto para el uso. Se deberá informar al responsable del servicio, 
+                                                        retirarlo y reponerlo en el menor tiempo posible. En este caso, se debe determinar si el equipo es susceptible 
+                                                        de ajuste o mantenimiento correctivo, en caso de serlo, solicitar su ejecución, de lo contrario, se procede a 
+                                                        darle de baja y remplazarlo por un equipo de la institución que este calibrado o por uno nuevo. </li>                           
+                                                    
+                                                </ul>
+                                            </div>
+                                            <div id="actividadesCalibracion4" style="display: none;">
+                                                <p class="justificado p_black font-weight-bold">
+                                                    Acciones para tomar sobre equipos desajustados
+                                                </p>
+                                                <p class="justificado p_black">
+                                                    Cuando se detecte equipos desajustados se debe:
+                                                </p>
+                                                <ul class="fa-ul justificado">
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Retirar de manera inmediata el equipo del servicio al 
+                                                        que pertenece.</li>
+                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Definir las acciones a seguir para reemplazar el equipo 
+                                                        desajustado; proceso de adquisición de un nuevo equipo.</li>                                                                               
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>                                               
+                        </div>
+
+
+                        <!-- 586 -->
+                        <div id="unidad9_58" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            
+                            <div class="row">
+                                <div class="col-md-12" style="display: -webkit-inline-flex;">
+                                    <p class="titulo_aprendizaje">
+                                        <span class="font-weight-bold" style="font-size: 20px;">
+                                            Ejercicio de aprendizaje
+                                        </span>
+                                    </p>&nbsp;
+                                    <img src="assets/image/aprendizaje.png" alt="Aprendizaje" class="img-fluid" width="50px">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p style="margin-left: 15px;">
+                                            <span class="font-weight-bold" style="font-size: 22px;">
+                                                FALSO/VERDADERO
+                                            </span>
+                                        </p>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="p_black caja-texto-borde-b">Escribe en los enunciados falso o verdadero según corresponda.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="button-3d-azul" id="validarEntrada" onclick="validarRespuesta()"><span class="font-weight-bold">Validar</span></button>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="caja-texto-back-b3" >
+                                        <p class="text-center p_white font-weight-bold">
+                                            Pruebas de funcionamiento
+                                        </p><br>
+                                        <p class="p_white justificado">
+                                            Son pruebas realizadas a cada equipo del laboratorio con el fin de determinar si su funcionamiento está de acuerdo 
+                                            a sus particularidades de rendimiento y de seguridad, determinadas en su diseño y proceso de fabricación, estas 
+                                            condiciones siempre están plasmadas en el manual de cada equipo. Los que no cumplan estos requerimientos deben 
+                                            considerarse no aceptados para la prestación del servicio en el laboratorio, estas pruebas deben ser realizadas 
+                                            por personal especializado en cada tipo de equipo.
+                                        </p><br>
+                                        <div class="col-md-12 actividadEntradas text-center">  
+                                            <input class="input_actividad" id="entrada1" type='text' name='ri1'>
+                                        </div>        
+                                    </div>    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="caja-texto-back-b3">
+                                        <p class="text-center p_white font-weight-bold">
+                                            Frecuencia de inspección y mantenimiento
+                                        </p><br>
+                                        <p class="p_white justificado" >
+                                            El reemplazo puede hacerse usando repuestos provistos por el fabricante, repuestos genéricos que posean las mismas 
+                                            propiedades o repuestos conseguidos de equipos considerados fuera de servicio u obsoletos siempre y cuando estén en 
+                                            perfectas condiciones de funcionamiento.
+                                        </p>  <br><br><br><br>
+                                        <div class="actividadEntradas text-center">
+                                            <input class="input_actividad" id="entrada2" type="text" name="ri2">
+                                        </div>        
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <!-- 587-590 -->
+                        <div id="unidad9_59" class="tab-pane" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img class="imf-fluid" src="assets/image/Personajes.png" style="margin-bottom: 50px">
+                                </div>
+                                <div class="col-md-6" style="padding-right: 30px;">
+                                    <h4 class="text-center tituloh4_center">Actividad de aprendizaje 4</h4>
+                            
+                                    <div id="carouselActividadAprendizaje4" class="carousel slide" data-interval="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="caja-texto" >
+                                                    <p class="p_black justificado">
+                                                        Bienvenidos a la actividad de aprendizaje N° 4 Calibración de la balanza analitica.
+                                                        <br><br>
+                                                        A continuación, se presenta la situación a resolver dentro de esta actividad. Clic en el botón siguiente:
+                                                        <br>                            
+                                                    </p>
+                                                    <p class="text-right"><a class="pull-right" href="#carouselActividadAprendizaje4" role="button" data-slide="next"><img
+                                                        class="boton-dialogo" src="assets/image/btn_siguiente.png"></a></p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="caja-texto ">
+                                                    <p class="bocadilloAmarillo">
+                                                        <span class="font-weight-bold">Profesor:</span>
+                                                        ¡Hola! Bienvenidos a la cuarta actividad de esta unidad donde abordaremos el tema  calibración de la balanza analítica.
+                                                    </p>
+                                                    <p class="bocadilloAzul">
+                                                        <span class="font-weight-bold">Estudiante: </span>
+                                                        Muy bien profesor ¿Y de qué se trata la actividad?
+                                                    </p>
+                                                    <p class="text-center"><a class="" href="#carouselActividadAprendizaje4" role="button"
+                                                            data-slide="prev"><img class="boton-dialogo" src="assets/image/btn_anterior.png"></a>
+                                                        <a class="" href="#carouselActividadAprendizaje4" role="button" data-slide="next"><img
+                                                                class="boton-dialogo" src="assets/image/btn_siguiente.png"></a></p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="caja-texto p_black">
+                                                    <p class="bocadilloAmarillo">
+                                                        <span class="font-weight-bold">Profesor:</span>
+                                                        Debes comprender cuáles son los procesos de calibración de la balanza analítica. 
+                                                    </p>
+                                                    <p class="bocadilloAzul">
+                                                        <span class="font-weight-bold">Estudiante: </span>
+                                                        Comprendo lo que debo realizar profesor, ¿Cuál es la información que necesito para resolver la actividad?
+                                                    </p>
+                                                    <p class="text-center">
+                                                        <a class="" href="#carouselActividadAprendizaje4" role="button" data-slide="prev"><img class="boton-dialogo" src="assets/image/btn_anterior.png"></a>
+                                                        <a class="" href="#carouselActividadAprendizaje4" role="button" data-slide="next"><img class="boton-dialogo" src="assets/image/btn_siguiente.png"></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="caja-texto p_black">
+                                                    <p class="bocadilloAmarillo">
+                                                        <span class="font-weight-bold">Profesor:</span>
+                                                        La información necesaria para resolver la actividad, la encontrarás en el contendido disponible a continuación. 
+                                                        Recuerda descargar y desarrollar la guía de aprendizaje.
+                                                    </p>
+                                                    <p class="bocadilloAzul">
+                                                        <span class="font-weight-bold">Estudiante: </span>
+                                                        ¡Está bien profesor, revisaré la información y resolveré la actividad!
+                                                    </p>
+                                                    <a class="" href="#carouselActividadAprendizaje4" role="button" data-slide="prev"><img
+                                                            class="boton-dialogo" src="assets/image/btn_anterior.png"></a>
+                                                </div>
+                                                <p class="p_black text-center">Haz clic en el botón descargar actividad:</p>
+                                                <p class="text-center"><a href="assets/docs/Actividad1.pdf" target="_blank"><img
+                                                            style="width: 160px" src="assets/image/btn_descargar.png"></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 591 -->
+                        <div id="unidad9_60" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Calibración de balanza analítica.</p>
+                            </div>
+
+                            <div class="col-md-12">
+                                <p class="justificado p_black">
+                                    La calibración de estos equipos debe ser llevado a cabo por personas capacitados para ello. Además, es imperativo 
+                                    destacar que dicha calibración se debe realizar en base a los preceptos emitidos por la OIML (Organización 
+                                    internacional de metrología legal) o de otra entidad equivalente, tal como “la Sociedad Americana para Ensayo de 
+                                    Materiales” (ASTM), entre otras reconocidas. A continuación, se incluye la tabla de clasificación de pesas de 
+                                    referencia que utiliza la OIML.
+                                </p><br>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p class="text-center"><img src="assets/image/OIML.png" class="img-fluid"></p>                                        
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="col-md-12 caja-amarilla-borde4" style="z-index: 1;">
+                                            <div class="col-md-12 caja-amarilla-borde-interna4" >
+                                                <p class="justificado p_black">
+                                                    Para el caso de las balanzas deberá seguirse la misma metodología explicada en la lección (solicitud de 
+                                                    mantenimiento (preventivo, correctivo) y registro de datos de calibración, en su literal: calibración.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                                       
+                        </div>
+
+
+                        <!-- 592-621 -->
+                        <div id="unidad9_61" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Calibración de balanza analítica.</p>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-5">
+                                        <div class="col-md-12 caja-amarillo-relleno">
+                                            <p class="justificado p_black">
+                                                Todos los procesos de calibración deben realizarse usando un peso patrón, y una vez se obtengan los resultados, se 
+                                                deberán comparar, esto con la finalidad de definir si son valores con tolerancias aceptables. 
+                                            </p>
+                                            <p class="justificado p_black">
+                                                Los pesos mencionados con anterioridad, deberán ser seleccionados, dependiendo de la capacidad del equipo.
+                                            </p>
+                                            <p class="justificado p_black">
+                                                El trabajo de mantenimiento y calibración de las balanzas analíticas se encuentra limitado a diversos controles que se exponen a continuación:
+                                            </p>
+                                            <p class="justificado p_black">
+                                                Clic en los botones para ampliar la información
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a data-toggle="modal" href="#modal_controlBalanza" class="button-tab-div-azul">Control</a>
+                                        <a data-toggle="modal" href="#modal_mantenimientoBalanza" class="button-tab-div-azul">Mantenimiento</a>
+                                        <a data-toggle="modal" href="#modal_calibracionBalanza" class="button-tab-div-azul">Calibración</a>
+                                        <a data-toggle="modal" href="#modal_patronBalanza" class="button-tab-div-azul">Patrón de medida</a>
+                                        <a data-toggle="modal" href="#modal_erroresBalanza" class="button-tab-div-azul">Clasificación de errores</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="text-center"><img src="assets/image/balanza1.png" class="img-fluid"></p>                                        
+                                    </div>
+                                </div>
+                            </div>                                                                       
+                        </div>
+
+                        <!-- 622 -->
+                        <div id="unidad9_62" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
+                            <div class="col-md-12">
+                                <p class="font-weight-bold">Calibración de balanza analítica.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="titulo-amarillo5 font-weight-bold text-center" style="z-index: 1;">Requisitos hoja de vida de los equipos</h6>
+                                </div>    
+                                <div class="col-md-8">
+                                    <hr id="hr_mechero">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12" style="padding-top: 10px;">
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-5">
+                                        <div class="row" style="align-items: center;">                                            
+                                            <div class="col-md-3">
+                                                <img src="assets/image/violacion-seguridad.png" class="" style="width: 110%;">
+                                            </div>
+                                            <div class="col-md-9 caja-solo-borde" style="padding-top: 60px; padding-bottom: 60px;">                                                
+                                                <p class="justificado p_black font-weight-bold">
+                                                    Partes y diligenciamiento del formato
+                                                </p>
+                                                <p class="justificado p_black">
+                                                    Todos los formatos y registros utilizados en el laboratorio de química deben diligenciarse de manera completa, 
+                                                    clara y veraz. todos los datos consignados deben contar con el respaldo de un documento expedido por el proveedor.
+                                                </p>
+                                                <p class="justificado p_black">
+                                                    Se deben evitar los tachones, el manejo de siglas sin definición oficial en el laboratorio, y deberán almacenarse 
+                                                    de manera ordenada y segura, garantizando su conservación y custodia. 
+                                                </p>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="col-md-12 caja-azul-relleno3">
+                                            <div id="carouselRequisitos" class="carousel slide" data-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <p class="justificado p_white">
+                                                            A continuación, se presenta la información recomendada para contener un formato de hoja de vida de un equipo de 
+                                                            laboratorio. El diseño del formato es definido por cada laboratorio, conteniendo la información mínima descrita 
+                                                            a continuación:
+                                                        </p>
+                                                        <p class="justificado p_white">Usa los botones para navegar por la información</p>
+                                                        <p class="text-right"><a class="" href="#carouselRequisitos" role="button" data-slide="next"><img
+                                                                class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <p class="justificado p_white">
+                                                            Formato de hoja de vida de equipos. 
+                                                        </p>
+                                                        <div class="button-tab-modal-amarillo">
+                                                            <p class="text-center font-weight-bold p_black">
+                                                                Información general  
+                                                            </p>
+                                                        </div>
+                                                        <div class="row" style="align-items: center;">
+                                                            <div class="col-md-12">
+                                                                <ul class="fa-ul justificado p_white">
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Nombre del equipo.</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Código interno de identificación, definido por el laboratorio.</li>                           
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Ubicación física del equipo.</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Modelo del equipo.</li>                           
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Marca del equipo.</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Serie del equipo.</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Número de registro sanitario si aplica, este debe 
+                                                                        exigirse para todos los equipos amparados por el Decreto 4725 de 2008.</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Clasificación de riesgo para los equipos incluidos 
+                                                                        en el Decreto 4725 de 2008.</li>                                  
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a class="" href="#carouselRequisitos" role="button" data-slide="prev">
+                                                            <img class="flecha" src="assets/image/anterior-amarillo.png"></a><a class="" href="#carouselRequisitos" 
+                                                            role="button" data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <p class="justificado p_white">
+                                                            Formato de hoja de vida de equipos. 
+                                                        </p>
+                                                        <div class="button-tab-modal-amarillo">
+                                                            <p class="text-center font-weight-bold p_black">
+                                                                Información general  
+                                                            </p>
+                                                        </div>
+                                                        <div class="row" style="align-items: center;">
+                                                            <div class="col-md-12">
+                                                                <ul class="fa-ul justificado p_white">
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Fabricante</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Fecha de recepción del equipo</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Fecha de instalación</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Fecha del inicio de servicio del equipo</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Proveedor: puede ser diferente al fabricante, es con quien se adquiere el equipo directamente</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Datos de contacto del proveedor: Lugar de origen, dirección, datos de contacto (teléfonos, correos electrónicos)</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Factura o documento remisorio del equipo</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Tipo de adquisición: Compra, comodato, donación, entro otros.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a class="" href="#carouselRequisitos" role="button" data-slide="prev">
+                                                            <img class="flecha" src="assets/image/anterior-amarillo.png"></a><a class="" href="#carouselRequisitos" 
+                                                            role="button" data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <p class="justificado p_white">
+                                                            Formato de hoja de vida de equipos. 
+                                                        </p>
+                                                        <div class="button-tab-modal-amarillo">
+                                                            <p class="text-center font-weight-bold p_black">
+                                                                Características metrológicas a controlar
+                                                            </p>
+                                                        </div>  
+                                                        <div class="row" style="align-items: center;">
+                                                            <div class="col-md-12">
+                                                                <p class="justificado p_white">
+                                                                    Las que le apliquen al equipo:
+                                                                </p>
+                                                                <ul class="fa-ul justificado p_white">
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Exactitud </li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Precisión</li> 
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Escala de medición</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Rango de medición</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Rango de uso</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Parámetro medible</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Frecuencia de calibración</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Frecuencia de verificación</li>    
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a class="" href="#carouselRequisitos" role="button" data-slide="prev">
+                                                            <img class="flecha" src="assets/image/anterior-amarillo.png"></a><a class="" href="#carouselRequisitos" 
+                                                            role="button" data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <p class="justificado p_white">
+                                                            Formato de hoja de vida de equipos. 
+                                                        </p>
+                                                        <div class="button-tab-modal-amarillo">
+                                                            <p class="text-center font-weight-bold p_black">
+                                                                Componentes o accesorios
+                                                            </p>
+                                                        </div>  
+                                                        <div class="row" style="align-items: center;">
+                                                            <div class="col-md-12">
+                                                                <ul class="fa-ul justificado p_white">
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Nombre del accesorio o componente</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Marca</li> 
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Modelo</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Serie</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Identificación dentro del inventario del laboratorio</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Condiciones de instalación</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Condiciones de operación</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>INFORMACIÓN DE GARANTIA: Fecha de inicio y fecha de terminación.</li>    
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a class="" href="#carouselRequisitos" role="button" data-slide="prev">
+                                                            <img class="flecha" src="assets/image/anterior-amarillo.png"></a><a class="" href="#carouselRequisitos" 
+                                                            role="button" data-slide="next"><img class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <p class="justificado p_white">
+                                                            Formato de hoja de vida de equipos. 
+                                                        </p>
+                                                        <div class="button-tab-modal-amarillo">
+                                                            <p class="text-center font-weight-bold p_black">
+                                                                Componentes o accesorios
+                                                            </p>
+                                                        </div>  
+                                                        <div class="row" style="align-items: center;">
+                                                            <div class="col-md-12">
+                                                                <ul class="fa-ul justificado p_white">
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>CONDICIONES AMBIENTALES Y DE FUNCIONAMIENTO
+                                                                        <ul>
+                                                                            <li>Temperatura de trabajo</li>
+                                                                            <li>Humedad de trabajo</li>
+                                                                            <li>Voltaje</li>
+                                                                            <li>Corriente</li>
+                                                                        </ul>
+                                                                    </li>    
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>TIPO DE MANTENIMIENTO
+                                                                        <ul>
+                                                                            <li>Preventivo y/o correctivo</li>
+                                                                            <li>Mantenimiento contratado con externo o mantenimiento propio</li>
+                                                                        </ul>
+                                                                    </li>                                                                         
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>INFORMACIÓN SOBRE PROVEEDORES DE MANTENIMIENTO 
+                                                                        ESPECIALIZADO AUTORIZADO</li>
+                                                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>LISTADO DE DOCUMENTOS DE SOPORTE</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a class="" href="#carouselRequisitos" role="button" data-slide="prev">
+                                                            <img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>                                               
+                        </div>
+                        
+                        
                         
                            
-                        
-                        
-
                         
 
                                           
@@ -5893,7 +6947,17 @@
                <li><a class="nav-link" href="#unidad9_53"></a></li> 
                <li><a class="nav-link" href="#unidad9_54"></a></li> 
                <li><a class="nav-link" href="#unidad9_55"></a></li> 
-               <li><a class="nav-link" href="#unidad9_56"></a></li>                        
+               <li><a class="nav-link" href="#unidad9_56"></a></li>    
+               <li><a class="nav-link" href="#unidad9_57"></a></li>    
+               <li><a class="nav-link" href="#unidad9_58"></a></li>    
+               <li><a class="nav-link" href="#unidad9_59"></a></li>                        
+               <li><a class="nav-link" href="#unidad9_60"></a></li>                       
+               <li><a class="nav-link" href="#unidad9_61"></a></li>                       
+               <li><a class="nav-link" href="#unidad9_62"></a></li>                       
+               <li><a class="nav-link" href="#unidad9_63"></a></li>                       
+               <li><a class="nav-link" href="#unidad9_64"></a></li>                       
+               <li><a class="nav-link" href="#unidad9_65"></a></li>                       
+               <li><a class="nav-link" href="#unidad9_66"></a></li>                        
 
             </ul>
             <div class="tab-content footer-content">
@@ -11582,6 +12646,823 @@
         </div>
     </div>
 
+    <div class="modal fade" id="modal_identificacionProblemas" tabindex="-1" role="dialog" aria-labelledby="m_identificacionProblemas" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_identificacionProblemas">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Mantenimiento de equipos</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="font-weight-bold p_black">Identificación de problemas</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top: 60px; align-items: center;">
+                        <div class="col-md-6">
+                            <div class="col-md-12 caja-azul-relleno-claro">
+                                <div class="">
+                                    <p class="justificado p_black"><span class="font-weight-bold">Daño en una pieza: </span>
+                                        Verificar si se tiene en stock, si es así, se realiza el cambio del mismo registrando la actividad en un formato 
+                                        de mantenimiento correctivo, con el fin de dejar soporte y trazabilidad dentro de la hoja de vida de cada equipo. 
+                                        Si no se cuenta con la pieza para realizar el cambio inmediato, se informará al servicio que el equipo queda 
+                                        inoperativo hasta la consecución del mismo; se debe realizar la gestión de dicho accesorio teniendo en cuenta las 
+                                        referencias recomendadas por el fabricante.
+                                    </p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-md-5">
+                            <div class="col-md-12 caja-azul-relleno-claro">
+                                <div class="">
+                                    <p class="justificado p_black"><span class="font-weight-bold">Fallas en el equipo: </span>
+                                        Realizar verificación en los mecanismos internos y externos para detectar la falla. Si la falla se identifica y 
+                                        se puede solucionar, se realiza y se genera reporte de mantenimiento correctivo, de no ser posible se debe informar 
+                                        al servicio que el equipo queda inoperativo. De no ser identificada la falla del equipo se deberá solicitar 
+                                        revisión por parte del proveedor externo.
+                                    </p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-md-8">
+                            <div class="col-md-12 caja-azul-relleno-claro">
+                                <div class="">
+                                    <p class="justificado p_black"><span class="font-weight-bold">Recomendaciones: </span>
+                                        Siempre que un equipo quede inoperativo se debe informar al servicio o al funcionario que lo opera.
+                                    </p>
+                                    <p class="justificado p_black">
+                                        Si el equipo es móvil en lo posible se debe retirar del servicio, si es fijo o no es posible su traslado se debe 
+                                        identificar visiblemente que se encuentra FUERA DE SERVICIO.
+                                    </p>
+                                    <p class="justificado p_black">
+                                        Si se realiza alguna intervención correctiva durante el mantenimiento preventivo se recomienda diligenciar formato 
+                                        de mantenimiento correctivo.
+                                    </p>
+                                    <p class="justificado p_black">
+                                        Al momento de devolver un equipo al servicio se deben realizar pruebas comprobando su correcto funcionamiento.
+                                    </p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_registroActividades" tabindex="-1" role="dialog" aria-labelledby="m_registroActividades" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_registroActividades">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Mantenimiento de equipos</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="font-weight-bold p_black">Registro de actividades (formatos)</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top: 60px;">
+                        <div class="col-md-12">
+                            <p class="justificado p_black">
+                                Estos registros deberán tener como mínimo la siguiente información. 
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="col-md-12 caja-azul-relleno-claro">
+                                <p class="justificado p_black">
+                                    1. Identificación del área a la que pertenece el equipo. <br><br>
+                                    2. Ubicación física del equipo. <br><br>
+                                    3. Tipo de mantenimiento: Correctivo o preventivo. <br><br>
+                                    4. Fecha de realización del mantenimiento. <br><br>
+                                    5. Identificación del equipo: 
+                                        <ul>
+                                            <li>Nombre del equipo.</li>
+                                            <li>Modelo del equipo.</li>
+                                            <li>Marca del equipo.</li>
+                                            <li>Serie del equipo.</li>
+                                            <li>Proveedor.</li>
+                                        </ul>
+                                    6. Falla reportada, para el caso del mantenimiento correctivo.<br><br>
+                                    7. Descripción del trabajo realizado.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="col-md-7">
+                            <div class="col-md-12 caja-azul-relleno-claro">
+                                <p class="justificado p_black">
+                                    8. Identificación de los repuestos utilizados.<br><br>
+                                        <ul>
+                                            <li>Descripción del repuesto.</li>
+                                            <li>Referencia del repuesto.</li>
+                                            <li>Cantidad.</li>
+                                        </ul>
+                                    9. Registrar si después de su mantenimiento, el equipo queda disponible para su uso o si queda fuera de servicio.<br><br>
+                                    10. En todos los casos, debe registrarse quién es el responsable de realizar el mantenimiento, y quien es el 
+                                        responsable en el área del laboratorio que recibe la información sobre el mantenimiento, y ele quipo en el 
+                                        caso de quedar disponible.<br><br>
+                                    11. Para el mantenimiento preventivo debe adicionarse en el registro de la actividad: <br><br>
+                                        <ul>
+                                            <li>Frecuencia de mantenimiento.</li>
+                                            <li>Inspecciones que deben realizarse: </li>
+                                            <ul style="list-style: lower-alpha;">
+                                                <li>Inspección visual del equipo.</li>
+                                                <li>Estado de los cables.</li>
+                                                <li>Estado de los fusibles.</li>
+                                                <li>Estado de accesorios.</li>
+                                                <li>Estado de limpieza integral del equipo.</li>
+                                                <li>Prueba de funcionalidad.</li>
+                                            </ul>
+                                        </ul>
+                                </p>
+                            </div>                            
+                        </div>
+                   </div>
+                   <p class="justificado p_black">
+                        Y demás parámetros que el laboratorio crea importantes para el control y seguimiento del correcto funcionamiento 
+                        de los equipos.
+                   </p>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal_calibracion2" tabindex="-1" role="dialog" aria-labelledby="m_calibracion2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_calibracion2">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Calibración</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="font-weight-bold p_black">Equipos susceptibles a calibración</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top: 60px;">
+                            AQUI VA TABLA CALIBRADOS
+                   </div>                                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="modal_actividadesCalibracion" tabindex="-1" role="dialog" aria-labelledby="m_actividadesCalibracion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_actividadesCalibracion">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Calibración</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="font-weight-bold p_black">Actividades para realizar calibración</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 60px;">
+                        <p class="justificado p_black">
+                            Ejemplo de tabla de medición y clasificación para definir equipos que son susceptibles a calibración.
+                        </p>
+                        <p class="text-center">
+                            <img src="assets/image/ejemplo1.PNG" class="img-fluid">
+                        </p><br>
+                        <p class="justificado p_black">
+                            Criterios de evaluación de influencia de la medición
+                        </p>
+                        <p class="text-center">
+                            <img src="assets/image/tabla1.png" class="img-fluid">
+                        </p><br>
+                        <p class="justificado p_black">
+                            La selección de los equipos para control metrológico se realiza mediante lo que resulta en la calificación de 
+                            criticidad de las características a medir; los equipos que tengan una calificación igual o mayor a tres deberán 
+                            ser calibrados y/o verificados. (Ver la tabla anterior).
+                        </p>
+                   </div>                                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_controlBalanza" tabindex="-1" role="dialog" aria-labelledby="m_controlBalanza" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_controlBalanza">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Calibración de balanza analítica</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="font-weight-bold p_black">En lo referente al control</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 60px;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="caja-azul-relleno2">
+                                    <div class="row" style="align-items: center;">
+                                        <div class="col-md-2">
+                                            <p class="p_white text-center font-weight-bold" style="font-size: 50px;">1</p>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <p class="p_white justificado"><span class="font-weight-bold">Control diario: </span>
+                                                previo a cada pesada, se debe verificar el aparato se encuentre limpio, nivelado y que este en estado de reposo, 
+                                                es decir en el punto cero.
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="caja-azul-relleno2" >
+                                    <div class="row" style="align-items: center;">
+                                        <div class="col-md-2">
+                                            <p class="p_white text-center font-weight-bold" style="font-size: 50px;">2</p>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <p class="p_white justificado"><span class="font-weight-bold">Control periódico: </span>
+                                                la periodicidad de los controles se definirá por parte del laboratorio según las recomendaciones de los proveedores 
+                                                de los equipos manejados por ellos y según el material usado. La masa determinada deberá coincidir con la masa 
+                                                teórica de la pesa, si hay modificación alguna, se debe recalibrar la balanza (procedimiento explicado en el 
+                                                presente apartado).
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="caja-azul-relleno2">
+                                    <div class="row" style="align-items: center;">
+                                        <div class="col-md-2">
+                                            <p class="p_white text-center font-weight-bold" style="font-size: 50px;">3</p>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <p class="p_white justificado"><span class="font-weight-bold">Control anual: </span>
+                                                se debe llevar a cabo cuando se presente un cambio de posición en el lugar de trabajo del instrumento, se 
+                                                verificará la tara y se pesaran continuamente una serie de pesas calibradas por los proveedores certificados. La 
+                                                calibración puede ejecutarse, utilizando las pesas externas o realizando un test de calibración (mecanismos 
+                                                interno de cada equipo que se realizará según el manual de la balanza), usando la pesa interna. a manera general, 
+                                                las balanzas analíticas vienen de fabrica con una calibración realizada y grabada en la memoria, si no se dispone 
+                                                de pesas calibradas puede utilizarse el test de calibración ya conocido. Por último, resulta importante tener en 
+                                                cuenta que el procedimiento de calibración puede tener variaciones significativas según el modelo de la balanza 
+                                                analítica y claro está, el fabricante de la misma, y se reitera que se debe realizar este procedimiento cuando se 
+                                                presenten cambios notorios en la temperatura del lugar, cuando esta sea reubicada; es importante que este proceso 
+                                                se debe llevar a cabo según el plan de mantenimiento y calibración previsto por el laboratorio. 
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>                                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_mantenimientoBalanza" tabindex="-1" role="dialog" aria-labelledby="m_mantenimientoBalanza" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_mantenimientoBalanza">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Calibración de balanza analítica</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="font-weight-bold p_black">En lo que respecta al mantenimiento</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 60px;">
+                        <div class="row justify-content-center" style="align-items: center;">
+                            <div class="col-md-1" style="z-index: 1;">
+                                <a href="#carouselMantenimientoBalanzas" data-slide-to="1" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab2">1</p></a>
+                                <a href="#carouselMantenimientoBalanzas" data-slide-to="2" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab2">2</p></a>
+                                <a href="#carouselMantenimientoBalanzas" data-slide-to="3" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab2">3</p></a>
+                                <a href="#carouselMantenimientoBalanzas" data-slide-to="4" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab2">4</p></a>
+                                <a href="#carouselMantenimientoBalanzas" data-slide-to="5" style="margin-right: 5px;"><p class="font-weight-bold p_white button-tab2">5</p></a>
+                            </div> 
+                            <div class="col-md-10">
+                                <div class="col-md-12">
+                                    <div id="carouselMantenimientoBalanzas" class="carousel slide " data-interval="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <p class="text-center"><img src="assets/image/personal-mantenimiento2.png" class="img-fluid"></p>                                                
+                                            </div>
+                                            <div class="carousel-item">  
+                                                <div class="col-md-12">
+                                                    <div class="caja-amarillo-relleno2">
+                                                        <p class="justificado p_black">
+                                                            Como primera medida se deberán limpiar específicamente las pesas que se vayan a manipular para el proceso de 
+                                                            calibración, estas pesas deben ser de masa conocida y certificada por el proveedor para poder hacer el comparativo, 
+                                                            se deberá usar guantes siempre que se vaya a realizar este procedimiento ya que esto evita un contacto directo 
+                                                            entre la piel y la balanza, de tal forma se previene que se adhieran sustancias a la balanza como grasas entre 
+                                                            otras, que podrían modificar el resultado al momento de la medición. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">  
+                                                <div class="col-md-12">
+                                                    <div class="caja-amarillo-relleno2">
+                                                        <p class="justificado p_black">
+                                                            En el mismo sentido, se debe limpiar con algún elemento tipo Brocha o cepillo que permita llegar a la superficie 
+                                                            interna de la Balanza, de esta forma se estará garantizando que no exista moléculas de polvo sobre el platillo 
+                                                            que puedan afectar o generar variaciones en las mediciones.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">  
+                                                <div class="col-md-12">
+                                                    <div class="caja-amarillo-relleno2">
+                                                        <p class="justificado p_black">
+                                                            En lo que respecta a la superficie exterior de la Balanza, se deberá hacer el mismo procedimiento de limpieza 
+                                                            que el mencionado en el numeral anterior.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">  
+                                                <div class="col-md-12">
+                                                    <div class="caja-amarillo-relleno2">
+                                                        <p class="justificado p_black">
+                                                            Finalmente, se debe colocar el instrumento de medición en una superficie llana, nivelada y donde no sufra de vibraciones.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">  
+                                                <div class="col-md-12">
+                                                    <div class="caja-amarillo-relleno2">
+                                                        <p class="justificado p_black">
+                                                            Por último, se deberá nivelar la burbuja de aire que lleva cada instrumento, según el modelo o fabricante del 
+                                                            mismo esta podría estar ubicada en la parte posterior o en un costado de la balanza. Para todos los casos se debe 
+                                                            verificar el manual de la balanza donde se identifica el lugar exacto donde cada operario puede identificar la 
+                                                            burbuja o el mecanismo semejante para definir si la balanza esta nivelada.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                            <p class="text-center p_yellow font-weight-bold" style="opacity: 0.5" >Clic en los números para ver</p>                                                                       
+                                        </div>
+                                    </div>
+                                </div>                                                            
+                            </div>
+                        </div>                  
+                    </div>                                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal_calibracionBalanza" tabindex="-1" role="dialog" aria-labelledby="m_calibracionBalanza" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_calibracionBalanza">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-10">
+                                <p class="font-weight-bold p_black">Procedimiento de calibración de las Balanzas Analíticas</p>
+                            </div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 60px;">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <p class="justificado p_black">
+                                    Usa los botones para navegar en la información dentro de las tarjetas.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="caja-amarillo">
+                                            <div id="carouselCalibracionBalanzas1" class="carousel slide" data-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div class="row">
+                                                            <div class="col-md-12 text-center">
+                                                                <img src="assets/image/guia2.png" class="img-fluid">
+                                                                <p class="text-center font-weight-bold"><span class="p_black">Procedimiento de calibración de las Balanzas Analíticas</span></p>
+                                                                <p class="text-right"><a href="#carouselCalibracionBalanzas1" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                                <div style="height: 35px; clear: both;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row" style="align-items: center;">
+                                                            <div class="col-md-2 ">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">1</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Inicialmente se deberá conectar la balanza a la fuente de poder y paso seguido encenderla.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas1" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas1" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">2</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    A continuación deberemos Tarar la Balanza (Explicado en el proceso especifico de manejo de la balanza). 
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas1" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas1" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">3</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Seguido a ello debemos colocar la pesa de masa conocida y certificada por el proveedor, en el plato de la 
+                                                                    balanza para determinar y asentar el valor obtenido.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas1" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas1" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div> 
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">4</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Luego, retiramos la pesa y volvemos a tarar la Balanza.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas1" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas1" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">5</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Deberemos llevar a cabo la misma operación con cada una de las pesas patrón y registraremos los valores obtenidos.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas1" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas1" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>                                                                     
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="caja-amarillo">
+                                            <div id="carouselCalibracionBalanzas2" class="carousel slide" data-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="assets/image/formulario-contacto.png" class="img-fluid">
+                                                                <p class="text-left font-weight-bold p_black">Pasos a seguir después del proceso de Calibración de las Balanzas Analíticas</p>
+                                                                <p class="text-right"><a href="#carouselCalibracionBalanzas2" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row" style="align-items: center;">
+                                                            <div class="col-md-2 ">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">1</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Apagar el instrumento de medición una vez concluidas las determinaciones.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas2" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas2" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">2</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Guardar en el lugar dispuesto para ello las pesas que fueron usadas
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas2" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas2" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">3</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Llevar a cabo los cálculos requeridos. Restar el valor del peso teórico, con el valor arrojado por la balanza para 
+                                                                    medir si la diferencia es o no significativa. 
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas2" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas2" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div> 
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px; opacity: 0.5;">3</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Los valores de diferencia aceptados entre el valor del patrón con peso conocido y certificado, y el valor arrojado 
+                                                                    por la balanza es determinado por el fabricante de cada balanza, y es definido en el manual e cada equipo.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas2" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas2" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center" style="align-items: center;">
+                                                            <div class="col-md-2">
+                                                                <p class="text-center p_white font-weight-bold" style="font-size: 50px; margin-top: 7px;">4</p>  
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <p class="justificado p_black">
+                                                                    Registrar la calibración realizada en la bitácora del equipo de medición.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-right"><a href="#carouselCalibracionBalanzas2" data-slide="prev"><i class="fas fa-caret-square-left fa-2x"></i></a>
+                                                            <a href="#carouselCalibracionBalanzas2" data-slide="next"><i class="fas fa-caret-square-right fa-2x"></i></a></p>
+                                                    </div>                                                                      
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 caja-azul-borde2" style="z-index: 1;">
+                                        <div class="col-md-12 caja-azul-borde2-interna">
+                                            <p class="justificado p_white"><span class="font-weight-bold">NOTA: </span>
+                                                la prueba consiste en tomar 6 lecturas colocando la masa en 5 posiciones del plato. La carga debe ser de un tercio 
+                                                de la capacidad del instrumento. Después de cada lectura es necesario registrar la lectura sin carga (NUNCA SE 
+                                                AJUSTA DE NUEVO A CERO). Las posiciones para las mediciones en diferentes partes del plato se exponen en los 
+                                                siguientes diagramas, según la forma del plato:
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="col-md-3 espacio">
+                                <img src="assets/image/circulo.png" class="img-fluid">
+                                <img src="assets/image/cuadrado.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_patronBalanza" tabindex="-1" role="dialog" aria-labelledby="m_patronBalanza" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_patronBalanza">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-8">
+                                <p class="text-center font-weight-bold p_black">Patrón de Medida en la Calibración de una Balanza Analítica</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 60px;">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="col-md-11">
+                                    <div class="caja-texto-amarillo6">
+                                        <p class="justificado p_black">
+                                            Las Pesas Patrón tienen gran relevancia al momento de la calibración de un equipo de medición esto es por tener 
+                                            un valor correcto del valor generado (utilizando un Patrón o material de referencia certificado), toda vez que 
+                                            los instrumentos de medición como balanzas analíticas se van a comparar y se van a verificar con este valor. 
+                                            Ahora bien, en la Calibración de una Balanza Analítica, el valor predeterminado habitualmente será proporcionado 
+                                            por estas Pesas Patrón y pesas individuales de valor conocido. Dentro de las mencionadas pesas, las más usuales son: 
+                                        </p>
+                                        <div class="caja-amarilla-borde-interna5">
+                                            <p class="justificado p_black">
+                                                1. Las de acero inoxidable pulido <br>
+                                                2. Latón (cromado o no) <br>
+                                                3. Aleaciones de aluminio para las laminillas de subdivisión del gramo. <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-left" style="z-index: 1; position: relative; top: -25px;">
+                                    <img src="assets/image/curva-izquierda.png" class="img-fluid" >
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-11 caja-azul-borde2" style="z-index: 0; position: relative; bottom: 75px;">
+                                        <div class="col-md-12 caja-azul-borde2-interna">
+                                            <p class="justificado p_white"><span class="font-weight-bold">NOTA: </span>
+                                                Las mencionadas pesas habitualmente vienen presentadas en cajas que contienen una variedad de pesas que varían 
+                                                según sus masas y pueden adquirirse en laboratorios de calibración. las pesas patrón de hasta 50 kg se clasifican 
+                                                en siete clases diferentes teniendo en cuenta la recomendación R-111 emitida por la organización internacional 
+                                                de metrología legal (OIML) y según la tolerancia asociada a cada una. A continuación, se describen las clases 
+                                                mencionadas:
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                </div>                               
+                            </div>                             
+                            <div class="col-md-4">
+                                <div class="caja-texto-y-borde-azul">
+                                    <p class="justificado p_black">
+                                        Clases E1 y E2: Son pesas de una exactitud notable, con tolerancias mínimas asociadas, las cuales son utilizadas 
+                                        específicamente por los Laboratorios de Calibración.
+                                    </p>
+                                    <p class="justificado p_black">
+                                        Clases F1 y F2: Pesas de alta Exactitud, las cuales son utilizadas como patrones de referencia por los servicios 
+                                        de Metrología. 
+                                    </p>
+                                    <p class="justificado p_black">
+                                        Clases M1, M2 y M3: Son las pesas con las mayores tolerancias asociadas de las 7 clases, y son las más habituales 
+                                        para usos laborales.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_erroresBalanza" tabindex="-1" role="dialog" aria-labelledby="m_erroresBalanza" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="m_erroresBalanza">
+                <span class="mod-close-azul" data-dismiss="modal" aria-hidden="true">
+                    <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
+                </span>
+                <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold p_white" style="opacity: 0.5;">Calibración de balanza analítica</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="font-weight-bold p_black">Clasificación de los Errores</p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 60px;">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <p class="justificado p_black">
+                                    Para el caso de los instrumentos de medición como las balanzas analíticas, el error se puede definir como la 
+                                    diferencia entre el valor verdadero (el de la pesa de masa conocida y certificada por un proveedor) y el 
+                                    experimental (el valor real arrojado por la balanza). Los errores que se pueden presentar no siguen un patrón 
+                                    en específico, por lo que su origen se puede deber a múltiples causas. Así pues, los errores se pueden clasificar 
+                                    de la siguiente manera:
+                                </p>
+                                <div class="caja-texto-amarillo6">
+                                    <div class="caja-amarilla-borde-interna5">
+                                        <p class="justificado p_black"><span class="font-weight-bold">1. Errores aleatorios: </span>
+                                            Este tipo de errores se presentan cuando se llevan a cabo repeticiones en mediciones bajo las mismas condiciones 
+                                            y los resultados obtenidos tienden a ser diferentes en su mayoría. Los errores aleatorios son, en términos 
+                                            generales, leves y dentro de un gran número de mediciones se pueden observar modificaciones positivas como 
+                                            negativas. Es necesario manifestar que dentro de los errores aleatorios no se pueden hacer correcciones para 
+                                            obtener valores concordantes con el real, sin embargo, si se pueden realizar determinadas acciones que pueden 
+                                            conllevar a conclusiones aproximadas con el valor real. Dentro de los errores aleatorios más habituales son los 
+                                            que se presentan en relación a las condiciones del experimento, tales como los cambios de temperatura, vibraciones 
+                                            en el aire entre otros de índole ambiental.
+                                        </p>
+                                    </div>                            
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="col-md-11 caja-azul-borde2" style="z-index: 0; position: relative; bottom: 75px;">
+                                    <div class="col-md-12 caja-azul-borde2-interna">
+                                        <div id="carouselErroresSistematicos" class="carousel slide" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <p class="justificado p_white"><span class="font-weight-bold">2. Errores sistemáticos: </span>
+                                                        son errores que se presentan por defectos o irregularidades en los instrumentos de medida y en determinadas 
+                                                        ocasiones por su mala utilización o quizás porque el experimentador desconoce el funcionamiento del equipo. 
+                                                    </p>
+                                                    <p class="justificado p_white">
+                                                        Los errores sistemáticos más habituales que se presentan son: 
+                                                    </p>
+                                                    <p class="justificado p_white">
+                                                        1. Error de paralaje: se presenta cuando hay una separación entre el objeto que se está midiendo y la escala. Si 
+                                                        la línea de visión que se tiene, no es perpendicular a la escala, es probable que la lectura sea errónea. La 
+                                                        manera de contrarrestar su efecto, es alinear el eje visual de la forma más perpendicularmente posible a la escala
+                                                    </p>
+                                                    <p class="text-right"><a class="" href="#carouselErroresSistematicos" role="button" data-slide="next"><img
+                                                            class="flecha" src="assets/image/siguiente-amarillo.png"></a></p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <p class="justificado p_white">
+                                                        2. Error en el cero; En determinados equipos (volumétricos, amperímetro, esferómetro) es habitual que, 
+                                                        encontrándose el equipo inactivo, en posición cero o desconectado, señale un valor distinto a cero. Detectado el 
+                                                        error, se puede corregir sumándolo o restándolo al valor final obtenido del objeto a medir, no obstante, la única 
+                                                        forma de corregir de manera permanente este error sin tener que realizar sumas o restas, es comparar el equipo de 
+                                                        medición con un patrón que se encuentre previamente calibrado. 
+                                                    </p>
+                                                    <p class="text-right"><a class="" href="#carouselErroresSistematicos" role="button"
+                                                        data-slide="prev"><img class="flecha" src="assets/image/anterior-amarillo.png"></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>                                      
+                </div>
+            </div>
+        </div>
+    </div>
     
 
 

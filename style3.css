@@ -610,6 +610,7 @@ p {
     top: 20px;
     width: 140%;
     z-index: -1;
+    box-shadow: 2px 2px 4px 0px gray;
 }
 
 #hr_lateral{
@@ -1292,6 +1293,14 @@ a.article:hover {
     margin: 14px;
 }
 
+.caja-solo-borde {
+    border-left: 4px solid #2c538e; 
+    margin-left: -70px; 
+    padding-left: 70px;
+    padding-right: 2px; 
+    z-index: -1;
+}
+
 .caja-texto{
     border: 3px solid #2c538e;
     border-radius: 15px;
@@ -1397,6 +1406,16 @@ a.article:hover {
     box-shadow: 2px 2px 4px 0px gray;
 }
 
+.caja-texto-amarillo6{
+    background: #ffc107;
+    border-radius: 1px;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 7px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
 
 
 .caja-texto2:active{
@@ -1425,7 +1444,7 @@ a.article:hover {
     border-radius: 15px;
     padding: 5px 15px;
     margin: 10px 0px;
-    width: 100%;
+    width: 70%;
 }
 
 .caja-texto-amarillo{/**/
@@ -1619,6 +1638,15 @@ a.article:hover {
     align-content: center;
 }
 
+.caja-amarillo{ /**/
+    background-color: #ffc107;
+    border-radius: 2px;
+    padding: 15px;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+}
+
 
 
 .caja-tarjeta-azul-borde-frente{ /**/
@@ -1801,7 +1829,7 @@ a.article:hover {
 }
 
 .caja-color-blue-claro4{
-    background-color: #C9E2F2;
+    background-color: #8b959b;
     border-radius: 15px;
     padding: 15px;
     width: 90%;
@@ -1881,6 +1909,12 @@ a.article:hover {
     height: 90%;
     margin-top: 50px;
     box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-borde-azul4{
+    border: 3px solid #2c538e !important;
+    border-radius: 2px;
+    padding: 10px;
 }
 
 .caja-borde-amarillo3{
@@ -2005,6 +2039,53 @@ a.article:hover {
     background: #2c538e;
     border-radius: 20px;
     padding: 15px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
+    margin-bottom: 5px;
+}
+
+.caja-azul-relleno2{
+    display:flex;
+    background: #2c538e;
+    border-radius: 2px;
+    padding: 15px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
+    margin-bottom: 5px;
+}
+
+.caja-azul-relleno3{
+    display:flex;
+    background: #2c538e;
+    border-radius: 2px;
+    padding: 30px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
+    margin-bottom: 5px;
+}
+
+.caja-azul-relleno-claro{
+    background: #b9d5ff;
+    border-radius: 2px;
+    padding: 15px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
+    margin-bottom: 7px;
+}
+
+.caja-amarillo-relleno{
+    background: #ffc107;
+    border-radius: 20px;
+    padding: 15px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
+    margin-bottom: 5px;
+}
+
+.caja-amarillo-relleno2{
+    background: #ffc107;
+    border-radius: 20px;
+    padding: 40px;
     height: auto;
     box-shadow: 2px 2px 4px 0px grey;
     margin-bottom: 5px;
@@ -2409,6 +2490,10 @@ a.article:hover {
 }
 .p_blue {
     color: #2c538e !important;
+}
+
+.p_yellow{
+    color: #ffc107 !important;
 }
 
 .p_padding2 {
@@ -3328,6 +3413,96 @@ picture img {
     box-shadow: 0px 0px 20px 6px #2c538e;
   }
 
+  .button-tab-div-amarillo {
+    position: relative;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #ffc107;
+    text-align: center;
+    padding: 8px;
+    padding-top: 20px;
+    margin: 10px 2px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
+  }
+
+  .button-tab-div-amarillo-activo {
+    position: relative;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #b9d5ff;
+    text-align: center;
+    padding: 8px;
+    padding-top: 20px;
+    margin: 10px 2px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
+  }
+
+  .button-tab-div-azul {
+    position: relative;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #2c538e;
+    text-align: center;
+    padding: 8px;
+    margin: 10px 2px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
+  }
+
+  .button-tab-div-azul:hover{
+    position: relative;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #2c538e;
+    text-align: center;
+    padding: 8px;
+    margin: 10px 2px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
+  }
+
+  .button-tab-div-azul:active {
+    position: relative;
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #b9d5ff;
+    text-align: center;
+    padding: 8px;
+    margin: 10px 2px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
+  }
+
 
 
 .button-tab-azul {
@@ -3666,6 +3841,14 @@ picture img {
     height: auto;
 }
 
+.caja-texto-y-borde-azul{
+    border: 2px solid #2c538e !important;
+    background: #ffc107;
+    border-radius: 2px;
+    padding: 16px;
+    height: auto;
+}
+
 .caja-texto-amarillo-borde{
     border: 2px solid #ffc107 !important;
     background: #ffdd78;
@@ -3804,6 +3987,44 @@ picture img {
     width: 35px;
     height: 35px;
     justify-content: center;
+    
+}
+
+.button-tab3-3 {
+    position: static;
+    display:flex;
+    color: white;
+    font-weight: bold;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px #2c538e;
+    background:#2c538e;
+    text-align:center;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
+    
+}
+
+.button-tab3-activo3 {
+    position: static;
+    display:flex;
+    color: black;
+    font-weight: bold;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px #b9d5ff;
+    background:#b9d5ff;
+    text-align:center;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
     
 }
 
@@ -4496,7 +4717,8 @@ picture img {
     border-radius: 8px;
     margin: 14px;
     height: auto;
-    width: auto;   
+    width: auto; 
+    box-shadow: 2px 2px 4px 0px gray;  
 }
 
 .titulo-azul-modal {
@@ -4860,6 +5082,26 @@ Estilos de tarjetas interactivas.
     box-shadow: 2px 2px 4px 0px gray;
 }
 
+.caja-azul-borde2{
+    border: 4px solid #2c538e;
+    border-radius: 2px;
+    padding: 2px 2px; 
+    padding-right: 15px; 
+    background: #2c538e;
+    margin-top: 25px;
+    height: 100%;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-azul-borde2-interna{
+    border: 2px solid #ffc107;
+    border-radius: 2px;
+    padding: 22px;
+    background: transparent;
+    margin: -17px 1px;
+    box-shadow: 2px 2px 4px 0px grey;
+}
+
 .caja-amarilla-borde{
     border: 4px solid #ffc107;
     border-radius: 2px;
@@ -4878,6 +5120,16 @@ Estilos de tarjetas interactivas.
     margin-bottom: -14px;
     height: auto;
     box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-amarilla-borde-interna5{
+    border: 2px solid #2c538e;
+    border-radius: 2px;
+    background: transparent;
+    margin: 0 -30px;
+    padding: 3px 30px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
 }
 
 .caja-amarilla-borde-interna1{
@@ -4947,6 +5199,28 @@ Estilos de tarjetas interactivas.
     box-shadow: 2px 2px 4px 0px grey;
 }
 
+.caja-amarilla-borde4{
+    border: 4px solid #ffc107;
+    border-radius: 2px;
+    padding: 47px 10px;
+    background: #ffc107;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
+    transform: rotate(-9deg);
+}
+
+.caja-amarilla-borde-interna4{
+    border: 2px solid #2c538e;
+    border-radius: 2px;
+    padding: 10px; 
+    background: transparent;
+    margin-bottom: -14px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px gray;
+    transform: rotate(9deg);
+}
 
 
 
@@ -5023,7 +5297,7 @@ Estilos de tarjetas interactivas.
     padding: 20px; 
     background: #2c538e;
     margin-bottom: 10px;
-    height: 300px;
+    height: 100%;
 }
 
 .caja-texto-back-b3 p{
