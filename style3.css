@@ -4428,6 +4428,33 @@ picture img {
     box-shadow: 2px 2px 4px 0px grey;
 } 
 
+.circle-div-s-azul2{
+    width: 60px;
+    height: 60px;
+    background: #2d6ac5;
+    border-radius: 100px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 33px;
+    z-index: 2;
+    box-shadow: 2px 2px 4px 0px grey;
+} 
+
+.circle-div-s-azul2-activo{
+    width: 60px;
+    height: 60px;
+    background: #b9d5ff;
+    border: 2px solid #2d6ac5;
+    border-radius: 100px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 33px;
+    z-index: 2;
+    box-shadow: 2px 2px 4px 0px grey;
+} 
+
 .circle-div-amarillo{
     display: flex; 
     width: 130px;
@@ -5318,6 +5345,16 @@ Estilos de tarjetas interactivas.
     border-radius: 2px;
     padding: 15px; 
     background: transparent;
+    margin-bottom: 10px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-texto-borde-azul-claro{
+    border: 2px solid #2c538e;
+    border-radius: 2px;
+    padding: 15px; 
+    background: #b9d5ff;
     margin-bottom: 10px;
     height: auto;
     box-shadow: 2px 2px 4px 0px gray;

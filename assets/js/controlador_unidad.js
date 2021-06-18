@@ -557,6 +557,11 @@ $(".button-tab3-3").click(function(){
     $(this).addClass("button-tab3-activo3");
 });
 
+$(".circle-div-s-azul2").click(function(){
+    $(".circle-div-s-azul2").removeClass("circle-div-s-azul2-activo");
+    $(this).addClass("circle-div-s-azul2-activo");
+});
+
 
 
 const horizontalAccordions = $(".accordion.width");
