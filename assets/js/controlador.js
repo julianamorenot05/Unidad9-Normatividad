@@ -1,4 +1,5 @@
 var numSlide = 71
+let intentosJuego = 0;
 
 $(document).ready(function () {
 
@@ -2100,37 +2101,3 @@ $(".choice").on("click", function(){
 
 
 
-$('#validadjuego4').off('click').on('click', function(){
-    if (intentosJuego > 1) {
-        Swal.fire(
-            '¡Has superado el número de intentos!',
-            'Revisa los temas de la actividad de aprendizaje y vuelve a intentarlo',
-            'warning'
-        ) 
-    } else {
-        var arrayx=$(".juegoact4").val();
-        console.log(arrayx.indexOf('3'))
-        if (arrayx.indexOf('3') != -1) {
-            Swal.fire(
-                '¡Respuesta Invalida!',
-                'Selecciona unicamente lo correcto',
-                'error'
-            )  
-            intentosJuego++;
-        }else{
-            if (arrayx.length === 5) {
-                Swal.fire(
-                    '¡Has acertado!',
-                    'Continua con la Siguiente actividad',
-                    'success'
-                ) 
-            }else{
-                Swal.fire(
-                    '¡Selecciona los correctos!',
-                    '',
-                    'warning'
-                )  
-            }    
-        }
-    }  
-});

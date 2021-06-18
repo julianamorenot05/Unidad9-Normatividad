@@ -104,26 +104,7 @@ p {
 
 /* IMAGENES */
 
-#virus0{
-    position: relative; 
-    top: -73px; 
-    left: 89%; 
-    z-index: 100; 
-}
 
-#virus1{
-    position: relative; 
-    left: 25%; 
-    top: -95px;
-    z-index: 100; 
-}
-
-#virus2{
-    position: relative; 
-    top: -95px; 
-    left: 70%; 
-    z-index: 100; 
-}
 
 
 /* ICONOS */
@@ -461,20 +442,20 @@ p {
 
 
 .expand{
-    width :64%;
+    width :100%;
     
     
     
 }
 .unset{
     width :16%;
-    background-color: #ddd !important;
+    background-color: transparent !important;
     
 }
 .small{
-    width :4%;
+    width :20%;
 
-    background-color: #ddd !important;
+    background-color: transparent !important;
 }
 .small>div{
     opacity: 0;
@@ -1219,7 +1200,7 @@ a.article:hover {
     padding: 15px;
     border-radius: 8px;
     margin: 14px;
-    height: 80px;
+    height: auto;
     width: 60%;
     box-shadow: 2px 2px 4px 0px gray;
 }
@@ -1511,7 +1492,7 @@ a.article:hover {
     border-radius: 10px;
     padding: 18px;
     height: 325px;
-    width: 895px;    
+    width: 100%;    
 }
 
 .caja-tarjeta-atras{ /**/
@@ -1519,8 +1500,8 @@ a.article:hover {
     background: #ffdd78;
     border-radius: 10px;
     padding: 16px;
-    height: 325px;
-    width: 895px;
+    height: auto;
+    width: 100%;
     align-content: center;
 }
 
@@ -1841,11 +1822,20 @@ a.article:hover {
 }
 
 .caja-color-blue-claro4{
-    background-color: #8b959b;
+    background-color: #C9E2F2;
     border-radius: 15px;
     padding: 15px;
     width: 90%;
     margin-left: 4%;
+}
+
+.caja-color-blue-claro5{
+    background-color: #C9E2F2;
+    border-radius: 15px;
+    padding: 2px;
+    width: auto;
+    height: auto;
+    
 }
 
 .caja-color-blue-oscuro{
@@ -1970,7 +1960,7 @@ a.article:hover {
     border-radius: 15px;
     padding: 20px;
     margin-top: 15px;
-    height: 300px;
+    height: auto;
 }
 
 .caja-texto-yellow3{
@@ -4076,6 +4066,40 @@ picture img {
     
 }
 
+.button-tab2-cuadrado {
+    position: static;
+    display:inline-block;
+    color: black;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px #2c538e;
+    background:#2c538e;
+    text-align:center;
+    padding-top: 15px;
+    margin: 5px;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    
+}
+
+.button-tab2-cuadrado-active {
+    position: static;
+    display:inline-block;
+    color: #fff;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px #b9d5ff;
+    background:#b9d5ff;
+    text-align:center;
+    padding-top: 15px;
+    margin: 5px;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    
+}
+
 .boton-redondo-azul {
     position: static;
     display:inline-block;
@@ -5472,7 +5496,7 @@ Estilos de tarjetas interactivas.
 }
 
 .sm_picture.selected{
-    background: #5cb85c !important;
+    background: #b9d5ff !important;
 }
 .sm_picture_f.selected{
     background: #dc3545 !important;
@@ -5485,10 +5509,13 @@ Estilos de tarjetas interactivas.
 
 .image_picker_selector .thumbnail {
     padding: 10px !important;
-    width: 320px;
-    height: 225px;
-    border: 4px solid #ffc107 !important;
-    border-radius: 20px;
+    width: 135px;
+    height: 155px;
+    background: #ffc107;
+    border-radius: 2px;
+    color: rgb(20, 19, 19);
+    text-align: center;
+    box-shadow: 2px 2px 4px 0px gray;
 }
 
 #estructuraTransistor_canvas{
@@ -5941,4 +5968,9 @@ img.zoom2{
   top: 0.25em;
   left: 1em;
   color: white;
+}
+
+#virus-b{
+    position:relative; 
+    top: -195px;
 }

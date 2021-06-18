@@ -192,6 +192,41 @@ $(".btnAplicacionesControl").click(function() {
     }
   });
 
+  
+  $('#validadjuego4').off('click').on('click', function(){
+    if (intentosJuego > 1) {
+        Swal.fire(
+            '¡Has superado el número de intentos!',
+            'Revisa los temas de la actividad de aprendizaje y vuelve a intentarlo',
+            'warning'
+        ) 
+    } else {
+        var arrayx=$(".juegoact4").val();
+        console.log(arrayx.indexOf('3'))
+        if (arrayx.indexOf('3') != -1) {
+            Swal.fire(
+                '¡Respuesta Invalida!',
+                'Selecciona unicamente lo correcto',
+                'error'
+            )  
+            intentosJuego++;
+        }else{
+            if (arrayx.length === 5) {
+                Swal.fire(
+                    '¡Has acertado!',
+                    'success'
+                ) 
+            }else{
+                Swal.fire(
+                    '¡Selecciona los correctos!',
+                    '',
+                    'warning'
+                )  
+            }    
+        }
+    }  
+});
+
   /** Falso o verdadero 2 */
   
 
@@ -528,6 +563,11 @@ $(".button-tab-amarillo2").click(function(){
 $(".button-tab2-amarillo").click(function(){
     $(".button-tab2-amarillo").removeClass("button-tab2-amarillo-active");
     $(this).addClass("button-tab2-amarillo-active");
+});
+
+$(".button-tab2-cuadrado").click(function(){
+    $(".button-tab2-cuadrado").removeClass("button-tab2-cuadrado-active");
+    $(this).addClass("button-tab2-cuadrado-active");
 });
 
 $(".button-tab-amarillo4").click(function(){
