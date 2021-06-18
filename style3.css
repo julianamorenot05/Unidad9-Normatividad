@@ -1645,8 +1645,20 @@ a.article:hover {
     height: auto;
     width: auto;
     font-size: 25px;
+    box-shadow: 2px 2px 4px 0px gray;
 }
 
+.caja-amarillo2{
+    background-color: #ffc107;
+    display: flex;
+    border-radius: 2px;
+    padding: 15px;
+    height: 100%;
+    width: auto;
+    font-size: 25px;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px gray;
+}
 
 
 .caja-tarjeta-azul-borde-frente{ /**/
@@ -3634,6 +3646,8 @@ picture img {
     justify-content: center;
   }
 
+
+
   .button-tab-amarillo2 {
     position:relative;
     display:inline-block;
@@ -4343,6 +4357,19 @@ picture img {
     box-shadow: 2px 2px 4px 0px gray; 
     align-items: center;
     padding: 5px;
+}
+
+.circle-div-azul{
+    display: flex; 
+    width: 130px;
+    height: 130px;
+    background: #2c538e;
+    border-radius: 100px; 
+    justify-content: center;
+    box-shadow: 2px 2px 4px 0px gray; 
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
 }
 
 .circle-div2{
@@ -5273,6 +5300,26 @@ Estilos de tarjetas interactivas.
     background: transparent;
     margin-bottom: 10px;
     height: 335px;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-texto-borde-amarillo2{
+    border: 2px solid #ffc107;
+    border-radius: 2px;
+    padding: 15px ; 
+    background: transparent;
+    margin-bottom: 10px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px gray;
+}
+
+.caja-texto-borde-azul2{
+    border: 2px solid #2c538e;
+    border-radius: 2px;
+    padding: 15px; 
+    background: transparent;
+    margin-bottom: 10px;
+    height: auto;
     box-shadow: 2px 2px 4px 0px gray;
 }
 
