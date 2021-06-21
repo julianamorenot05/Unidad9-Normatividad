@@ -48,18 +48,35 @@ p {
 }
 
 .boton-azul-cuadro{
-    
-    width: 53px;
-    height: 53px;
-    background: #2c538e;
-    color: white;
-    border-radius: 10px;
-    margin-left: -20px;
-    margin-top: 4px;
-    position: relative; 
-    cursor: pointer;
     align-items: center;
     justify-content: center;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    background: #2c538e;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 2px 4px 0px grey;
+}
+
+
+
+.boton-azul-cuadro-activo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    background: #ffc107;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    box-shadow: 2px 2px 4px 0px grey;
 }
 
 .button-tab2-azul {
@@ -117,7 +134,8 @@ p {
     color:#2c538e;
 }
 
-.fa-caret-square-right, .fa-caret-square-left{
+.fa-caret-square-right, .fa-caret-square-left,
+    .fa-caret-right, .fa-caret-left{
     color: #2c538e ;
 }
 
@@ -713,54 +731,6 @@ p {
     text-align: end;
 }
 
-@media screen and (max-width: 360px) {
-    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
-        top: 65% !important;
-    }
-
-    #hr_amarillo2 {
-        width: 40%;
-    }
-    
-
-}
-
-@media screen and (max-width: 412px) and (min-width: 361px) {
-    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
-        top: 45% !important;
-    }
-
-    #hr_amarillo2 {
-        width: 40%;
-    }
-    
-
-}
-
-@media screen and (max-width: 680px) and (min-width: 420px) {
-    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
-        top: 35% !important;
-    }
-
-    #hr_amarillo2 {
-        width: 45%;
-    }
-    
-
-}
-
-@media screen and (max-width: 885px) and (min-width: 681px) {
-    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
-        top: 21% !important;
-    }
-
-    #hr_amarillo2 {
-        width: 45%;
-    }
-    
-
-}
-
 
 
 #hr_amarillo3{
@@ -1163,13 +1133,7 @@ a.article:hover {
     width: 70%;
 }
 
-@media screen and (max-width: 700px) {
-    .imagen100{
-        width: 15rem;
-    }
-    
 
-}
 
 .titulo-unidad{
     text-align: center;
@@ -1197,7 +1161,7 @@ a.article:hover {
     text-align: center;
     background: #2c538e;
     color: #fff;
-    padding: 15px;
+    padding: 18px;
     border-radius: 8px;
     margin: 14px;
     height: auto;
@@ -1484,7 +1448,8 @@ a.article:hover {
     border-radius: 10px;
     padding: 18px;
     height: 325px;
-    width: 100%;    
+    width: 100%;   
+    margin-bottom: 10px;  
 }
 
 .caja-tarjeta{ /**/
@@ -1660,8 +1625,8 @@ a.article:hover {
     border: 3px solid #2c538e;
     background: #fff;
     border-radius: 5px;
-    padding: 1px;
-    height: 240px;
+    padding: 10px;
+    height: auto;
     width: 100%;
     align-content: center;
     box-shadow: 2px 2px 4px 0px gray;
@@ -1762,35 +1727,45 @@ a.article:hover {
 }
 
 .caja-color-blue-claro{
-    position: absolute;
-    background-color: #b9d5ff;
-    opacity: 0.3;
+    background: rgba(185, 213, 255, 0.5);
     border-radius: 2%;
     padding: 30px;
     width: 115%;
-    height: 250px;
+    height: auto;
     margin-left: -13%;
 }
 
 
-.caja-color-blue-claro2{
+/*.caja-color-blue-claro2{
     background-color: #b9d5ff;
     border-radius: 10%;
     padding: 30px;
     width: auto;
+    
+}*/
+
+
+.caja-color-blue-claro2{
+    background-color: #B4C7E7;
+    border-radius: 15px;
+    padding: 15px;
+    padding-top: 0;
+    width: 80%;
     height: auto;
+    margin-left: 10%;
 }
 
+
 .caja-rosado-transparente{
-    position: absolute;
-    background-color: #F9E5CD;
-    opacity: 0.3;
+    background-color: rgba(249, 229, 205, 0.6);
     border-radius: 2%;
-    padding: 30px;
+    padding: 35px;
     width: 110%;
-    height: 150px;
+    height: auto;
     margin-left: -5%;
+    margin-bottom: 30px;
 }
+
 
 .caja-transparente{
     padding: 20px;
@@ -1804,14 +1779,12 @@ a.article:hover {
     height: 200px;
 }
 
-
-.caja-color-blue-claro2{
-    background-color: #B4C7E7;
-    border-radius: 15px;
-    padding: 15px;
-    width: 80%;
-    margin-left: 10%;
+.caja-transparente5{
+    padding: 20px;
+    padding-right: 50px;
+    height: 300px;
 }
+
 
 .caja-color-blue-claro3{
     background-color: #C9E2F2;
@@ -2262,94 +2235,6 @@ a.article:hover {
 
 
 
-@media only screen and (max-width: 500px) and (min-width: 341px) {  
-
-    .link-image img{
-        width: 40px;
-    }
-
-    .tablinks p {
-        font-size: 10px;
-    }
-    
-    #mensajeSopaLetras {
-        display: block !important;
-    }
-    
-    /**
-    Unidad de Transistores
-    **/
-    #infografiaTransistorIGBT{
-        top:auto !important;
-    }
-
-    #btnTransistorIgbt{
-        text-align: center !important;
-    }
-
-    #btnTransistorIgbt>img{
-        height: 50px !important;
-        float:none !important;
-    }
-
-    #imagenTransistor{
-        display: none !important;
-    }
-
-    #unidad4_4-12 .row{
-        display: none !important;
-    }
-
-    #unidad4_4-12 #mensajeJuegoEmparejamiento {
-        display: block !important;
-    }
-
-    #botonesVariadorVelocidad{
-        left: auto !important;
-    }
-
-    #botonesVariadorVelocidad>button{
-        width: 100%;
-    }
-
-    #calificacionEjercicio_1{
-        margin-top: 10px !important;
-    }
-
-    .botoneraAplicacionesSCR{
-        margin-top: 80px;
-    }
- 
-    #unidad4_4-30 .row{
-        display: none !important;
-    }
-
-    #unidad4_4-30 #mensajeJuegoSecuencia {
-        display: block !important;
-    }
-
-    .circleImageDiodos{
-        position: relative !important;
-    }
-
-    #imagenFondoEnergia{
-        position: inherit !important;
-        left: auto !important;
-        top: auto !important;
-    }
-
-    
-    .tarjetasCanvasTriac>div>p{
-        height: auto !important;
-    }
-    .tarjetasCanvasTriac>div>img{
-        width: 100% !important; 
-    }
-
-    
-
-
-}
 
 .display-none{
     display: none;
@@ -2775,11 +2660,7 @@ a.article:hover {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 700px) {
-    .ajuste{
-        margin-top: 100px;
-    }
- }
+
 
 .tablinks:hover p:before {
    opacity: 0.1;
@@ -2882,11 +2763,6 @@ a.article:hover {
    animation: city 1s ease;
 }
 
-@media screen and (max-width: 512px) {
-    .tabcontent h2{
-        top: 90px;
-    }
- }
 
 @keyframes city {
    from {
@@ -3789,21 +3665,7 @@ picture img {
     
 }
 
-@media screen and (max-width: 767px) {
-    .button-tab-azul32{
-        height: 60%;
-        width: 80%;
-        margin-left: 30px;
-    }
-    
-}
 
-@media screen and (max-width: 1050px) and (min-width: 768px) {
-    .button-tab-azul32{
-        width: 25%;
-    }
-    
-}
 
 
 
@@ -5619,6 +5481,11 @@ border-radius: 4px;
 background: #d4d4d4;
 }
 
+#imagen-zoom:hover {
+   -webkit-transform: scale(1.5);
+    transform: scale(1.2) translate(6px, 40px);
+    margin: auto;
+}
 
 img.zoom {
     width: 350px;
@@ -5699,71 +5566,6 @@ img.zoom2{
     z-index: 1; 
 }
 
-
-@media screen and (max-width: 1059px) and (min-width: 775px) {
-    .ajuste-boton{
-        padding-left: 4em;
-    }
-
-    #buenasPracticas{
-        margin-left: -175px;
-        
-    }
-
-}
-
-@media screen and (max-width: 772px) {
-    .ajuste-boton{
-        padding-left: 0em;
-    }
-
-    #buenasPracticas{
-        margin-left: 0px;
-
-        
-    }
-
-    #buenasPracticas1, #buenasPracticas2, #buenasPracticas3, #buenasPracticas4{
-        margin-top: 14em !important;
-        z-index: 10000;
-    }
-
-}
-
-
-@media screen and (min-width: 1000px) {
-    #texto_advertencia, #texto_prohibicion{
-        padding-left: 5em; 
-        padding-right: 5em;
-    }
-
-    #figura4{
-        width: 70%;
-        margin-left: 15%;
-    }
-
-}
-
-@media screen and (max-width: 927px) {
-    #elementos2, #elementos3, #elementos4,  #elementos5 {
-        padding-top: 2em;
-        z-index: 100px;
-        margin-top: 4em !important;
-    }
-
-    #elementos1 {
-        margin-top: 4em !important;
-    }
-
-}
-
-@media screen and (max-width: 1098px) {
-    .caja-texto-back-b3{
-        height: auto;
-        width: auto;
-    }
-
-}
 
 #pointer {
   display: inline-flex;
@@ -5970,7 +5772,3 @@ img.zoom2{
   color: white;
 }
 
-#virus-b{
-    position:relative; 
-    top: -195px;
-}

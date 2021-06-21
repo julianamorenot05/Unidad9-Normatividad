@@ -2,7 +2,17 @@
 
 /* Para 960px */  
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
-  
+    body{
+        overflow: scroll;
+    }
+    
+    .menu-actividades{
+        margin-top: 550px;
+    }
+
+    .selector{
+        margin-top: -100px !important; 
+    }
 }  
   
 /* Para 800px */  
@@ -12,11 +22,53 @@
         margin-top: 20px !important;
     }
 
+    body{
+        overflow: scroll;
+    }
+    
+    .menu-actividades{
+        margin-top: 550px;
+    }
+
+    .selector{
+        margin-top: -100px !important; 
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .nav-justified .nav-item {
+        flex-basis: initial;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
 }  
   
 /* Para 600px */  
 @media only screen and (max-width: 620px) and (min-width: 501px) {  
-  
+    body{
+        overflow: scroll;
+    }
+    
+    .menu-actividades{
+        margin-top: 550px;
+    }
+
+    .selector{
+        margin-top: -100px !important; 
+    }
+
+    .nav-justified .nav-item {
+        flex-basis: initial;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
 }  
   
 /* Para 480px */  
@@ -24,9 +76,11 @@
     .barra-progreso{
         display: none !important;
     }
+
     body{
        overflow: scroll;
     }
+
     .logo_cl{
         width: 40%;
     }
@@ -46,6 +100,7 @@
     .nav-justified .nav-item{
         flex-basis: initial;
     }
+
     .navbar-expand-lg .navbar-nav{
        flex-direction: row;
     }
@@ -53,15 +108,25 @@
     .navbar-nav .nav-item{
        padding: 5px;
     }
+
     #puzzle {
         padding: 0px;
     }
     #puzzle button {
         font-size: 1rem;
     }
+
     .puzzleSquare {
         height: 6vw;
         width: 6vw;
+    }
+
+    .menu-actividades{
+        margin-top: 550px;
+    }
+
+    .selector{
+        margin-top: -100px !important; 
     }
 }  
   
@@ -73,6 +138,18 @@
     #puzzle button {
         font-size: 1rem;
     }
+
+    body{
+        overflow: scroll;
+    }
+    
+    .menu-actividades{
+        margin-top: 550px;
+    }
+
+    .selector{
+        margin-top: -100px !important; 
+    }
 } 
 
 
@@ -83,10 +160,24 @@
     }
 } 
 
-@media only screen and (max-width: 930px) and (min-width: 768px)  {  
+@media only screen and (max-width: 930px) and (min-width: 767px)  {  
     #imgRequerimientosCentrifugas{
         position: relative;
         bottom: 150px;
+    }
+
+    .caja-amarilla {
+        height: 405px;
+    }
+} 
+
+@media only screen and (max-width: 991px) and (min-width: 768px)  {  
+    #img-precauciones{
+        margin-top: 20px;
+    }
+
+    .caja-tarjeta-azul-borde-frente{
+        height: 205px;
     }
 } 
 
@@ -139,5 +230,264 @@
         left: 70%; 
         z-index: 100; 
     }
+
+    #titulo-puntos{
+        justify-content: center;
+    }
     
 } 
+
+
+
+
+
+@media screen and (max-width: 1059px) and (min-width: 775px) {
+    .ajuste-boton{
+        padding-left: 4em;
+    }
+
+    #buenasPracticas{
+        margin-left: -175px;
+        
+    }
+
+}
+
+@media screen and (max-width: 772px) {
+    .ajuste-boton{
+        padding-left: 0em;
+    }
+
+    #buenasPracticas{
+        margin-left: 0px;
+
+        
+    }
+
+    #buenasPracticas1, #buenasPracticas2, #buenasPracticas3, #buenasPracticas4{
+        margin-top: 14em !important;
+        z-index: 10000;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+    #texto_advertencia, #texto_prohibicion{
+        padding-left: 5em; 
+        padding-right: 5em;
+    }
+
+    #figura4{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+}
+
+@media screen and (max-width: 927px) {
+    #elementos2, #elementos3, #elementos4,  #elementos5 {
+        padding-top: 2em;
+        z-index: 100px;
+        margin-top: 4em !important;
+    }
+
+    #elementos1 {
+        margin-top: 4em !important;
+    }
+
+}
+
+@media screen and (max-width: 1098px) {
+    .caja-texto-back-b3{
+        height: auto;
+        width: auto;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 360px) {
+    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
+        top: 65% !important;
+    }
+
+    #hr_amarillo2 {
+        width: 40%;
+    }
+    
+
+}
+
+@media screen and (max-width: 412px) and (min-width: 361px) {
+    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
+        top: 45% !important;
+    }
+
+    #hr_amarillo2 {
+        width: 40%;
+    }
+    
+
+}
+
+@media screen and (max-width: 680px) and (min-width: 420px) {
+    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
+        top: 35% !important;
+    }
+
+    #hr_amarillo2 {
+        width: 45%;
+    }
+    
+
+}
+
+@media screen and (max-width: 885px) and (min-width: 681px) {
+    #hr_amarillo2, .titulo_redondo, .mod-close-amarillo3{
+        top: 21% !important;
+    }
+
+    #hr_amarillo2 {
+        width: 45%;
+    }
+    
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .imagen100{
+        width: 15rem;
+    }
+    
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+
+    .link-image img{
+        width: 40px;
+    }
+
+    /*.tablinks p {
+        font-size: 10px;
+    }*/
+    
+    #mensajeSopaLetras {
+        display: block !important;
+    }
+    
+    
+    #unidad4_4-12 #mensajeJuegoEmparejamiento {
+        display: block !important;
+    }
+
+    
+    #calificacionEjercicio_1{
+        margin-top: 10px !important;
+    }
+
+    .botoneraAplicacionesSCR{
+        margin-top: 80px;
+    }
+ 
+
+    #unidad4_4-30 #mensajeJuegoSecuencia {
+        display: block !important;
+    }
+
+   
+    
+    .tarjetasCanvasTriac>div>p{
+        height: auto !important;
+    }
+    .tarjetasCanvasTriac>div>img{
+        width: 100% !important; 
+    }
+
+    
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .ajuste{
+        margin-top: 100px;
+    }
+ }
+
+
+
+
+@media screen and (max-width: 512px) {
+    /*.tabcontent h2{
+        top: 90px;
+    }*/
+ }
+
+
+
+@media screen and (max-width: 767px) {
+    .button-tab-azul32{
+        height: 60%;
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    #lavado-manos {
+        margin-top: 120px
+    }
+    
+    .caja-redonda-blanco{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 768px) {
+    .button-tab-azul32{
+        width: 25%;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    #imagen-zoom:hover {
+        -webkit-transform: scale(1.5);
+         transform: scale(1.1) translate(-11px, 40px);
+         margin: auto;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    #virus-b{
+        position:relative;  
+        top: -240px;
+        margin-bottom: -240px;
+    }
+}
+
+@media screen and (max-width: 1020px) and (min-width: 975px){
+    #virus-b{
+        position:relative; 
+        top: -225px;
+        margin-bottom: -240px;
+    }
+}
+
+
+@media screen and (max-width: 974px) and (min-width: 768px){
+    #virus-b{
+        position:relative; 
+        top: -200px;
+        margin-bottom: -240px;
+    }
+}

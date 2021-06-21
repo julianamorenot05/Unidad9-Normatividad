@@ -602,6 +602,11 @@ $(".circle-div-s-azul2").click(function(){
     $(this).addClass("circle-div-s-azul2-activo");
 });
 
+$(".boton-azul-cuadro").click(function(){
+    $(".boton-azul-cuadro").removeClass("boton-azul-cuadro-activo");
+    $(this).addClass("boton-azul-cuadro-activo");
+});
+
 
 
 const horizontalAccordions = $(".accordion.width");
