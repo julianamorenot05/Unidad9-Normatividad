@@ -759,7 +759,6 @@ function showDiv47() { /**HASTA 52 */
     document.getElementById('recomendacion3').style.display = "none"; 
     document.getElementById('recomendacion4').style.display = "none"; 
     document.getElementById('recomendacion5').style.display = "none"; 
-    document.getElementById('recomendacion6').style.display = "none"; 
 }
 
 function showDiv48() { /**HASTA 52 */
@@ -769,7 +768,6 @@ function showDiv48() { /**HASTA 52 */
     document.getElementById('recomendacion3').style.display = "none"; 
     document.getElementById('recomendacion4').style.display = "none"; 
     document.getElementById('recomendacion5').style.display = "none"; 
-    document.getElementById('recomendacion6').style.display = "none"; 
 }
 function showDiv49() { /**HASTA 52 */
     document.getElementById('recomendacion').style.display = "none"; 
@@ -777,8 +775,7 @@ function showDiv49() { /**HASTA 52 */
     document.getElementById('recomendacion2').style.display = "none"; 
     document.getElementById('recomendacion3').style.display = "block"; 
     document.getElementById('recomendacion4').style.display = "none"; 
-    document.getElementById('recomendacion5').style.display = "none"; 
-    document.getElementById('recomendacion6').style.display = "none"; 
+    document.getElementById('recomendacion5').style.display = "none";
 }
 function showDiv50() { /**HASTA 52 */
     document.getElementById('recomendacion').style.display = "none"; 
@@ -787,7 +784,6 @@ function showDiv50() { /**HASTA 52 */
     document.getElementById('recomendacion3').style.display = "none"; 
     document.getElementById('recomendacion4').style.display = "block"; 
     document.getElementById('recomendacion5').style.display = "none"; 
-    document.getElementById('recomendacion6').style.display = "none"; 
 }
 function showDiv51() { /**HASTA 52 */
     document.getElementById('recomendacion').style.display = "none"; 
@@ -796,17 +792,8 @@ function showDiv51() { /**HASTA 52 */
     document.getElementById('recomendacion3').style.display = "none"; 
     document.getElementById('recomendacion4').style.display = "none"; 
     document.getElementById('recomendacion5').style.display = "block"; 
-    document.getElementById('recomendacion6').style.display = "none"; 
 }
-function showDiv52() { /**HASTA 52 */
-    document.getElementById('recomendacion').style.display = "none"; 
-    document.getElementById('recomendacion1').style.display = "none"; 
-    document.getElementById('recomendacion2').style.display = "none"; 
-    document.getElementById('recomendacion3').style.display = "none"; 
-    document.getElementById('recomendacion4').style.display = "none"; 
-    document.getElementById('recomendacion5').style.display = "none"; 
-    document.getElementById('recomendacion6').style.display = "block"; 
-}
+
 
 function showNaOCl() {
     document.getElementById('NaOCl').style.display = "block";

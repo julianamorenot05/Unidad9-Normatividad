@@ -643,8 +643,7 @@
                                     <div id="carouselSuciedad" class="carousel slide" data-interval="false">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <div class="row justify-content-center" style="align-items: center;">
-                                                    
+                                                <div class="row justify-content-center" style="align-items: center;">                                                    
                                                     <div class="col-md-5">
                                                         <div class="row">
                                                             <div class="col-md-12 " role="button" id="caja1-frente" onclick="showDiv3()" style="text-align: center; align-items: center; margin-right: 17px;">
@@ -1595,10 +1594,14 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="row justify-content-center">
-                                        <div class="titulo-azul2" style="position: relative; top: -35px; padding-top: 4%;">
-                                            <i class="fas fa-circle" style="position: relative; top: -65%; left: -10%;"></i>
-                                            <span class="font-weight-bold text-center">Elementos de protección personal </span>
-                                            <i class="fas fa-circle" style="position: relative; top: -65%; right: -10%;"></i>
+                                        <div class="titulo-azul2 p_white" style="position: relative; top: -35px;">
+                                            <div class="row" id="titulo-puntos">
+                                                <i class="fas fa-circle" ></i>
+                                                <div class="col-md-10">
+                                                    <p class="font-weight-bold p_white">Elementos de protección personal</p>
+                                                </div>
+                                                <i class="fas fa-circle" ></i>                                                
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -1618,15 +1621,21 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="col-md-3" style="padding-left: 3em;">
-                                            <div id="hexagono">
-                                                <img src="assets/image/gafas-seguridad.png" class="img-fluid" >
+                                        <div class="col-md-3" >
+                                            <div class="row justify-content-center">
+                                                <div id="hexagono">
+                                                    <img src="assets/image/gafas-seguridad.png" class="img-fluid" >
+                                                </div>
                                             </div>
-                                            <div id="hexagono">
-                                                <img src="assets/image/mascara-gas.png" class="img-fluid" >
+                                            <div class="row justify-content-center">
+                                                <div id="hexagono">
+                                                    <img src="assets/image/mascara-gas.png" class="img-fluid" >
+                                                </div>
                                             </div>
-                                            <div id="hexagono">
-                                                <img src="assets/image/bata-laboratorio.png" class="img-fluid" >
+                                            <div class="row justify-content-center">
+                                                <div id="hexagono">
+                                                    <img src="assets/image/bata-laboratorio.png" class="img-fluid" >
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1653,13 +1662,13 @@
                                     <img src="assets/image/limpieza.png" class="img-fluid" >
                                     <p style="position: relative; top: -5%;">Clic en las tarjetas para ver información</p>
                                 </div>
-                                <div class="col-md-7" style="margin-left: -10px; padding-top: 8px;">
+                                <div class="col-md-7" style="padding-top: 8px;">
                                     <p class="p_black justificado">Para la bioseguridad en las áreas de trabajo es esencial conocer los conceptos 
                                         básicos sobre los procesos de desinfección y sobre las condiciones de esterilización. Teniendo en cuenta que 
                                         los materiales contaminados no pueden llevarse a desinfección y/o esterilización rápidamente, es importante 
                                         entender y estandarizar los conceptos elementales de la limpieza previa a este proceso.</p>
                                     <div class="row justify-content-center">
-                                        <div class="col-md-6" >
+                                        <div class="col-md-6 espacio2" >
                                             <div id="caja-desinfeccion-frente">
                                                 <div class="row col-md-12 justify-content-center caja-tarjeta-azul" onclick="showDiv39()" style="align-items: center;">
                                                     <p class="p_white font-weight-bold" style="font-size: 25px;">Desinfección</p>    
@@ -1674,9 +1683,9 @@
                                                                     microorganismos patógenos de una superficie inanimada, con excepción de las esporas. La actividad del 
                                                                     proceso de desinfección depende de varios elementos:</p>                                                  
                                                                 <p class="text-right"><p class="text-right"><a class="pull-right" href="#carouselDesinfeccion" role="button" 
-                                                                    data-slide="next" ><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p> 
+                                                                    data-slide="next" ><i class="fas fa-caret-right fa-4x"></i></a></p> 
                                                             </div>                                        
-                                                            <div class="carousel-item" style="margin-left: -11px; margin-top: 38px;">
+                                                            <div class="carousel-item" style="margin-left: -10px; ">
                                                                 <ul class="fa-ul justificado" style="margin-left: 33px;">
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Del tipo de contaminación del material.</li>
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>De la calidad del proceso de limpieza realizado previamente.</li>                                  
@@ -1684,10 +1693,10 @@
                                                                     
                                                                 </ul>
                                                                 <p class="text-right" ><a class="pull-right" href="#carouselDesinfeccion" role="button" data-slide="prev" style="margin-right: 4px;">
-                                                                    <img class="flecha2" src="assets/image/fle_anterior.png"></a><a class="pull-right" href="#carouselDesinfeccion" 
-                                                                    role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>                                          
+                                                                    <i class="fas fa-caret-left fa-4x"></i></a><a class="pull-right" href="#carouselDesinfeccion" 
+                                                                    role="button" data-slide="next"><i class="fas fa-caret-right fa-4x"></i></a></p>                                          
                                                             </div>
-                                                            <div class="carousel-item" style="margin-left: -11px; margin-top: 38px;">
+                                                            <div class="carousel-item" style="margin-left: -10px;">
                                                                 <ul class="fa-ul justificado" style="margin-left: 33px;">
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Del tiempo de contacto del material con el desinfectante, es definido por el fabricante del desinfectante.</li>                                                                
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>De la estructura del objeto a desinfectar, es necesario 
@@ -1696,14 +1705,14 @@
                                                                     </li>
                                                                 </ul>
                                                                 <p class="text-right" style="position: relative; top: -23px;"><a class="pull-right" href="#carouselDesinfeccion" role="button" data-slide="prev" style="margin-right: 4px;">
-                                                                    <img class="flecha2" src="assets/image/fle_anterior.png"></a><a role="button" onclick="showDiv45()"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
+                                                                    <i class="fas fa-caret-left fa-4x"></i></a><a role="button" onclick="showDiv45()"><i class="fas fa-caret-right fa-4x"></i></a></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>                                            
                                         </div>  
-                                        <div class="col-md-6" >
+                                        <div class="col-md-6 espacio2" >
                                             <div id="caja-esterilizacion-frente">
                                                 <div class="row col-md-12 justify-content-center caja-tarjeta-azul" onclick="showDiv40()" style="align-items: center;">
                                                     <p class="p_white font-weight-bold" style="font-size: 25px;">Esterilización</p>    
@@ -1740,13 +1749,13 @@
                                     <img src="assets/image/limpieza.png" class="img-fluid" >
                                     <p style="position: relative; top: -5%;">Clic en las tarjetas para ver información</p>
                                 </div>
-                                <div class="col-md-7" style="margin-left: -10px; padding-top: 8px;">
+                                <div class="col-md-7" style=" padding-top: 8px;">
                                     <p class="p_black justificado">Para la bioseguridad en las áreas de trabajo es esencial conocer los conceptos 
                                         básicos sobre los procesos de desinfección y sobre las condiciones de esterilización. Teniendo en cuenta que 
                                         los materiales contaminados no pueden llevarse a desinfección y/o esterilización rápidamente, es importante 
                                         entender y estandarizar los conceptos elementales de la limpieza previa a este proceso.</p>
                                     <div class="row justify-content-center">
-                                        <div class="col-md-6" >
+                                        <div class="col-md-6 espacio2" >
                                             <div id="caja-diferencias-frente">
                                                 <div class="row col-md-12 justify-content-center caja-tarjeta2" onclick="showDiv41()" style="align-items: center;">
                                                     <p class="p_black font-weight-bold text-center" style="font-size: 20px;">Diferencias entre desinfección y esterilización</p>    
@@ -1757,40 +1766,40 @@
                                                     <div id="carouselDiferencias" class="carousel slide" data-interval="false">
                                                         <div class="carousel-inner">
                                                             <div class="carousel-item active">
-                                                                <ul class="fa-ul justificado" style="margin-left: 33px;">
+                                                                <ul class="fa-ul justificado" style="margin-left: 35px;">
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>El proceso de esterilización elimina toda clase de microorganismo existente.</li>
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>La desinfección radica en la inhibición de los efectos nocivos que 
                                                                         los microorganismos tienen sobre los humanos y, al mismo tiempo, se pretende eliminar una mayor parte de estos microorganismos. </li>                                  
                                                                 </ul>                                               
                                                                 <p class="text-right"><p class="text-right"><a class="pull-right" href="#carouselDiferencias" role="button" 
-                                                                    data-slide="next" ><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p> 
+                                                                    data-slide="next" ><i class="fas fa-caret-right fa-4x"></i></a></p> 
                                                             </div>                                        
                                                             <div class="carousel-item" style="margin-left: -11px; margin-top: 38px;">
-                                                                <ul class="fa-ul justificado" style="margin-left: 33px;">
+                                                                <ul class="fa-ul justificado" style="margin-left: 35px;">
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>En el proceso de desinfección no es posible eliminar esporas, al contrario de la esterilización.</li>
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>El tiempo utilizado y exigido en el proceso de esterilización es mayor que el utilizado en el proceso de desinfección.</li>                                                                                                     
                                                                 </ul>
                                                                 <p class="text-right" ><a class="pull-right" href="#carouselDiferencias" role="button" data-slide="prev" style="margin-right: 4px;">
-                                                                    <img class="flecha2" src="assets/image/fle_anterior.png"></a><a class="pull-right" href="#carouselDiferencias" 
-                                                                    role="button" data-slide="next"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>                                          
+                                                                    <i class="fas fa-caret-left fa-4x"></i></a><a class="pull-right" href="#carouselDiferencias" 
+                                                                    role="button" data-slide="next"><i class="fas fa-caret-right fa-4x"></i></a></p>                                          
                                                             </div>
                                                             <div class="carousel-item" style="margin-left: -11px; margin-top: 0px;">
-                                                                <ul class="fa-ul justificado" style="margin-left: 33px;">
+                                                                <ul class="fa-ul justificado" style="margin-left: 35px;">
                                                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>La esterilización es elegida en los casos en que el fabricante 
                                                                         del material recomienda este medio, ya que garantiza que los componentes que serán sometidos a este proceso no 
                                                                         sufrirán modificaciones o daños. Por ejemplo, en la esterilización con calor, los materiales termo-sensibles no 
                                                                         soportarán estas temperaturas. Este se define en la ficha técnica de cada fabricante
                                                                     </li>
                                                                 </ul>
-                                                                <p class="text-right" style="position: relative; top: -23px;"><a class="pull-right" href="#carouselDiferencias" role="button" data-slide="prev" style="margin-right: 4px;">
-                                                                    <img class="flecha2" src="assets/image/fle_anterior.png"></a><a role="button" onclick="showDiv43()"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
+                                                                <p class="text-right" style=""><a class="pull-right" href="#carouselDiferencias" role="button" data-slide="prev" style="margin-right: 4px;">
+                                                                    <i class="fas fa-caret-left fa-4x"></i></a><a role="button" onclick="showDiv43()"><i class="fas fa-caret-right fa-4x"></i></a></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>                                            
                                         </div>  
-                                        <div class="col-md-6" >
+                                        <div class="col-md-6 espacio2" >
                                             <div id="caja-genericos-frente">
                                                 <div class="row col-md-12 justify-content-center caja-tarjeta2" onclick="showDiv42()" style="align-items: center;">
                                                     <p class="p_black font-weight-bold text-center" style="font-size: 20px;">Datos genéricos</p>    
@@ -1806,7 +1815,7 @@
                                                                     como más determinados y poder responder a los peligros biológicos que puedan presentarse en un laboratorio.
                                                                 </p>                                              
                                                                 <p class="text-right"><p class="text-right"><a class="pull-right" href="#carouselGenericos" role="button" 
-                                                                    data-slide="next" ><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p> 
+                                                                    data-slide="next" ><i class="fas fa-caret-right fa-4x"></i></a></p> 
                                                             </div>                                        
                                                             <div class="carousel-item" style=" margin-top: 0px;">
                                                                 <p class="p_black justificado">
@@ -1814,8 +1823,8 @@
                                                                     se deben aplicar en todos los casos según las recomendaciones de cada fabricante, de igual manera las pautas de 
                                                                     esterilización deberán establecerse según las recomendaciones del fabricante del producto. 
                                                                 </p>                                                                
-                                                                <p class="text-right" style="position: relative; top: -23px;"><a class="pull-right" href="#carouselGenericos" role="button" data-slide="prev" style="margin-right: 4px;">
-                                                                    <img class="flecha2" src="assets/image/fle_anterior.png"></a><a role="button" onclick="showDiv44()"><img class="flecha2" src="assets/image/fle_siguiente.png"></a></p>
+                                                                <p class="text-right" style=""><a class="pull-right" href="#carouselGenericos" role="button" data-slide="prev" style="margin-right: 4px;">
+                                                                    <i class="fas fa-caret-left fa-4x"></i></a><a role="button" onclick="showDiv44()"><i class="fas fa-caret-right fa-4x"></i></a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1977,7 +1986,7 @@
                                     <div id="NaOCl">
                                         <div class="row">
                                             <div class="col-md-1"></div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <div id="carouselCloro" class="carousel slide" data-interval="false">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
@@ -2030,7 +2039,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showNaDCC()">NaDCC</a></p>
+                                                <div class="button-tab-azul3" onclick="showNaDCC()">
+                                                    <p class="p-button-tab-azul3">NaDCC</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2038,9 +2049,11 @@
                                     <div id="NaDCC" style="display: none">
                                         <div class="row">
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showNaOCl()">NaOCl</a></p>
+                                                <div class="button-tab-azul3" onclick="showNaOCl()">
+                                                    <p class="p-button-tab-azul3">NaOCl</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">                                            
+                                            <div class="col-md-8 caja-texto3">                                            
                                                 <p class="text-left p_black"><span class="font-weight-bold">Dicloroisocianurato sódico </span>(NaDCC)</p>
                                                 <p class="justificado p_black">Este producto en forma de polvo tiene un sesenta por ciento de cloro libre. Este compuesto 
                                                     puede almacenarse de manera fácil y segura tanto en su forma en polvo como en su forma de comprimido.
@@ -2051,7 +2064,9 @@
                                                 </p>                       
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showCloraminas()">Cloraminas</a></p>
+                                                <div class="button-tab-azul3" onclick="showCloraminas()">
+                                                    <p class="p-button-tab-azul3">Cloraminas</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2059,9 +2074,11 @@
                                     <div id="Cloraminas" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showNaDCC()">NaDCC</a></p>
+                                                <div class="button-tab-azul3" onclick="showNaDCC()">
+                                                    <p class="p-button-tab-azul3">NaDCC</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <p class="text-left p_black"><span class="font-weight-bold">Cloraminas</span></p>
                                                 <p class="justificado p_black">Estas se encuentran en polvo con un veinticinco por ciento aproximado de cloro en forma 
                                                     libre. Este compuesto libera cloro a una ligereza menor que el hipoclorito, por lo que inicialmente se requieren 
@@ -2069,7 +2086,9 @@
                                                     sustancias orgánicas con la misma intensidad que lo hacen los hipocloritos. Estas soluciones son prácticamente inodoras. </p>
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showClO2()">ClO2</a></p>
+                                                <div class="button-tab-azul3" onclick="showClO2()">
+                                                    <p class="p-button-tab-azul3">ClO2</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2077,9 +2096,11 @@
                                     <div id="ClO2" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showCloraminas()">Cloraminas</a></p>
+                                                <div class="button-tab-azul3" onclick="showCloraminas()">
+                                                    <p class="p-button-tab-azul3">Cloraminas</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <p class="text-left p_black"><span class="font-weight-bold">Dióxido de cloro </span>(ClO2)</p>
                                                 <p class="justificado p_black">Este compuesto es un desinfectante, germicida, desinfectante y con alto poder de oxidación 
                                                     y de rápida acción, que generalmente ejerce su actividad en concentraciones menores a las requeridas por el cloro 
@@ -2087,7 +2108,9 @@
                                                     reacción exotérmica (liberando calor). Este compuesto es soluble y estable en agua. </p>  
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showCH2O()">CH2O</a></p>
+                                                <div class="button-tab-azul3" onclick="showCH2O()">
+                                                    <p class="p-button-tab-azul3">CH2O</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2095,9 +2118,11 @@
                                     <div id="CH2O" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showClO2()">ClO2</a></p>
+                                                <div class="button-tab-azul3" onclick="showClO2()">
+                                                    <p class="p-button-tab-azul3">ClO2</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <p class="text-left p_black"><span class="font-weight-bold">Formaldehído </span>(CH2O)</p>
                                                 <p class="justificado p_black">Este gas elimina todas las esporas y los microorganismos a temperaturas por encima de 20°C. 
                                                     Tiene una acción comparativamente lenta y necesita humedad relativa local de aproximadamente el 70%.</p>  
@@ -2108,7 +2133,9 @@
                                                     ventilados. Se deben seguir los requerimientos y la normal de manipulación indicados en la ficha de seguridad del producto.</p>
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showGlutaraldehído()">(OHC<br>(CH2)<br>3CHO)</a></p>
+                                                <div class="button-tab-azul3" onclick="showGlutaraldehído()">
+                                                    <p class="p-button-tab-azul3">(OHC (CH2) 3CHO)</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2116,9 +2143,11 @@
                                     <div id="Glutaraldehído" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showCH2O()">CH2O</a></p>
+                                                <div class="button-tab-azul3" onclick="showCH2O()">
+                                                    <p class="p-button-tab-azul3">CH2O</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <div id="carouselGlutaraldehído" class="carousel slide" data-interval="false">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
@@ -2152,7 +2181,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showFenolicos()">Compuestos fenólicos</a></p>
+                                                <div class="button-tab-azul3" onclick="showFenolicos()">
+                                                    <p class="p-button-tab-azul3">Compuestos fenólicos</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2160,9 +2191,11 @@
                                     <div id="Fenolicos" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showGlutaraldehído()">(OHC (CH2)3 CHO)</a></p>
+                                                <div class="button-tab-azul3" onclick="showGlutaraldehído()">
+                                                    <p class="p-button-tab-azul3">(OHC (CH2)3 CHO)</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <div id="carouselFenólicos" class="carousel slide" data-interval="false">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
@@ -2195,7 +2228,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showAmonio()">Compuesto de amonio cuaternario</a></p>
+                                                <div class="button-tab-azul3" onclick="showAmonio()">
+                                                    <p class="p-button-tab-azul3">Compuesto de amonio cuaternario</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>                                    
@@ -2203,9 +2238,11 @@
                                     <div id="Amonio" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showFenolicos()">Compuestos fenólicos</a></p>
+                                                <div class="button-tab-azul3" onclick="showFenolicos()">
+                                                    <p class="p-button-tab-azul3">Compuestos fenólicos</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <p class="text-left p_black"><span class="font-weight-bold">Compuestos de amonio cuaternario</span></p>
                                                 <p class="justificado p_black">Presentan una adecuada actividad ante bacterias que están en fase vegetativa y contra 
                                                     virus que presentan envoltura lipídica. Unos de estos compuestas, son usado como productos antisépticos, como el 
@@ -2218,7 +2255,9 @@
                                                 </p>    
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showAlcoholes()">Alcoholes</a></p>
+                                                <div class="button-tab-azul3" onclick="showAlcoholes()">
+                                                    <p class="p-button-tab-azul3">Alcoholes</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2226,9 +2265,11 @@
                                     <div id="Alcoholes" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showAmonio()">Compuesto de amonio cuaternario</a></p>
+                                                <div class="button-tab-azul3" onclick="showAmonio()">
+                                                    <p class="p-button-tab-azul3">Compuesto de amonio cuaternario</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <div id="carouselAlcoholes" class="carousel slide" data-interval="false">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
@@ -2263,7 +2304,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showYodo()">Yodo y yodóforos</a></p>
+                                                <div class="button-tab-azul3" onclick="showYodo()">
+                                                    <p class="p-button-tab-azul3">Yodo y yodóforos</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2271,9 +2314,11 @@
                                     <div id="Yodo" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showAlcoholes()">Alcoholes</a></p>
+                                                <div class="button-tab-azul3" onclick="showAlcoholes()">
+                                                    <p class="p-button-tab-azul3">Alcoholes</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <div id="carouselYodo" class="carousel slide" data-interval="false">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
@@ -2304,7 +2349,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showPeroxido()">Peróxido de hidrógeno y perácidos</a></p>
+                                                <div class="button-tab-azul3" onclick="showPeroxido()">
+                                                    <p class="p-button-tab-azul3">Peróxido de hidrógeno</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2312,9 +2359,11 @@
                                     <div id="Peroxido" style="display: none">
                                         <div class="row" >
                                             <div class="col-md-1">
-                                                <p class="font-weight-bold p_white"><a class="button-tab-azul3" onclick="showYodo()">Yodo y yodóforos</a></p>
+                                                <div class="button-tab-azul3" onclick="showYodo()">
+                                                    <p class="p-button-tab-azul3">Yodo y yodóforos</p>
+                                                </div>
                                             </div>
-                                            <div class="col-md-9 caja-texto3">
+                                            <div class="col-md-8 caja-texto3">
                                                 <p class="text-left p_black"><span class="font-weight-bold">Peróxido de hidrógeno y perácidos</span></p>
                                                 <p class="justificado p_black">Estos compuestos, como lo es el cloro, son considerados oxidantes enérgicos y se usan como 
                                                     germicidas potentes con un espectro amplio. Son considerados con mayor inocuidad que el cloro para el ambiente y el ser humano.
@@ -2343,10 +2392,10 @@
                             <br>
                             <div class="row">
                                 
-                                <div class="col" style="margin-right: -280px;">
+                                <div class="col-md-5"  id="img-desinfeccion-espacios">
                                     <img src="assets/image/desinfeccion1.png" class="img-fluid">
                                 </div>
-                                <div class="col" style="margin-top: 36px;">
+                                <div class="col-md-7" id="desinfeccion-espacios">
                                     <p class="p_black font-weight-bold" style="margin-left: 35px;">Desinfección de espacios y superficies</p>
                                     <div class="caja-texto-yellow">
                                         <p class="p_black justificado">
@@ -2497,19 +2546,26 @@
                             </div>
                             <br>
                             <div class="col-md-12">  
-                                <div class="row tituloh5_center1">
+                                <div class="row tituloh5_center1" id="recomendaciones-limpieza" style="margin-bottom: 17px;">
                                     <div class="col-md-9" style="padding-top: 4px;">
                                         Recomendación para implementar un proceso de limpieza y desinfección de superficies en un laboratorio
                                     </div>
                                     <div class="col-md-3 caja-texto-back-b2" style="z-index: 1;">
                                         <div class="col-md-12 caja-texto-back-b2-interna">
-                                            <div style="transform: rotate(5deg);">
-                                                <div class="col-md-9">
-                                                    <p class="justificado p_white">
-                                                        Para cualquier procedimiento utilice todos los elementos de protección personal
-                                                    </p>
+                                            <div id="recomendaciones-limpieza2" style="">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-11">
+                                                        <p class="justificado p_white">
+                                                            Para cualquier procedimiento utilice todos los elementos de protección personal
+                                                        </p>
+                                                    </div>
+                                                </div>    
+                                                <div class="row" style="justify-content: flex-end;">
+                                                    <div class="col-md-5 espacio">
+                                                        <p class="text-right"><img src="assets/image/traje-bioseguridad.png" class="img-fluid" style=""></p>
+                                                    </div>                                                    
                                                 </div>
-                                                <p class="text-right"><img src="assets/image/traje-bioseguridad.png" class="img-fluid" style="position: relative; left: 5%; top: -65px;"></p>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -2525,10 +2581,12 @@
                             <div class="col-md-12 caja-texto-borde-amarillo">
                                 <div class="col-md-12 caja-texto-borde-azul ">
                                     <div id="recomendacion" >
-                                        <div class="col-md-12" style="justify-content: center;" >
-                                            <p class="p_gray font-weight-bold text-center" style="opacity: 0.2; font-size: 25px; margin-top: 6%;">
-                                                Clic en los números para navegar por la información</p>
-                                        </div>                                        
+                                        <div class="row" style="align-items: center;">
+                                            <div class="col-md-12" style="justify-content: center;" >
+                                                <p class="p_gray font-weight-bold text-center" style="opacity: 0.2; font-size: 25px; margin-top: 6%;">
+                                                    Clic en los números para navegar por la información</p>
+                                            </div>                                        
+                                        </div>
                                     </div>
                                     <div id="recomendacion1" style="display: none;">
                                         <div class="row" style="align-items: center;">
@@ -2646,33 +2704,33 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-12 ">
-                                    <div class="row justify-content-center">
-                                        <div class="botonera" >
-                                            <div class="row button-tab2"  onclick="showDiv47()" role="button">
-                                                <p class="font-weight-bold p_white">1</p>
-                                            </div>
-                                            <div class="row button-tab2"  onclick="showDiv48()" role="button">
-                                                <p class="font-weight-bold p_white">2</p>
-                                            </div>
-                                            <div class="row button-tab2"  onclick="showDiv49()" role="button">
-                                                <p class="font-weight-bold p_white">3</p>
-                                            </div>
-                                            <div class="row button-tab2"  onclick="showDiv50()" role="button">
-                                                <p class="font-weight-bold p_white">4</p>
-                                            </div>
-                                            <div class="row button-tab2"  onclick="showDiv51()" role="button">
-                                                <p class="font-weight-bold p_white">5</p>
-                                            </div>                                        
+                                </div>                                 
+                            </div>    
+                            <div class="col-md-12 ">
+                                <div class="row justify-content-center">
+                                    <div class="botonera" >
+                                        <div class="row button-tab2"  onclick="showDiv47()" role="button">
+                                            <p class="font-weight-bold p_white">1</p>
                                         </div>
-                                    </div>                                
-                                </div>  
-                            </div>                                                      
+                                        <div class="row button-tab2"  onclick="showDiv48()" role="button">
+                                            <p class="font-weight-bold p_white">2</p>
+                                        </div>
+                                        <div class="row button-tab2"  onclick="showDiv49()" role="button">
+                                            <p class="font-weight-bold p_white">3</p>
+                                        </div>
+                                        <div class="row button-tab2"  onclick="showDiv50()" role="button">
+                                            <p class="font-weight-bold p_white">4</p>
+                                        </div>
+                                        <div class="row button-tab2"  onclick="showDiv51()" role="button">
+                                            <p class="font-weight-bold p_white">5</p>
+                                        </div>                                        
+                                    </div>
+                                </div>                                
+                            </div>                                                   
                         </div>
 
 
-                        <!-- 168-185 -->
+                        <!-- 169-185 -->
                         <div id="unidad9_21" class="tab-pane" role="tabpanel" style="padding-top: 18px;">
                             <div class="col-md-12">
                                 <p><span class="font-weight-bold">
@@ -2681,7 +2739,7 @@
                             </div>
                             <br>
                             <div class="col-md-12">  
-                                <div class="row tituloh5_center1" style="align-items: center;">
+                                <div class="row tituloh5_center1" id="medidas-limpieza" style="align-items: center; height: auto;">
                                     <div class="col" style="padding-top: 4px;">
                                         Medidas de limpieza en caso de derrames de sangre y líquidos corporales
                                     </div>
@@ -2737,126 +2795,107 @@
                                         <div id="medidas1" style="display: none;">
                                             <div class="row">                                                
                                                 <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Utilizar, gafas o careta, tapabocas quirúrgico convencional, guantes de neopreno y bata de bioseguridad</p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                    <div class="row " style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Utilizar, gafas o careta, tapabocas quirúrgico convencional, guantes de neopreno y bata de bioseguridad</p>   
+                                                        </div>
+                                                    </div> 
+                                                </div>                                                
                                             </div>
                                         </div>
                                         <div id="medidas2" style="display: none;">
                                             <div class="row">                                                
-                                                <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Cubrir el derrame con toallas desechables de papel absorbente para contener el derrame, es decir, 
-                                                            evitar su expansión. Lo primero que debe hacerse después de la protección del operario es contener el derrame. 
-                                                            También hay disponibles en el mercado productos gelificantes que ayudan a solidificar el derrame.</p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                <div class="row caja-amarilla-transparente">    
+                                                    <div class="row" style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Cubrir el derrame con toallas desechables de papel absorbente para contener el derrame, es decir, 
+                                                                evitar su expansión. Lo primero que debe hacerse después de la protección del operario es contener el derrame. 
+                                                                También hay disponibles en el mercado productos gelificantes que ayudan a solidificar el derrame.</p>   
+                                                        </div>
+                                                    </div>                                    
+                                                </div>                                                 
                                             </div>
                                         </div>
                                         <div id="medidas3" style="display: none;">
                                             <div class="row">                                                
-                                                <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Vierta el producto inactivante de materiales biológicos (revisar acción el producto desde 
-                                                            la ficha técnica) sobre las toallas de papel que están cubriendo el derrame.</p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                <div class="row caja-amarilla-transparente">    
+                                                    <div class="row" style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Vierta el producto inactivante de materiales biológicos (revisar acción el producto desde 
+                                                                la ficha técnica) sobre las toallas de papel que están cubriendo el derrame.</p>   
+                                                        </div>
+                                                    </div>                                    
+                                                </div>                                                 
                                             </div>
                                         </div>
                                         <div id="medidas4" style="display: none;">
                                             <div class="row">                                                
                                                 <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Inactive el derrame iniciando por el área externa de la zona afectada y avanzando de forma concéntrica hacia el centro.</p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                    <div class="row" style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Inactive el derrame iniciando por el área externa de la zona afectada y avanzando de forma concéntrica hacia el centro.</p>   
+                                                        </div>
+                                                    </div> 
+                                                </div>                                                
                                             </div>
                                         </div>
                                         <div id="medidas5" style="display: none;">
                                             <div class="row">                                                
                                                 <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Transcurridos el tiempo recomendado por el fabricante del producto inactivante, retire los 
-                                                            materiales. Si hay vidrio roto u otros objetos punzantes, estos se deben recoger con un recogedor o un trozo de 
-                                                            cartón rígido y debe ser depositados en un envase rígido y resistente. </p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                    <div class="row" style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Transcurridos el tiempo recomendado por el fabricante del producto inactivante, retire los 
+                                                                materiales. Si hay vidrio roto u otros objetos punzantes, estos se deben recoger con un recogedor o un trozo de 
+                                                                cartón rígido y debe ser depositados en un envase rígido y resistente. </p>   
+                                                        </div>
+                                                    </div> 
+                                                </div>                                                
                                             </div>
                                         </div>
                                         <div id="medidas6" style="display: none;">
                                             <div class="row">                                                
-                                                <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Realizar proceso de limpieza y desinfección de la zona afectada por el derrame.</p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                <div class="row caja-amarilla-transparente"> 
+                                                    <div class="row" style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Realizar proceso de limpieza y desinfección de la zona afectada por el derrame.</p>   
+                                                        </div>
+                                                    </div>                                       
+                                                </div>                                                
                                             </div>
                                         </div>
                                         <div id="medidas7" style="display: none;">
                                             <div class="row">                                                
-                                                <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Deseche los materiales contaminados depositándolos en la caneca de residuos de riesgo biológico.</p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                <div class="row caja-amarilla-transparente"> 
+                                                    <div class="row" style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Deseche los materiales contaminados depositándolos en la caneca de residuos de riesgo biológico.</p>   
+                                                        </div>
+                                                    </div>                                        
+                                                </div>                                                
                                             </div>
                                         </div>
                                         <div id="medidas8" style="display: none;">
                                             <div class="row">                                                
-                                                <div class="row caja-amarilla-transparente">                                        
-                                                </div>
-                                                <div class="row caja-transparente3" style="align-items: center;">
-                                                    <div class="col-md-11">
-                                                        <p class="p_black justificado">Los implementos de aseo usados se deben disponer con producto inactivante (Traperos, escobas, recogedor) y luego lavar</p>   
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <span class="mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; bottom: 64px; left: 21px;"><i class="fas fa-times fa-3x" ></i></span>
-                                                    </div>
-                                                </div> 
+                                                <div class="row caja-amarilla-transparente">                                                    
+                                                    <div class="row " style="align-items: center;">
+                                                        <div class="col-md-12">
+                                                            <p class=" mod-close-azul" role="button" onclick="cerrarMedidas()" style="position: relative; left: 21px;"><i class="fas fa-times fa-3x" ></i></p>
+                                                            <p class="p_black justificado">Los implementos de aseo usados se deben disponer con producto inactivante (Traperos, escobas, recogedor) y luego lavar</p>   
+                                                        </div>                                                        
+                                                    </div>                                        
+                                                </div>                                                 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                            </div>
-                                                                               
+                            </div>                                         
                         </div>
 
 
@@ -2869,16 +2908,16 @@
                             </div>
                             <br>
                             <div class="col-md-12">  
-                                <div class="row tituloh5_center1" style="align-items: center;">
+                                <div class="row tituloh5_center1" style="align-items: center; height: auto;">
                                     <div class="col" style="padding-top: 4px;">
                                         Limpieza y desinfección de equipos biomédicos
                                     </div>
                                 </div>  
                                 <br>
                             </div>
-                            <div class="col-md-12" style="margin-left: 5px; margin-right: 5px;">
+                            <div class="col-md-12" id="numerales-limpieza" style="">
                                 <div class="row">
-                                    <div class="col-md-3 ">
+                                    <div class="col-md-3 espacio2">
                                         <div class="caja-texto4">
                                             <p class="p_white justificado"><span class="font-weight-bold">1.</span>
                                                 La limpieza y la desinfección de los equipos debe realizarse según lo establece el fabricante. Algunas soluciones 
@@ -2892,7 +2931,7 @@
                                             </p>
                                         </div>  
                                     </div>
-                                    <div class="col-md-3 ">
+                                    <div class="col-md-3 espacio2">
                                         <div class="caja-texto4">
                                             <p class="p_white justificado"><span class="font-weight-bold">3.</span>
                                                 Antes de iniciar a operar un equipo debe garantizarse que está limpio.
@@ -2910,7 +2949,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 ">
+                                    <div class="col-md-3 espacio2">
                                         <div class="caja-texto4">
                                             <p class="p_white justificado"><span class="font-weight-bold">6.</span>
                                                 No utilizar paños abrasivos, objetos afilados como uñas, alambres o agujas.
@@ -2926,10 +2965,7 @@
                                         <img src="assets/image/equipo-biomedico.png" class="img-fluid">
                                     </div>
                                 </div>
-                                
-                                
-                            </div>
-                                                                               
+                            </div>                                         
                         </div>
 
 
@@ -2974,10 +3010,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        
-                                        <img src="assets/image/atomo.png" class="img-fluid" style="position: relative; bottom: 30%;">
-                                        <p class="font-weight-bold" style="position: relative; top: 80px;"><a onclick="mostrarFicha()" class="button-tab">Información general de una ficha técnica</a></p>
+                                    <div class="col-md-2 espacio">                                        
+                                        <img src="assets/image/atomo.png" id="atomo-seccion23" class="img-fluid" >
+                                        <p class="font-weight-bold" id="boton-seccion23"><a onclick="mostrarFicha()" class="button-tab">Información general de una ficha técnica</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -7687,6 +7722,16 @@
                     <i class="fas fa-times fa-3x"></i>
                 </span>
                 <div class="modal-body">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6"></div>
+                            <div class="col-md-2"></div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+
                     <p class="text-center">
                         <img src="assets/image/tabladesinfeccion.png" class="img-fluid">
                     </p>
@@ -7829,11 +7874,16 @@
                     <i class="fas fa-times fa-3x"></i>
                 </span>
                 <div class="modal-body">
-                    <h6 class="titulo-amarillo text-center font-weight-bold p_black"><i class="fas fa-circle" id="circulo_azul" 
-                        style="position: relative; left: -21%;"></i><i class="fas fa-circle" id="circulo_azul" style="position: relative; right: -75%;"></i>
-                        Clases más usadas de germicidas químicos y las diluciones <br> recomendadas que liberan cloro
-                        </h6>
-                    <p class="text-center">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-10">
+                                <p class="font-weight-bold p_black">Clases más usadas de germicidas químicos y las diluciones recomendadas que liberan cloro</p>
+                            </div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <p class="text-center" style="margin-top: 30px;">
                         <img src="assets/image/tabla-cloros.png" class="img-fluid">
                     </p>
                 </div>
@@ -7848,10 +7898,16 @@
                     <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
                 </span>
                 <div class="modal-body">
-                    <h6 class="titulo-amarillo text-center font-weight-bold p_black"><i class="fas fa-circle" id="circulo_azul" 
-                        style="position: relative; left: -19%;"></i>Tratamiento en autoclave
-                        <i class="fas fa-circle" id="circulo_azul" style="position: relative; right: -15%;"></i></h6>
-                    <div class="row">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-11">
+                                <p class="font-weight-bold p_black">Tratamiento en autoclave</p>
+                            </div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
                         <div class="col-md-8">
                             <p class="justificado p_black">Se someten los elementos a un medio con vapor de agua saturado a una presión y una 
                                 temperatura determinada con el fin de esterilizar el material de laboratorio, es considerado el método más 
@@ -7880,10 +7936,16 @@
                     <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
                 </span>
                 <div class="modal-body">
-                    <h6 class="titulo-amarillo text-center font-weight-bold p_black"><i class="fas fa-circle" id="circulo_azul" 
-                        style="position: relative; left: -19%;"></i>Carga de las autoclaves
-                        <i class="fas fa-circle" id="circulo_azul" style="position: relative; right: -15%;"></i></h6>
-                    <div class="row">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-11">
+                                <p class="font-weight-bold p_black">Carga de las autoclaves</p>
+                            </div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
                         <div class="col-md-5">
                             <img src="assets/image/ejemplo-carga1.png" class="img-fluid">
                         </div>
@@ -7908,11 +7970,17 @@
                     <i class="fas fa-times fa-3x" style="position: relative; top: -7px; left: 7px;"></i>
                 </span>
                 <div class="modal-body">
-                    <h6 class="titulo-amarillo text-center font-weight-bold p_black"><i class="fas fa-circle" id="circulo_azul" 
-                        style="position: relative; left: -19%;"></i>Precauciones en el uso de las autoclaves
-                        <i class="fas fa-circle" id="circulo_azul" style="position: relative; right: -15%;"></i></h6>
-
-                    <div class="row">
+                    <div class="titulo-amarillo text-center p_black">
+                        <div class="row" style="align-items: center;">
+                            <i class="fas fa-circle" id="circulo_azul"></i>
+                            <div class="col-md-11">
+                                <p class="font-weight-bold p_black">Precauciones en el uso de las autoclaves</p>
+                            </div>
+                            <i class="fas fa-circle" id="circulo_azul" ></i>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <p>Clic sobre las tarjetas para ver la información</p>
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-3 espacio">
@@ -14431,7 +14499,7 @@
     <script type="text/javascript" src="assets/js/wordfind.js"></script>
     <script type="text/javascript" src="assets/js/wordfindgame.js"></script>
     
-    <script type="text/javascript" src="assets/js/juegoArrastre.js"></script>
+    <!--<script type="text/javascript" src="assets/js/juegoArrastre.js"></script>-->
     <script type="text/javascript" src="assets/js/ahorcado.js"></script>
     
 

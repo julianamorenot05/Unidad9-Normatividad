@@ -607,6 +607,11 @@ $(".boton-azul-cuadro").click(function(){
     $(this).addClass("boton-azul-cuadro-activo");
 });
 
+$(".button-tab-azul2").click(function(){
+    $(".button-tab-azul2").removeClass("button-tab-azul2-activo");
+    $(this).addClass("button-tab-azul2-activo");
+});
+
 
 
 const horizontalAccordions = $(".accordion.width");

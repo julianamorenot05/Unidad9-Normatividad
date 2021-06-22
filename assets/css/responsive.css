@@ -53,6 +53,10 @@
     body{
         overflow: scroll;
     }
+
+    .barra-progreso{
+        display: none !important;
+    }
     
     .menu-actividades{
         margin-top: 550px;
@@ -233,6 +237,16 @@
 
     #titulo-puntos{
         justify-content: center;
+    }
+
+    #atomo-seccion23{
+        position: relative; 
+        bottom: 30%;
+    }
+
+    #boton-seccion23{
+        position: relative; 
+        top: 80px;
     }
     
 } 
@@ -450,6 +464,30 @@
     .caja-redonda-blanco{
         left: 0;
     }
+
+    .button-tab-azul3, .button-tab-azul3:active{
+        width: 350px;
+        height: 60px;
+        margin: 10px 0;
+    }
+
+    .p-button-tab-azul3 {
+        font-size: calc(6px + 2vw);
+    }
+
+    .caja-texto3{
+        margin: 0; 
+        width: 98%;
+        height: auto;
+    }
+
+    #recomendaciones-limpieza{
+        height: auto;
+    }
+
+    #numerales-limpieza {
+    margin-left: -15px; 
+    }
 }
 
 @media screen and (max-width: 1050px) and (min-width: 768px) {
@@ -465,6 +503,16 @@
          transform: scale(1.1) translate(-11px, 40px);
          margin: auto;
     }
+
+    .caja-amarilla-transparente {
+        padding: 15px 40px;
+        padding-left: 310px;
+        padding-bottom: 30px;
+    }
+
+    #medidas-limpieza{
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 1020px) {
@@ -473,6 +521,8 @@
         top: -240px;
         margin-bottom: -240px;
     }
+    
+    
 }
 
 @media screen and (max-width: 1020px) and (min-width: 975px){
@@ -481,6 +531,7 @@
         top: -225px;
         margin-bottom: -240px;
     }
+
 }
 
 
@@ -490,4 +541,137 @@
         top: -200px;
         margin-bottom: -240px;
     }
+
+    .caja-texto3 {
+        margin-left: 40px;
+    }
+
 }
+
+@media screen and (max-width: 1210px) {
+    .caja-tarjeta-azul-atras {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1220px) {
+    .caja-tarjeta2-atras {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1110px) and (min-width: 768px){
+    .caja-texto3 {
+        height: auto;
+    }
+
+    .p-button-tab-azul3{
+        transform: rotate(90deg);
+        font-size: calc(1px + 2vw);
+    }
+}
+
+
+@media screen and (max-width: 1050px) and (min-width: 768px) {
+    .caja-texto-yellow3{
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 767px) and (min-width: 500px) {
+    #recomendaciones-limpieza{
+        height: auto;
+    }
+
+    .caja-texto-back-b2 {
+        transform: rotate(-2deg);
+    }
+
+    #recomendaciones-limpieza2{
+        transform: rotate(2deg);
+    }
+    
+}
+
+@media screen and (max-width: 1250px) {
+    .caja-texto-borde-amarillo {
+        margin-top: 15px;
+        padding: 15px;
+        height: auto;
+    } 
+    
+    .caja-texto-borde-azul{
+        height: auto;
+    }
+
+    #recomendacion{
+        padding-bottom: 41px;
+    }
+}
+
+
+
+@media screen and (max-width: 1100px) and (min-width: 1050px){
+    .medio-circulo-der2 {
+        margin-right: 2px;
+    }
+
+    .medio-circulo-der2-activo {
+        margin-right: 2px;
+    }
+
+    .medio-circulo-izq2 {
+        margin-right: 4px;
+    }
+
+    .medio-circulo-izq2-activo {
+        margin-right: 4px;
+    }
+    
+}
+
+@media screen and (max-width: 1049px) and (min-width: 800px){
+    .medio-circulo-der2 {
+        margin-right: 100px;
+    }
+
+    .medio-circulo-der2-activo {
+        margin-right: 100px;
+    }
+
+    .medio-circulo-izq2 {
+        margin-right: 15px;
+    }
+
+    .medio-circulo-izq2-activo {
+        margin-right: 15px;
+    }
+    
+    .caja-amarilla-transparente{
+        padding: 15px 40px;
+        padding-left: 330px;
+        padding-bottom: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 799px) and (min-width: 768px) {  
+    .caja-amarilla-transparente {
+        padding: 15px 40px;
+        padding-left: 290px;
+        padding-bottom: 30px;
+    }
+} 
+
+@media only screen and (max-width: 767px) and (min-width: 650px) {  
+    .caja-amarilla-transparente {
+        padding: 15px 40px;
+        padding-left: 670px;
+        padding-bottom: 30px;
+    }
+}
+
+
+
