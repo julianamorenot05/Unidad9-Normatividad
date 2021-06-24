@@ -396,6 +396,7 @@ p {
     position:relative;
     display: flex;
     color: white;
+    font-weight: bold;
     text-decoration:none;
     border-radius:5px;
     background:#2c538e;
@@ -1283,7 +1284,7 @@ a.article:hover {
     background: #2c538e;
     border-radius: 15px;
     padding: 15px 15px;
-    margin-left: 17px;
+    margin-left: 10px;
     margin-bottom: 8px;
     height: auto;
     width: 100%
@@ -1471,6 +1472,7 @@ a.article:hover {
     height: 325px;
     width: 100%;    
     box-shadow: 2px 2px 5px 0px gray;
+    margin-bottom: 5px;
 }
 
 .caja-tarjeta-atras{ /**/
@@ -1482,6 +1484,7 @@ a.article:hover {
     width: 100%;
     align-content: center;
     box-shadow: 2px 2px 5px 0px gray;
+    margin-bottom: 5px;
 }
 
 .caja-tarjeta2{ /**/
@@ -1605,6 +1608,7 @@ a.article:hover {
     height: auto;
     width: 100%;
     font-size: 25px;
+    margin-bottom: 5px;
 }
 
 .caja-tarjeta-amarillo-atras{ /**/
@@ -1615,6 +1619,7 @@ a.article:hover {
     height: auto;
     width: 100%;
     align-content: center;
+    margin-bottom: 5px;
 }
 
 .caja-amarillo{ /**/
@@ -1625,6 +1630,7 @@ a.article:hover {
     width: auto;
     font-size: 25px;
     box-shadow: 2px 2px 4px 0px gray;
+    margin-bottom: 10px;
 }
 
 .caja-amarillo2{
@@ -2083,6 +2089,16 @@ a.article:hover {
     margin-bottom: 7px;
 }
 
+.caja-azul-relleno-claro2{
+    background: #C9E2F2;
+    border-radius: 25px;
+    padding: 15px;
+    height: auto;
+    box-shadow: 2px 2px 4px 0px grey;
+    margin-bottom: 7px;
+    margin: 13px;
+}
+
 .caja-amarillo-relleno{
     background: #ffc107;
     border-radius: 20px;
@@ -2405,6 +2421,10 @@ a.article:hover {
 
 .p_azul_claro{
     color: #C9E2F2; 
+}
+
+.p_azul_claro2{
+    color: #b3d0fd; 
 }
 
 .p_white {
@@ -4298,7 +4318,7 @@ picture img {
 .circle-div2{
     display: flex; 
     width: 125px;
-    height: 130px;
+    height: 125px;
     background: #2d6ac5;
     border-radius: 100px; 
     justify-content: center;
@@ -4911,7 +4931,7 @@ Estilos de tarjetas interactivas.
 .card-title {
     display: flex;
     height: 300px;
-    width: 66%;
+    width: 59%;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -5013,7 +5033,7 @@ Estilos de tarjetas interactivas.
     background: #2c538e;
     margin-bottom: 10px;
     height: auto;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
     box-shadow: 2px 2px 4px 0px gray;
 }
 
@@ -5515,6 +5535,12 @@ background: #d4d4d4;
     margin: auto;
 }
 
+#imagen-zoom2:hover {
+    -webkit-transform: scale(1.5);
+     transform: scale(1.2) translate(6px, 40px);
+     margin: auto;
+ }
+
 img.zoom {
     width: 350px;
     height: 200px;
@@ -5811,7 +5837,7 @@ img.zoom2{
 } 
 
 #recomendaciones-limpieza2{
-    transform: rotate(5deg);
+    transform: rotate(3deg);
 }
 
 #numerales-limpieza {
