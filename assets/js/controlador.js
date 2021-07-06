@@ -342,6 +342,18 @@ function mostrarCampo() {
     document.getElementById('planchas3').style.display = "none";
 }
 
+function modalBalanzaVolver() { 
+    document.getElementById('m_balanzasVerificacion1').style.display = "block";
+    document.getElementById('m_balanzasVerificacion2').style.display = "none";
+    document.getElementById('cerrar_modal').style.display = "block";
+}
+function modalBalanza() { 
+    document.getElementById('m_balanzasVerificacion1').style.display = "none";
+    document.getElementById('m_balanzasVerificacion2').style.display = "block";
+    document.getElementById('cerrar_modal').style.display = "none";
+
+}
+
 function mostrarPrincipios() { 
     document.getElementById('planchas').style.display = "none";
     document.getElementById('planchas1').style.display = "none";

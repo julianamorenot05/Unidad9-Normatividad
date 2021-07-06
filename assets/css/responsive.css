@@ -337,7 +337,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .boton-caja-texto-azul, .button-tab-azul{
+    .boton-caja-texto-azul, .button-tab-azul, .button-tab-azul:active{
         height: auto;
     }
 

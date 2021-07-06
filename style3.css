@@ -1930,6 +1930,7 @@ a.article:hover {
     border: 3px solid #2c538e !important;
     border-radius: 2px;
     padding: 10px;
+    height: 100%;
 }
 
 .caja-borde-amarillo3{
